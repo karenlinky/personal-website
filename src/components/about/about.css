@@ -2,5 +2,4 @@
 
 .aboutContent {
     height: calc(100% - var(--menu-bar-height));
-    background-color: grey;
 }

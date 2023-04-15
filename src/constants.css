@@ -1,5 +1,6 @@
 :root {
     --primary-text-color: white;
     --primary-background-menu-color: black;
+    --primary-background-color: rgb(5, 0, 18);
     --menu-bar-height: 65px;
 }
