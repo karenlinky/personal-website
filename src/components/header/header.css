@@ -42,3 +42,9 @@
 .menuItem:hover::after {
     transform: scaleX(1);
 }
+
+@media (max-width: 700px) {
+    .menuBar {
+        display: none;
+    }
+}
