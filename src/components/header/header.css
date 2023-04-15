@@ -1,4 +1,5 @@
 @import url("../../constants.css");
+
 .headerBar {
     width: 100%;
     height: var(--menu-bar-heigh);
