@@ -6,6 +6,10 @@ const MenuBar = () => {
   return (
     <div className={'menuBar'}>
         <MenuItem label={'Home'}/>
+        <MenuItem label={'Work Experience'}/>
+        <MenuItem label={'Projects'}/>
+        <MenuItem label={'UI Design'}/>
+        <MenuItem label={'3D Modelling'}/>
     </div>
   )
 }

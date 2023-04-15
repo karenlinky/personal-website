@@ -1,6 +1,7 @@
 .headerBar {
     width: 100%;
     text-align: center;
+    border-bottom: solid 1px black;
 }
 
 .menuBar {
@@ -8,5 +9,6 @@
 }
 
 .menuItem {
+    margin: 20px 15px 20px 15px;
     display: inline-block;
 }
