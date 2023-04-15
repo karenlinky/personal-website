@@ -1,6 +1,6 @@
 import React from 'react';
 import MenuBar from './MenuBar';
-import './styles/header.css';
+import './header.css';
 
 const Header = () => {
   return (
