@@ -1,4 +1,5 @@
 :root {
     --primary-text-color: white;
-    --primary-background-color: black;
+    --primary-background-menu-color: black;
+    --menu-bar-height: 65px;
 }

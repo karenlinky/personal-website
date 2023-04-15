@@ -2,7 +2,7 @@ import React from 'react'
 
 const MenuItemText = (props) => {
   return (
-    <div className={'menuItemText'}>
+    <div>
         {props.label}
     </div>
   )

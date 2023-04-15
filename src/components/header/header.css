@@ -1,8 +1,10 @@
 @import url("../../constants.css");
 .headerBar {
     width: 100%;
+    height: var(--menu-bar-heigh);
     text-align: center;
-    background-color: var(--primary-background-color);
+    background-color: var(--primary-background-menu-color);
+    padding: 15px;
 }
 
 .menuBar {
@@ -10,11 +12,13 @@
 }
 
 .menuItem {
-    margin: 15px;
+    /* margin: 15px 20px; */
+    margin: 0 20px;
     display: inline-block;
     color: var(--primary-text-color);
     text-decoration: none;
     position: relative;
+    padding: 5px;
 }
 
 .menuItem:hover {
@@ -36,8 +40,4 @@
 
 .menuItem:hover::after {
     transform: scaleX(1);
-}
-
-.menuItemText {
-    margin: 5px;
 }
