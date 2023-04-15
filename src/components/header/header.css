@@ -45,13 +45,24 @@
     transform: scaleX(1);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 699px) {
     .wideHeaderBar {
         display: none;
     }
 }
 
-@media (min-width: 699px) {
+
+
+.menuIcon {
+    color: var(--primary-text-color);
+    font-size: 1.8em;
+}
+
+.menuIcon:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 700px) {
     .narrowHeaderBar {
         display: none;
     }

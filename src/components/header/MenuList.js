@@ -1,8 +1,11 @@
 import React from 'react'
+import { FaBars } from "react-icons/fa";
 
 const MenuList = () => {
   return (
-    <div>MenuList</div>
+    <div>
+        <FaBars className={'menuIcon'}/>
+    </div>
   )
 }
 
