@@ -1,10 +1,11 @@
 import React from 'react';
+import MenuItemText from './MenuItemText';
 import './header.css';
 
 const MenuItem = (props) => {
   return (
     <div className={'menuItem'}>
-        {props.label}
+      <MenuItemText label={props.label} />
     </div>
   )
 }

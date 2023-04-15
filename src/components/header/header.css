@@ -1,7 +1,7 @@
 .headerBar {
     width: 100%;
     text-align: center;
-    border-bottom: solid 1px black;
+    background-color: black;
 }
 
 .menuBar {
@@ -9,10 +9,16 @@
 }
 
 .menuItem {
-    margin: 20px;
+    margin: 15px;
     display: inline-block;
+    color: white;
+    text-decoration: none;
 }
 
 .menuItem:hover {
     cursor: pointer;
+}
+
+.menuItemText {
+    margin: 5px;
 }
