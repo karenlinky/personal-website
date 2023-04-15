@@ -1,0 +1,12 @@
+.headerBar {
+    width: 100%;
+    text-align: center;
+}
+
+.menuBar {
+    display: inline-block;
+}
+
+.menuItem {
+    display: inline-block;
+}
