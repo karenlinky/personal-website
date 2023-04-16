@@ -10,7 +10,7 @@ const About = () => {
         <Header />
         <div className={'fullPageBody'}>
           <div className={'aboutContent'}>
-            <div className={'descriptionContainer'}>
+            <div className={'nameDescriptionContainer'}>
               <div className={'name nameColor notHighlightable'}>
                 KA YING
               </div>
@@ -18,8 +18,19 @@ const About = () => {
                   KAREN LIN
                 </div>
               <div className={'nameDescriptionDivider'} />
+              <div className={'descriptionContainer'}>
               <div className={'description'}>
-                Full stack engineer | Computer Science student at University of Waterloo
+                  {'const me = () => ('}
+                  <div className={'descriptionIndented'}>
+                    {'<Full stack engineer'}<br/>
+                    <div className={'descriptionIndented'}>
+                      {'school=\'University of Waterloo\''}<br />
+                      {'major=\'Computer Science\''}<br />
+                      {'expectedGradDate=\'2023 Apr\' />'}<br />
+                    </div>
+                  </div>
+                  {');'}
+                </div>
               </div>
             </div>
           </div>

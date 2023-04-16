@@ -4,7 +4,7 @@
     padding-top: 100px;
 }
 
-.descriptionContainer {
+.nameDescriptionContainer {
     width: 50%;
 }
 
@@ -49,4 +49,31 @@
     animation-duration: 0.5s;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
+}
+
+.descriptionContainer {
+    padding: 20px 30px;
+    background-color: rgb(31, 31, 31);
+}
+
+@keyFrames descriptionSlideIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.description {
+    font-family:'Courier New', Courier, monospace;
+    opacity: 0;
+    animation-name: descriptionSlideIn;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.descriptionIndented {
+    padding-left: 20px;
 }
