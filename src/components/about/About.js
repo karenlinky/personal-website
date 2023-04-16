@@ -35,7 +35,8 @@ const About = () => {
   const descriptionGradDate = <>
     <span className={'descriptionPurple'}>{'gradDate'}</span>
     <span className={'descriptionGrey'}>{'='}</span>
-    <span className={'descriptionGreen'}>{'\'2023 Apr\''}</span> 
+    <span className={'descriptionGreen'}>{'\'2023 Apr\''}</span>
+    <span className={'descriptionGrey'}>{' />'}</span> 
   </>
 
   const descriptionClosingBracket = <>
