@@ -1,10 +1,47 @@
 import React from 'react';
 import Header from '../header/Header';
+import DescriptionLine from './DescriptionLine';
 import '../../App.css'
 import '../content/content.css';
 import './about.css';
 
 const About = () => {
+  const descriptionStart = <>
+    <span className={'descriptionPurple'}>{'const '}</span> 
+    <span className={'descriptionBlue'}>{'me '}</span> 
+    <span className={'descriptionRed'}>{'= '}</ span> 
+    <span className={'descriptionGrey'}>{'() '}</span> 
+    <span className={'descriptionRed'}>{'=> '}</span> 
+    <span className={'descriptionGrey'}>{'('}</span> 
+  </>
+
+  const descriptionTag = <>
+    <span className={'descriptionGrey'}>{'<'}</span> 
+    <span className={'descriptionYellow'}>{'FullStackEngineer'}</span> 
+  </>
+
+  const descriptionSchool = <>
+    <span className={'descriptionPurple'}>{'school'}</span>
+    <span className={'descriptionGrey'}>{'='}</span>
+    <span className={'descriptionGreen'}>{'\'University of Waterloo\''}</span> 
+  </>
+
+  const descriptionMajor = <>
+    <span className={'descriptionPurple'}>{'major'}</span>
+    <span className={'descriptionGrey'}>{'='}</span>
+    <span className={'descriptionGreen'}>{'\'Computer Science\''}</span> 
+  </>
+
+  const descriptionGradDate = <>
+    <span className={'descriptionPurple'}>{'gradDate'}</span>
+    <span className={'descriptionGrey'}>{'='}</span>
+    <span className={'descriptionGreen'}>{'\'2023 Apr\''}</span> 
+  </>
+
+  const descriptionClosingBracket = <>
+    <span className={'descriptionGrey'}>{');'}</span> 
+  </>
+
   return (
     <>
         <Header />
@@ -20,16 +57,16 @@ const About = () => {
               <div className={'nameDescriptionDivider'} />
               <div className={'descriptionContainer'}>
               <div className={'description'}>
-                  {'const me = () => ('}
+                <DescriptionLine lineNumber={'1'} content={descriptionStart} />
                   <div className={'descriptionIndented'}>
-                    {'<Full stack engineer'}<br/>
+                  <DescriptionLine lineNumber={'2'} content={descriptionTag} />
                     <div className={'descriptionIndented'}>
-                      {'school=\'University of Waterloo\''}<br />
-                      {'major=\'Computer Science\''}<br />
-                      {'expectedGradDate=\'2023 Apr\' />'}<br />
+                      <DescriptionLine lineNumber={'3'} content={descriptionSchool} />
+                      <DescriptionLine lineNumber={'4'} content={descriptionMajor} />
+                      <DescriptionLine lineNumber={'5'} content={descriptionGradDate}/>
                     </div>
                   </div>
-                  {');'}
+                  <DescriptionLine lineNumber={'6'} content={descriptionClosingBracket} />
                 </div>
               </div>
             </div>

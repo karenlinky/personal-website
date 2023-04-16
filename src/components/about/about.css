@@ -1,5 +1,6 @@
 .aboutContent {
-    width: 70%;
+    width: 80%;
+    padding: 20px;
     margin: auto;
     padding-top: 100px;
 }
@@ -51,12 +52,7 @@
     animation-fill-mode: forwards;
 }
 
-.descriptionContainer {
-    padding: 20px 30px;
-    background-color: rgb(31, 31, 31);
-}
-
-@keyFrames descriptionSlideIn {
+@keyFrames descriptionContainerFadein {
     from {
         opacity: 0;
     }
@@ -65,15 +61,101 @@
     }
 }
 
+.descriptionContainer {
+    opacity: 0;
+    padding: 20px 30px;
+    background-color: rgb(17, 17, 17);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    animation-name: descriptionContainerFadein;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
 .description {
     font-family:'Courier New', Courier, monospace;
-    opacity: 0;
-    animation-name: descriptionSlideIn;
-    animation-duration: 0.5s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
 }
 
 .descriptionIndented {
     padding-left: 20px;
+}
+
+@media (max-width: 900px) {
+    .aboutContent {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 670px) {
+    .nameDescriptionContainer {
+        width: 100%;
+    }
+}
+
+@keyFrames descriptionTyping {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.descriptionLine {
+    overflow: hidden;
+    width: 0;
+    white-space: nowrap;
+    animation-name: descriptionTyping;
+    animation-duration: 1s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+}
+
+.descriptionLine1 {
+    animation-delay: 0.5s;
+}
+
+.descriptionLine2 {
+    animation-delay: 1s;
+}
+
+.descriptionLine3 {
+    animation-delay: 1.5s;
+}
+
+.descriptionLine4 {
+    animation-delay: 2.5s;
+}
+
+.descriptionLine5 {
+    animation-delay: 3.5s;
+}
+
+.descriptionLine6 {
+    animation-delay: 4.3s;
+}
+
+.descriptionPurple {
+    color: rgb(240, 139, 218);
+}
+
+.descriptionBlue {
+    color: rgb(131, 154, 229);
+}
+
+.descriptionRed {
+    color: rgb(234, 132, 132);
+}
+
+.descriptionGreen {
+    color: rgb(144, 230, 144);
+}
+
+.descriptionYellow{
+    color: rgb(242, 242, 133);
+}
+
+.descriptionGrey{
+    color: grey;
 }
