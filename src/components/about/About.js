@@ -1,6 +1,8 @@
 import React from 'react';
 import Header from '../header/Header';
 import DescriptionLine from './DescriptionLine';
+import PrimaryButton from '../buttons/PrimaryButtonLink';
+import Separator25 from '../sectionSeparator/Separator25';
 import '../../App.css'
 import '../content/content.css';
 import './about.css';
@@ -72,10 +74,12 @@ const About = () => {
                 <DescriptionLine lineNumber={'6'} content={descriptionClosingBracket} />
               </div>
             </div>
+            <Separator25 />
+            <PrimaryButton label={'View Experience'} href={'/#'}/>
           </div>
           <div className={'codeIconContainer'}>
-            {/* <Spline scene="https://prod.spline.design/FfFeAoRvCnDSswQo/scene.splinecode" /> */}
-            <Spline scene="https://prod.spline.design/vy4gA9KFEQJRvbPs/scene.splinecode" />
+            {/* <Spline scene="https://prod.spline.design/FfFeAoRvCnDSswQo/scene.splinecode" />
+            <Spline scene="https://prod.spline.design/vy4gA9KFEQJRvbPs/scene.splinecode" /> */}
           </div>
         </div>
       </div>

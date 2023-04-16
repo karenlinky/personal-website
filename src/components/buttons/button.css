@@ -1,0 +1,16 @@
+@import url("../../constants.css");
+
+.button {
+    padding: 15px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.primaryButton {
+    background-color: var(--primary-color);
+}
