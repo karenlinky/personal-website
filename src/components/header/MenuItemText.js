@@ -1,8 +1,9 @@
 import React from 'react'
+import '../../App.css';
 
 const MenuItemText = (props) => {
   return (
-    <div>
+    <div className={'notHighlightable'}>
         {props.label}
     </div>
   )
