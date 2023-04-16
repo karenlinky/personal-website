@@ -3,10 +3,16 @@
     padding: 20px;
     margin: auto;
     padding-top: 100px;
+    display: flex;
 }
 
-.nameDescriptionContainer {
-    width: 50%;
+.nameDescriptionContainer, .codeIconContainer {
+    display: inline-block;
+    flex: 1;
+}
+
+.codeIconContainer {
+    max-height: 500px;
 }
 
 @keyFrames nameFadeIn {
@@ -88,8 +94,11 @@
 
 
 @media (max-width: 670px) {
-    .nameDescriptionContainer {
-        width: 100%;
+    .aboutContent {    
+        display: block;
+    }
+    .nameDescriptionContainer, .codeIconContainer {
+        display: block;
     }
 }
 

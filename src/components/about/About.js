@@ -5,6 +5,8 @@ import '../../App.css'
 import '../content/content.css';
 import './about.css';
 
+import Spline from '@splinetool/react-spline';
+
 const About = () => {
   const descriptionStart = <>
     <span className={'descriptionPurple'}>{'const '}</span> 
@@ -71,6 +73,11 @@ const About = () => {
                 </div>
               </div>
             </div>
+
+            <div className={'codeIconContainer'}>
+              <Spline scene="https://prod.spline.design/vy4gA9KFEQJRvbPs/scene.splinecode" />
+            </div>
+
           </div>
         </div>
 
