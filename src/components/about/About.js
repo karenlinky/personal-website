@@ -74,6 +74,7 @@ const About = () => {
             </div>
           </div>
           <div className={'codeIconContainer'}>
+            {/* <Spline scene="https://prod.spline.design/FfFeAoRvCnDSswQo/scene.splinecode" /> */}
             <Spline scene="https://prod.spline.design/vy4gA9KFEQJRvbPs/scene.splinecode" />
           </div>
         </div>
