@@ -78,8 +78,7 @@ const About = () => {
             <PrimaryButton label={'View Experience'} href={'/#'}/>
           </div>
           <div className={'codeIconContainer'}>
-            {/* <Spline scene="https://prod.spline.design/FfFeAoRvCnDSswQo/scene.splinecode" />
-            <Spline scene="https://prod.spline.design/vy4gA9KFEQJRvbPs/scene.splinecode" /> */}
+            <Spline scene="https://prod.spline.design/B9pJa24JBcb8CusO/scene.splinecode" />
           </div>
         </div>
       </div>
