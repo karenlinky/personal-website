@@ -1,6 +1,0 @@
-@import url("../constants.css");
-
-.fullPageContent{
-    height: 100vh;
-    background-color: var(--primary-background-color);
-}

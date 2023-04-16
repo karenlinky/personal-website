@@ -1,0 +1,10 @@
+@import url("../../constants.css");
+
+.fullPageContent {
+    min-height: 100vh;
+    background-color: var(--primary-background-color);
+}
+
+.fullPageBody {
+    height: calc(100% - var(--menu-bar-height));
+}

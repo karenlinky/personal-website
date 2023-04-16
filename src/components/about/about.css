@@ -1,5 +1,10 @@
-@import url("../../constants.css");
-
 .aboutContent {
-    height: calc(100% - var(--menu-bar-height));
+    width: 70%;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.name {
+    font-size: 5em;
+    line-height: 1em;
 }
