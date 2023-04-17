@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Header from '../header/Header';
 import DescriptionLine from './DescriptionLine';
 import PrimaryButton from '../buttons/PrimaryButtonLink';
 import Separator25 from '../sectionSeparator/Separator25';
+import IconButtonGroup from '../iconButton/IconButtonGroup';
 import '../../App.css'
 import '../content/content.css';
 import './about.css';
@@ -47,6 +48,12 @@ const About = () => {
     <span className={'descriptionGrey'}>{');'}</span> 
   </>
 
+  const [showAnimation, setShowAnimation] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => setShowAnimation(true), 4500);
+  }, []);
+
   return (
     <>
       <Header />
@@ -80,9 +87,14 @@ const About = () => {
             <PrimaryButton label={'View Experience'} href={'/#'}/>
           </div>
           <div className={'codeIconContainer'}>
-            {/* <Spline scene="https://prod.spline.design/B9pJa24JBcb8CusO/scene.splinecode" /> */}
+            {showAnimation ? <Spline scene="https://prod.spline.design/B9pJa24JBcb8CusO/scene.splinecode" /> : null}
           </div>
         </div>
+      </div>
+
+      {/* links */}
+      <div className='icons'>
+        <IconButtonGroup />
       </div>
     </>
   )
