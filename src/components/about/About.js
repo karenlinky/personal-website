@@ -86,7 +86,7 @@ const About = () => {
             <PrimaryButton className={'fadeIn'} label={'View Experience'} href={'/#'}/>
           </div>
           <div className={'codeIconContainer'}>
-            {showAnimation ? <Spline scene="https://prod.spline.design/B9pJa24JBcb8CusO/scene.splinecode" /> : null}
+            {/* {showAnimation ? <Spline scene="https://prod.spline.design/B9pJa24JBcb8CusO/scene.splinecode" /> : null} */}
           </div>
         </div>
       </div>
