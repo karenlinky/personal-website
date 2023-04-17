@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import Header from '../header/Header';
 import DescriptionLine from './DescriptionLine';
 import PrimaryButton from '../buttons/PrimaryButtonLink';
 import Separator from '../sectionSeparator/Separator';
@@ -68,7 +67,7 @@ const About = () => {
             </div>
             <div className={'nameDescriptionDivider'} />
             <div className={'descriptionContainer'}>
-              <span class={'descriptionScrollableContainer'}>
+              <span className={'descriptionScrollableContainer'}>
                 <div className={'description'}>
                   <DescriptionLine lineNumber={'1'} content={descriptionStart} />
                   <div className={'descriptionIndented'}>
