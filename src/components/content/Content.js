@@ -9,7 +9,7 @@ const Content = () => {
   return (
     <div className={'fullPageContent'}>
       <BrowserRouter>
-      <Header />
+        <Header />
         <Routes>
           <Route path={'/home'} element={<About />} />
           <Route path={'/work_experiences'} element={<WorkExperiences />} />
