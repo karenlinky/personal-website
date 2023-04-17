@@ -83,7 +83,7 @@ const About = () => {
               </span>
             </div>
             <Separator margin={'75'} />
-            <PrimaryButton label={'View Experience'} href={'/#'}/>
+            <PrimaryButton className={'fadeIn'} label={'View Experience'} href={'/#'}/>
           </div>
           <div className={'codeIconContainer'}>
             {showAnimation ? <Spline scene="https://prod.spline.design/B9pJa24JBcb8CusO/scene.splinecode" /> : null}
