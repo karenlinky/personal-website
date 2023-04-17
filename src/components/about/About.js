@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import Header from '../header/Header';
 import DescriptionLine from './DescriptionLine';
 import PrimaryButton from '../buttons/PrimaryButtonLink';
-import Separator25 from '../sectionSeparator/Separator25';
+import Separator from '../sectionSeparator/Separator';
 import IconButtonGroup from '../iconButton/IconButtonGroup';
 import '../../App.css'
 import '../content/content.css';
@@ -83,7 +83,7 @@ const About = () => {
                 </div>
               </span>
             </div>
-            <Separator25 />
+            <Separator margin={'75'} />
             <PrimaryButton label={'View Experience'} href={'/#'}/>
           </div>
           <div className={'codeIconContainer'}>
