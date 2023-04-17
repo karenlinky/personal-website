@@ -1,11 +1,11 @@
 import React from 'react';
 import WorkExperienceCard from './WorkExperienceCard';
 
-const MetaExperienceCard = () => {
-  const company = 'Meta';
+const Achievers1ExperienceCard = () => {
+  const company = 'Achievers';
   const position = 'SWE Intern';
-  const location = 'Seattle, WA, US';
-  const dateRange = '2022 May - 2022 Aug';
+  const location = 'Toronto, ON, CA';
+  const dateRange = '2021 Jan - 2021 Apr';
   const description = <div>
     <div>Used ReactJS and Hack to build new features</div>
     <div>Built an alert inbox page using a new React component library</div>
@@ -21,4 +21,4 @@ const MetaExperienceCard = () => {
   )
 }
 
-export default MetaExperienceCard
+export default Achievers1ExperienceCard

@@ -4,6 +4,9 @@ import PageHeader from '../typography/PageHeader';
 import HeaderSpace from '../header/HeaderSpace';
 import Separator from '../sectionSeparator/Separator';
 import MetaExperienceCard from './MetaExperienceCard';
+import Achievers1ExperienceCard from './Achievers1ExperienceCard';
+import Achievers2ExperienceCard from './Achievers2ExperienceCard';
+import KGSExperienceCard from './KGSExperienceCard copy';
 import '../content/content.css';
 
 const WorkExperiences = () => {
@@ -14,11 +17,11 @@ const WorkExperiences = () => {
         <PageHeader label={'Work Experiences'} />
         <MetaExperienceCard />
         <Separator margin={'25'} />
-        <MetaExperienceCard />
+        <Achievers2ExperienceCard />
         <Separator margin={'25'} />
-        <MetaExperienceCard />
+        <Achievers1ExperienceCard />
         <Separator margin={'25'} />
-        <MetaExperienceCard />
+        <KGSExperienceCard />
       </ResponsivePage>
     </div>
   )
