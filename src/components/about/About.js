@@ -60,11 +60,11 @@ const About = () => {
       <div className={'fullPageBody'}>
         <div className={'aboutContent'}>
           <div className={'nameDescriptionContainer'}>
-            <div className={'name nameColor notHighlightable'}>
+            <div className={'name notHighlightable'}>
               KA YING
             </div>
             <div className={'name notHighlightable'}>
-                KAREN LIN
+                <span className={'nameColor'}>KAREN</span> LIN
             </div>
             <div className={'nameDescriptionDivider'} />
             <div className={'descriptionContainer'}>

@@ -2,7 +2,10 @@
 
 .fullPageContent {
     min-height: 100vh;
-    background-color: var(--primary-background-color);
+    /* background: rgb(0,0,0);
+    background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 43%, rgba(42,42,42,1) 70%, rgba(88,88,88,1) 100%); */
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 48%, rgba(42,42,42,1) 77%, rgba(88,88,88,1) 100%);
 }
 
 .fullPageBody {
