@@ -42,4 +42,5 @@
     height: 3px;
     margin: 25px 0;
     background-color: var(--primary-text-color);
+    background-color: var(--card-text-color);
 }
