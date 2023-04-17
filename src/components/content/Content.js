@@ -1,16 +1,19 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Header from '../header/Header';
 import React from 'react';
 import About from '../about/About';
 import './content.css'
 
 const Content = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path={'/home'} element={<div className={'fullPageContent'}><About /></div>} />
-        {/* <Route path="*" element={<Redirect />} /> */}
-      </Routes>
-    </BrowserRouter>
+    <div className={'fullPageContent'}>
+      <BrowserRouter>
+      <Header />
+        <Routes>
+          <Route path={'/home'} element={<About />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   )
 }
 

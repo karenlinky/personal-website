@@ -56,7 +56,7 @@ const About = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className={'fullPageBody'}>
         <div className={'aboutContent'}>
           <div className={'nameDescriptionContainer'}>
