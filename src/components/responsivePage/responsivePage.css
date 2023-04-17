@@ -1,5 +1,6 @@
 .responsivePage {
     margin: auto;
+    padding-bottom: 100px;
     width: 70%;
     max-width: 800px;
 }
