@@ -2,18 +2,21 @@
 .card {
     padding: 20px;
     max-width: 100%;
-    border-radius: 10px;
-
-    background: rgb(48,56,65);
-    background: linear-gradient(93deg, rgba(48,56,65,1) 0%, rgba(38,44,51,1) 45%, rgba(29,37,43,1) 100%);
+    border-radius: 15px;
+    background: rgb(31,31,31);
 }
 
 .cardHeader {
-    font-size: 1.5em;
+    font-size: 2em;
+    color: var(--card-text-color);
+}
+
+.cardSubheader {
+    font-weight: 500;
 }
 
 .workExperiencesCard {
-    width: 400px;
+    /* width: 400px; */
 }
 
 .workExperiencesContent {

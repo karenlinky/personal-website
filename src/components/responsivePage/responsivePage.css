@@ -3,3 +3,11 @@
     width: 70%;
     max-width: 800px;
 }
+
+
+
+@media (max-width: 699px) {
+    .responsivePage {
+        width: 95%;
+    }
+}
