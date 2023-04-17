@@ -15,6 +15,10 @@
     font-weight: 500;
 }
 
+.expandable {
+    cursor: pointer;
+}
+
 .workExperiencesCard {
     /* width: 400px; */
 }
