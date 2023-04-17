@@ -61,24 +61,26 @@ const About = () => {
             </div>
             <div className={'nameDescriptionDivider'} />
             <div className={'descriptionContainer'}>
-              <div className={'description'}>
-                <DescriptionLine lineNumber={'1'} content={descriptionStart} />
-                <div className={'descriptionIndented'}>
-                  <DescriptionLine lineNumber={'2'} content={descriptionTag} />
+              <span class={'descriptionScrollableContainer'}>
+                <div className={'description'}>
+                  <DescriptionLine lineNumber={'1'} content={descriptionStart} />
                   <div className={'descriptionIndented'}>
-                    <DescriptionLine lineNumber={'3'} content={descriptionSchool} />
-                    <DescriptionLine lineNumber={'4'} content={descriptionMajor} />
-                    <DescriptionLine lineNumber={'5'} content={descriptionGradDate}/>
+                    <DescriptionLine lineNumber={'2'} content={descriptionTag} />
+                    <div className={'descriptionIndented'}>
+                      <DescriptionLine lineNumber={'3'} content={descriptionSchool} />
+                      <DescriptionLine lineNumber={'4'} content={descriptionMajor} />
+                      <DescriptionLine lineNumber={'5'} content={descriptionGradDate}/>
+                    </div>
                   </div>
+                  <DescriptionLine lineNumber={'6'} content={descriptionClosingBracket} />
                 </div>
-                <DescriptionLine lineNumber={'6'} content={descriptionClosingBracket} />
-              </div>
+              </span>
             </div>
             <Separator25 />
             <PrimaryButton label={'View Experience'} href={'/#'}/>
           </div>
           <div className={'codeIconContainer'}>
-            <Spline scene="https://prod.spline.design/B9pJa24JBcb8CusO/scene.splinecode" />
+            {/* <Spline scene="https://prod.spline.design/B9pJa24JBcb8CusO/scene.splinecode" /> */}
           </div>
         </div>
       </div>
