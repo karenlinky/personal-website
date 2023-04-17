@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React/*, {useEffect, useState}*/ from 'react';
 import DescriptionLine from './DescriptionLine';
 import PrimaryButton from '../buttons/PrimaryButtonLink';
 import Separator from '../sectionSeparator/Separator';
@@ -7,7 +7,7 @@ import '../../App.css'
 import '../content/content.css';
 import './about.css';
 
-import Spline from '@splinetool/react-spline';
+// import Spline from '@splinetool/react-spline';
 
 const About = () => {
   const descriptionStart = <>
@@ -47,11 +47,11 @@ const About = () => {
     <span className={'descriptionGrey'}>{');'}</span> 
   </>
 
-  const [showAnimation, setShowAnimation] = useState(false);
+  // const [showAnimation, setShowAnimation] = useState(false);
 
-  useEffect(() => {
-    setTimeout(() => setShowAnimation(true), 4500);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => setShowAnimation(true), 4500);
+  // }, []);
 
   return (
     <>
