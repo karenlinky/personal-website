@@ -5,11 +5,11 @@ import './header.css';
 const MenuBar = () => {
   return (
     <div className={'menuBar'}>
-        <MenuItem label={'Home'}/>
-        <MenuItem label={'Work Experience'}/>
-        <MenuItem label={'Projects'}/>
-        <MenuItem label={'UI Design'}/>
-        <MenuItem label={'3D Modelling'}/>
+        <MenuItem label={'Home'} to={'/home'}/>
+        <MenuItem label={'Work Experience'} to={'/work_experience'}/>
+        <MenuItem label={'Projects'} to={'projects'}/>
+        <MenuItem label={'UI Design'} to={'ui_design'}/>
+        <MenuItem label={'3D Modeling'} to={'3d_modeling'}/>
     </div>
   )
 }

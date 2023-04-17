@@ -1,12 +1,13 @@
 import React from 'react';
 import MenuItemText from './MenuItemText';
+import { Link } from 'react-router-dom';
 import './header.css';
 
-const MenuItem = (props) => {
+const MenuItem = ({label, to}) => {
   return (
-    <div className={'menuItem'}>
-      <MenuItemText label={props.label} />
-    </div>
+    <Link className={'menuItem'} to={to}>
+      <MenuItemText label={label} />
+    </Link>
   )
 }
 
