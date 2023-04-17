@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useCallback, useState} from 'react';
 import './card.css';
 
 const Card = ({ children, className, expandableContent }) => {
@@ -8,8 +8,24 @@ const Card = ({ children, className, expandableContent }) => {
     additionalClassName = " expandable"
   }
 
+  const [showExpandableContent, setShowExpandableContent] = useState(false);
+  const onClick = useCallback(
+    () => {
+        if (showExpandableContent == null) {
+            return;
+        }
+
+        setShowExpandableContent(!showExpandableContent);
+    }
+    , [showExpandableContent])
+
   return (
-    <div className={'card' + additionalClassName + (className ? ' ' + className : '')}>{children}</div>
+    <div
+    className={'card' + additionalClassName + (className ? ' ' + className : '')}
+    onClick={onClick}>
+      {children}
+      {showExpandableContent ? <div className={'expandableContent'}>{expandableContent}</div> : null}
+    </div>
   )
 }
 
