@@ -4,7 +4,6 @@ import PageHeader from '../typography/PageHeader';
 import Card from '../card/Card';
 import CardHeader from '../card/CardHeader';
 import CardSubheader from '../card/CardSubheader';
-import CardContent from '../card/CardContent';
 
 const WorkExperiences = () => {
   const MetaDescription = <div>
@@ -20,12 +19,10 @@ const WorkExperiences = () => {
   return (
     <ResponsivePage>
         <PageHeader label={'Work Experiences'}/>
-        <Card className={'workExperiencesCard'} expandableContent={MetaDescription}>
-          <CardContent  className={'workExperiencesContent'}>
-            <CardHeader>Meta, SWE Intern</CardHeader>
-            <CardSubheader>Seattle</CardSubheader>
-            <CardSubheader>2022 May - 2022 Aug</CardSubheader>
-          </CardContent>
+        <Card className={'workExperiencesCard'} cardContentClassName={'workExperiencesContent'} expandableContent={MetaDescription}>
+          <CardHeader>Meta, SWE Intern</CardHeader>
+          <CardSubheader>Seattle</CardSubheader>
+          <CardSubheader>2022 May - 2022 Aug</CardSubheader>
         </Card>
     </ResponsivePage>
   )

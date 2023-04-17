@@ -1,7 +1,9 @@
 import React, {useCallback, useState} from 'react';
+import CardContent from './CardContent';
+import CardDivider from './CardDivider'
 import './card.css';
 
-const Card = ({ children, className, expandableContent }) => {
+const Card = ({ children, className, expandableContent, cardContentClassName }) => {
 
   var additionalClassName = "";
   if (expandableContent !== null) {
@@ -23,8 +25,16 @@ const Card = ({ children, className, expandableContent }) => {
     <div
     className={'card' + additionalClassName + (className ? ' ' + className : '')}
     onClick={onClick}>
-      {children}
-      {showExpandableContent ? <div className={'expandableContent'}>{expandableContent}</div> : null}
+      <CardContent className={cardContentClassName ? cardContentClassName : ''}>
+        {children}      
+        {expandableContent !== null ?
+          <div className={'expandableContent' + (showExpandableContent ? ' showExpandableContent' : '')}>
+            <CardDivider />
+            {expandableContent}
+          </div> :
+          null
+        }
+      </CardContent>
     </div>
   )
 }

@@ -17,6 +17,16 @@
 
 .expandable {
     cursor: pointer;
+}  
+
+.expandableContent {
+    overflow: hidden;
+    max-height: 0;
+    transition: 500ms;
+}
+
+.showExpandableContent {
+    max-height: 500px;
 }
 
 .workExperiencesCard {
@@ -24,5 +34,12 @@
 }
 
 .workExperiencesContent {
-    margin: 10px 25px;
+    margin: 10px 25px 20px 25px;
+}
+
+.cardDivider {
+    width: 100%;
+    height: 3px;
+    margin: 25px 0;
+    background-color: var(--primary-text-color);
 }
