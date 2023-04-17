@@ -6,7 +6,7 @@ const MenuBar = () => {
   return (
     <div className={'menuBar'}>
         <MenuItem label={'Home'} to={'/home'}/>
-        <MenuItem label={'Work Experience'} to={'/work_experience'}/>
+        <MenuItem label={'Work Experiences'} to={'/work_experiences'}/>
         <MenuItem label={'Projects'} to={'projects'}/>
         <MenuItem label={'UI Design'} to={'ui_design'}/>
         <MenuItem label={'3D Modeling'} to={'3d_modeling'}/>
