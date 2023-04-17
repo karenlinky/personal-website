@@ -24,16 +24,6 @@ const WorkExperiences = () => {
           <CardSubheader>Seattle</CardSubheader>
           <CardSubheader>2022 May - 2022 Aug</CardSubheader>
         </Card>
-        <Card className={'workExperiencesCard'} cardContentClassName={'workExperiencesContent'} expandableContent={MetaDescription}>
-          <CardHeader>Meta, SWE Intern</CardHeader>
-          <CardSubheader>Seattle</CardSubheader>
-          <CardSubheader>2022 May - 2022 Aug</CardSubheader>
-        </Card>
-        <Card className={'workExperiencesCard'} cardContentClassName={'workExperiencesContent'} expandableContent={MetaDescription}>
-          <CardHeader>Meta, SWE Intern</CardHeader>
-          <CardSubheader>Seattle</CardSubheader>
-          <CardSubheader>2022 May - 2022 Aug</CardSubheader>
-        </Card>
     </ResponsivePage>
   )
 }
