@@ -1,7 +1,7 @@
 import React from 'react';
 import WorkExperienceCard from './WorkExperienceCard';
 
-const KGSExperienceCard = () => {
+const KGSExperienceCard = ({ openNum, experienceNum, onCardClick }) => {
   const company = 'KGS Research';
   const position = 'Programmer (Internship)';
   const location = 'Scarborough, ON, CA';
@@ -17,7 +17,15 @@ const KGSExperienceCard = () => {
   </div>;
     
   return (
-    <WorkExperienceCard company={company} position={position}location={location} dateRange={dateRange} description={description} />
+    <WorkExperienceCard
+    company={company}
+    position={position}
+    location={location}
+    dateRange={dateRange}
+    description={description}
+    openNum={openNum}
+    experienceNum={experienceNum}
+    onCardClick={onCardClick} />
   )
 }
 

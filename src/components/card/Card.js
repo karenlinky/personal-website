@@ -1,25 +1,29 @@
-import React, {useCallback, useState} from 'react';
+import React, {useCallback/*, useState*/} from 'react';
 import CardContent from './CardContent';
 import CardDivider from './CardDivider'
 import './card.css';
 
-const Card = ({ children, className, expandableContent, cardContentClassName }) => {
+const Card = ({ children, className, expandableContent, cardContentClassName, openNum, experienceNum, onCardClick }) => {
+
+  console.log('AAAAA')
+  console.log(openNum);
+  console.log(experienceNum)
 
   var additionalClassName = "";
   if (expandableContent !== null) {
     additionalClassName = " expandable"
   }
 
-  const [showExpandableContent, setShowExpandableContent] = useState(false);
+//   const [showExpandableContent, setShowExpandableContent] = useState(false);
   const onClick = useCallback(
     () => {
-        if (showExpandableContent == null) {
+        if (expandableContent === null) {
             return;
         }
 
-        setShowExpandableContent(!showExpandableContent);
+        onCardClick(experienceNum);
     }
-    , [showExpandableContent])
+    , [/*showExpandableContent, */expandableContent, onCardClick, experienceNum])
 
   return (
     <div
@@ -28,7 +32,7 @@ const Card = ({ children, className, expandableContent, cardContentClassName }) 
       <CardContent className={cardContentClassName ? cardContentClassName : ''}>
         {children}      
         {expandableContent !== null ?
-          <div className={'expandableContent' + (showExpandableContent ? ' showExpandableContent' : '')}>
+          <div className={'expandableContent' + (openNum === experienceNum ? ' showExpandableContent' : '')}>
             <CardDivider />
             {expandableContent}
           </div> :
