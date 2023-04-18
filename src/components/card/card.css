@@ -1,10 +1,49 @@
 @import url("../../constants.css");
+
+@keyFrames fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.cardContainer {
+    opacity: 0;
+    animation: fadeIn 1s;
+    animation-fill-mode: forwards;
+}
+
+.cardContainer:nth-of-type(1) {
+    animation-delay: 100ms;
+}
+
+.cardContainer:nth-of-type(2) {
+    animation-delay: 200ms;
+}
+
+.cardContainer:nth-of-type(3) {
+    animation-delay: 300ms;
+}
+
+.cardContainer:nth-of-type(4) {
+    animation-delay: 400ms;
+}
+
 .card {
     padding: 20px;
     max-width: 100%;
     border-radius: 10px;
     background: rgb(31,31,31);
+    opacity: 0;
+    animation: fadeIn 1s;
+    animation-fill-mode: forwards;
 }
+
+/* .workExperiencesCard:nth-of-type(2) {
+    animation-delay: 1000ms;
+} */
 
 .cardHeader {
     font-size: 1.25em;

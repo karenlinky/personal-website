@@ -3,15 +3,16 @@ import CardContent from './CardContent';
 import CardDivider from './CardDivider'
 import './card.css';
 
-const Card = ({ children, className, expandableContent, cardContentClassName, openNum, experienceNum, onCardClick }) => {
-
-  console.log('AAAAA')
-  console.log(openNum);
-  console.log(experienceNum)
+const Card = ({ children, className, expandableContent, cardContentClassName, openNum, experienceNum, onCardClick, delay }) => {
 
   var additionalClassName = "";
   if (expandableContent !== null) {
     additionalClassName = " expandable"
+  }
+
+  var style = {};
+  if (delay !== null) {
+    style['animationDelay'] = delay;
   }
 
 //   const [showExpandableContent, setShowExpandableContent] = useState(false);
@@ -28,6 +29,7 @@ const Card = ({ children, className, expandableContent, cardContentClassName, op
   return (
     <div
     className={'card' + additionalClassName + (className ? ' ' + className : '')}
+    style={style}
     onClick={onClick}>
       <CardContent className={cardContentClassName ? cardContentClassName : ''}>
         {children}      

@@ -1,7 +1,9 @@
 import React from 'react';
 import WorkExperienceCard from './WorkExperienceCard';
+import Separator from '../sectionSeparator/Separator';
 
-const Achievers2ExperienceCard = ({ openNum, experienceNum, onCardClick }) => {
+const Achievers2ExperienceCard = ({ openNum, experienceNum, onCardClick, delay }) => {
+  const margin = <Separator margin={'25'} />;
   const company = 'Achievers';
   const position = 'SWE Intern';
   const location = 'Toronto, ON, CA';
@@ -25,7 +27,8 @@ const Achievers2ExperienceCard = ({ openNum, experienceNum, onCardClick }) => {
       description={description}
       openNum={openNum}
       experienceNum={experienceNum}
-      onCardClick={onCardClick} />
+      onCardClick={onCardClick}
+      delay={delay} />
   )
 }
 

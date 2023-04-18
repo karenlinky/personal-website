@@ -1,7 +1,7 @@
 import React from 'react';
 import WorkExperienceCard from './WorkExperienceCard';
 
-const KGSExperienceCard = ({ openNum, experienceNum, onCardClick }) => {
+const KGSExperienceCard = ({ openNum, experienceNum, onCardClick, delay }) => {
   const company = 'KGS Research';
   const position = 'Programmer (Internship)';
   const location = 'Scarborough, ON, CA';
@@ -25,7 +25,8 @@ const KGSExperienceCard = ({ openNum, experienceNum, onCardClick }) => {
     description={description}
     openNum={openNum}
     experienceNum={experienceNum}
-    onCardClick={onCardClick} />
+    onCardClick={onCardClick}
+    delay={delay} />
   )
 }
 

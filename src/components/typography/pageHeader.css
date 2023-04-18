@@ -1,4 +1,15 @@
+@keyFrames fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .pageHeader {
     font-size: 2em;
     margin: 50px 0 50px 20px;
+    animation: fadeIn 1s;
+    animation-fill-mode: forwards;
 }
