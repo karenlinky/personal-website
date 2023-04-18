@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import DescriptionLine from './DescriptionLine';
+import { FaReact, FaPython } from "react-icons/fa";
+import DescriptionLanguageButton from './DescriptionLanguageButton';
 import './about.css';
 
 const AboutDescription = () => {
@@ -22,6 +24,12 @@ const AboutDescription = () => {
         <span className={'descriptionGrey'}>{'='}</span>
         <span className={'descriptionGreen'}>{'\'University of Waterloo\''}</span> 
     </>
+
+    const descriptionDegree = <>
+        <span className={'descriptionPurple'}>{'degree'}</span>
+        <span className={'descriptionGrey'}>{'='}</span>
+        <span className={'descriptionGreen'}>{'\'Bachelor\''}</span> 
+    </>
   
     const descriptionMajor = <>
         <span className={'descriptionPurple'}>{'major'}</span>
@@ -29,32 +37,89 @@ const AboutDescription = () => {
         <span className={'descriptionGreen'}>{'\'Computer Science\''}</span> 
     </>
   
-    const descriptionGradDate = <>
-        <span className={'descriptionPurple'}>{'gradDate'}</span>
+    const descriptionPeriod = <>
+        <span className={'descriptionPurple'}>{'period'}</span>
         <span className={'descriptionGrey'}>{'='}</span>
-        <span className={'descriptionGreen'}>{'\'2023 Apr\''}</span>
-        <span className={'descriptionGrey'}>{' />'}</span> 
-    </>
-  
-    const descriptionClosingBracket = <>
-        <span className={'descriptionGrey'}>{');'}</span> 
+        <span className={'descriptionGreen'}>{'\'2018 Sept - 2023 Apr\''}</span>
+        <span className={'descriptionGrey'}>{' />;'}</span> 
     </>
 
     const ReactCode = <>
     <DescriptionLine lineNumber={'1'} content={descriptionTag} />
     <div className={'descriptionIndented'}>
         <DescriptionLine lineNumber={'2'} content={descriptionSchool} />
-        <DescriptionLine lineNumber={'3'} content={descriptionMajor} />
-        <DescriptionLine lineNumber={'4'} content={descriptionGradDate}/>
+        <DescriptionLine lineNumber={'3'} content={descriptionDegree} />
+        <DescriptionLine lineNumber={'4'} content={descriptionMajor} />
+        <DescriptionLine lineNumber={'5'} content={descriptionPeriod}/>
     </div>
-    <DescriptionLine lineNumber={'5'} content={descriptionClosingBracket} />
     </>;
+
+
+    const pythonTag =  <>
+        <span className={'descriptionBlue'}>{'me '}</span> 
+        <span className={'descriptionRed'}>{'= '}</ span>
+        <span className={'descriptionYellow'}>{'FullStackEngineer'}</span> 
+        <span className={'descriptionGrey'}>{'('}</span>
+    </>
+
+    const pythonSchool = <>
+        <span className={'descriptionPurple'}>{'school'}</span>
+        <span className={'descriptionGrey'}>{'='}</span>
+        <span className={'descriptionGreen'}>{'\'University of Waterloo\''}</span>
+        <span className={'descriptionGrey'}>{','}</span>
+    </>
+
+    const pythonDegree = <>
+        <span className={'descriptionPurple'}>{'degree'}</span>
+        <span className={'descriptionGrey'}>{'='}</span>
+        <span className={'descriptionGreen'}>{'\'Bachelor\''}</span>
+        <span className={'descriptionGrey'}>{','}</span>
+    </>
+
+    const pythonMajor = <>
+        <span className={'descriptionPurple'}>{'major'}</span>
+        <span className={'descriptionGrey'}>{'='}</span>
+        <span className={'descriptionGreen'}>{'\'Computer Science\''}</span>
+        <span className={'descriptionGrey'}>{','}</span>
+    </>
+
+    const pythonPeriod = <>
+        <span className={'descriptionPurple'}>{'period'}</span>
+        <span className={'descriptionGrey'}>{'='}</span>
+        <span className={'descriptionGreen'}>{'\'2018 Sept - 2023 Apr\''}</span>
+        <span className={'descriptionGrey'}>{');'}</span>
+    </>
+
+    const PythonCode = <>
+    <DescriptionLine lineNumber={'1'} content={pythonTag} />
+    <div className={'descriptionIndented'}>
+        <DescriptionLine lineNumber={'2'} content={pythonSchool} />
+        <DescriptionLine lineNumber={'3'} content={pythonDegree} />
+        <DescriptionLine lineNumber={'4'} content={pythonMajor} />
+        <DescriptionLine lineNumber={'5'} content={pythonPeriod}/>
+    </div>
+    </>;
+
+    const [openCode, setOpenCode] = useState(0);
+
+    const openReact = () => {
+        setOpenCode(0);
+    }
+
+    const openPython = () => {
+        setOpenCode(1);
+    }
+
 
     return (
         <div className={'descriptionContainer'}>
             <span className={'descriptionScrollableContainer'}>
+            <DescriptionLanguageButton onClick={openReact}><FaReact /></DescriptionLanguageButton>
+            <DescriptionLanguageButton onClick={openPython}><FaPython /></DescriptionLanguageButton>
+            <div className={'languageSeparator'} />
             <div className={'description'}>
-                {ReactCode}
+                {openCode == 0 ? ReactCode : null}
+                {openCode == 1 ? PythonCode : null}
             </div>
             </span>
         </div>
