@@ -114,12 +114,14 @@ const AboutDescription = () => {
     return (
         <div className={'descriptionContainer'}>
             <span className={'descriptionScrollableContainer'}>
-            <DescriptionLanguageButton onClick={openReact}><FaReact /></DescriptionLanguageButton>
-            <DescriptionLanguageButton onClick={openPython}><FaPython /></DescriptionLanguageButton>
+            <DescriptionLanguageButton selected={openCode === 0} onClick={openReact}><FaReact /></DescriptionLanguageButton>
+            <DescriptionLanguageButton selected={openCode === 1} onClick={openPython}><FaPython /></DescriptionLanguageButton>
             <div className={'languageSeparator'} />
-            <div className={'description'}>
-                {openCode == 0 ? ReactCode : null}
-                {openCode == 1 ? PythonCode : null}
+            <div className={'codeContainer'}>
+                <div className={'description'}>
+                    {openCode == 0 ? ReactCode : null}
+                    {openCode == 1 ? PythonCode : null}
+                </div>
             </div>
             </span>
         </div>

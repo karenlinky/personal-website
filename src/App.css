@@ -8,24 +8,25 @@
 }
 
 ::-webkit-scrollbar {
+  height: 10px;
   width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #2e2e2e;
   border-radius: 15px;
 }
   
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(184, 184, 184);
+  background: rgb(83, 83, 83);
   border-radius: 15px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(167, 167, 167);
+  background: rgb(113, 113, 113);
 }
 
 .notHighlightable {

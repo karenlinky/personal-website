@@ -100,6 +100,11 @@
     }
 }
 
+.codeContainer {
+    width: 100%;
+    overflow: auto;
+}
+
 
 @media (max-width: 670px) {
     .aboutContent {    
@@ -203,10 +208,14 @@
     display: inline-block;
     font-size: 0.8em;
     margin-right: 3px;
-    cursor: pointer;
 }
 
-.languageButton:hover {
+.selectedButton {
+    background-color: var(--primary-color);
+}
+
+.notSelectedButton:hover {
+    cursor: pointer;
     background-color: rgb(94, 94, 94);
 }
 
