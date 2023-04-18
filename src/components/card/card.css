@@ -27,7 +27,7 @@
 .expandableContent {
     overflow: hidden;
     max-height: 0;
-    transition: 500ms;
+    transition: 1s;
 }
 
 .showExpandableContent {
