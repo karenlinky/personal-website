@@ -9,28 +9,6 @@
     }
 }
 
-.cardContainer {
-    opacity: 0;
-    animation: fadeIn 1s;
-    animation-fill-mode: forwards;
-}
-
-.cardContainer:nth-of-type(1) {
-    animation-delay: 100ms;
-}
-
-.cardContainer:nth-of-type(2) {
-    animation-delay: 200ms;
-}
-
-.cardContainer:nth-of-type(3) {
-    animation-delay: 300ms;
-}
-
-.cardContainer:nth-of-type(4) {
-    animation-delay: 400ms;
-}
-
 .card {
     padding: 20px;
     max-width: 100%;
