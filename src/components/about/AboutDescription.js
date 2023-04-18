@@ -3,13 +3,16 @@ import DescriptionLine from './DescriptionLine';
 import './about.css';
 
 const AboutDescription = () => {
-    const descriptionStart = <>
-        <span className={'descriptionPurple'}>{'const '}</span> 
-        <span className={'descriptionBlue'}>{'me '}</span> 
-        <span className={'descriptionRed'}>{'='}</ span>
-    </>
+    // const descriptionStart = <>
+    //     <span className={'descriptionPurple'}>{'const '}</span> 
+    //     <span className={'descriptionBlue'}>{'me '}</span> 
+    //     <span className={'descriptionRed'}>{'='}</ span>
+    // </>
   
     const descriptionTag = <>
+        <span className={'descriptionPurple'}>{'const '}</span> 
+        <span className={'descriptionBlue'}>{'me '}</span> 
+        <span className={'descriptionRed'}>{'= '}</ span>
         <span className={'descriptionGrey'}>{'<'}</span> 
         <span className={'descriptionYellow'}>{'FullStackEngineer'}</span> 
     </>
@@ -37,20 +40,21 @@ const AboutDescription = () => {
         <span className={'descriptionGrey'}>{');'}</span> 
     </>
 
+    const ReactCode = <>
+    <DescriptionLine lineNumber={'1'} content={descriptionTag} />
+    <div className={'descriptionIndented'}>
+        <DescriptionLine lineNumber={'2'} content={descriptionSchool} />
+        <DescriptionLine lineNumber={'3'} content={descriptionMajor} />
+        <DescriptionLine lineNumber={'4'} content={descriptionGradDate}/>
+    </div>
+    <DescriptionLine lineNumber={'5'} content={descriptionClosingBracket} />
+    </>;
+
     return (
         <div className={'descriptionContainer'}>
             <span className={'descriptionScrollableContainer'}>
             <div className={'description'}>
-                <DescriptionLine lineNumber={'1'} content={descriptionStart} />
-                <div className={'descriptionIndented'}>
-                <DescriptionLine lineNumber={'2'} content={descriptionTag} />
-                <div className={'descriptionIndented'}>
-                    <DescriptionLine lineNumber={'3'} content={descriptionSchool} />
-                    <DescriptionLine lineNumber={'4'} content={descriptionMajor} />
-                    <DescriptionLine lineNumber={'5'} content={descriptionGradDate}/>
-                </div>
-                </div>
-                <DescriptionLine lineNumber={'6'} content={descriptionClosingBracket} />
+                {ReactCode}
             </div>
             </span>
         </div>
