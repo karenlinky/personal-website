@@ -1,6 +1,7 @@
 import React from 'react';
 import WorkExperienceCard from './WorkExperienceCard';
 import ListItem1 from '../listItems/ListItem1';
+import ListItem2 from '../listItems/ListItem2';
 
 const MetaExperienceCard = ({ openNum, experienceNum, onCardClick, delay }) => {
   const company = 'Meta';
@@ -8,9 +9,13 @@ const MetaExperienceCard = ({ openNum, experienceNum, onCardClick, delay }) => {
   const location = 'Seattle, WA, US';
   const dateRange = '2022 May - 2022 Aug';
   const description = <div>
-    <ListItem1>Used ReactJS and Hack to build new features</ListItem1>
-    <ListItem1>Used ReactJS and Hack to build new featuresUsed ReactJS and Hack to build new featuresUsed ReactJS and Hack to build new featuresUsed ReactJS and Hack to build new features</ListItem1>
-    <div>Built an alert inbox page using a new React component library</div>
+    <div>ReactJS, Hack (PHP)</div>
+    <ListItem1>Built an alert inbox page using a new React component library</ListItem1>
+    <ListItem2>Old library</ListItem2>
+    <ListItem1>Built an alert inbox page using a new React component libraryBuilt an alert inbox page using a new React component libraryBuilt an alert inbox page using a new React component libraryBuilt an alert inbox page using a new React component library</ListItem1>
+    <ListItem2>Built an alert inbox page using a new React component libraryBuilt an alert inbox page using a new React component libraryBuilt an alert inbox page using a new React component libraryBuilt an alert inbox page using a new React component libraryBuilt an alert inbox page using a new React component libraryBuilt an alert inbox page using a new React component library</ListItem2>
+    <ListItem1>Built an alert inbox page using a new React component library</ListItem1>
+    <ListItem2>Old library</ListItem2>
     <div>Added a test-launch feature to the developer communication platform</div>
     <div>Added validations to restrict recipient type of a test-launch</div>
     <div>Added logic for message’s status check</div>

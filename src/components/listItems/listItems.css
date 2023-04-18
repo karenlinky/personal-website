@@ -5,9 +5,17 @@
 
 .bulletPoint {
     font-size: 0.8em;
-    padding: 4px 8px 0 5px;
+    padding: 4px 16px 0 5px;
     display: inline;
     flex: 0;
+}
+
+.listItem1 {
+    margin-top: 5px;
+}
+
+.listItem2 {
+    padding-left: 32px;
 }
 
 .listItemContent {
