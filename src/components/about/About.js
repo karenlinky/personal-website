@@ -14,10 +14,10 @@ const About = () => {
   const descriptionStart = <>
     <span className={'descriptionPurple'}>{'const '}</span> 
     <span className={'descriptionBlue'}>{'me '}</span> 
-    <span className={'descriptionRed'}>{'= '}</ span> 
-    <span className={'descriptionGrey'}>{'() '}</span> 
+    <span className={'descriptionRed'}>{'='}</ span> 
+    {/* <span className={'descriptionGrey'}>{'() '}</span> 
     <span className={'descriptionRed'}>{'=> '}</span> 
-    <span className={'descriptionGrey'}>{'('}</span> 
+    <span className={'descriptionGrey'}>{'('}</span>  */}
   </>
 
   const descriptionTag = <>
