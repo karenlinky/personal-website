@@ -1,0 +1,16 @@
+.listItem {
+    width: 100%;
+    display: flex;
+}
+
+.bulletPoint {
+    font-size: 0.8em;
+    padding: 4px 8px 0 5px;
+    display: inline;
+    flex: 0;
+}
+
+.listItemContent {
+    display: inline-block;
+    flex: 1;
+}

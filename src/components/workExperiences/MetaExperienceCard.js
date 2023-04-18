@@ -1,5 +1,6 @@
 import React from 'react';
 import WorkExperienceCard from './WorkExperienceCard';
+import ListItem1 from '../listItems/ListItem1';
 
 const MetaExperienceCard = ({ openNum, experienceNum, onCardClick, delay }) => {
   const company = 'Meta';
@@ -7,7 +8,8 @@ const MetaExperienceCard = ({ openNum, experienceNum, onCardClick, delay }) => {
   const location = 'Seattle, WA, US';
   const dateRange = '2022 May - 2022 Aug';
   const description = <div>
-    <div>Used ReactJS and Hack to build new features</div>
+    <ListItem1>Used ReactJS and Hack to build new features</ListItem1>
+    <ListItem1>Used ReactJS and Hack to build new featuresUsed ReactJS and Hack to build new featuresUsed ReactJS and Hack to build new featuresUsed ReactJS and Hack to build new features</ListItem1>
     <div>Built an alert inbox page using a new React component library</div>
     <div>Added a test-launch feature to the developer communication platform</div>
     <div>Added validations to restrict recipient type of a test-launch</div>
