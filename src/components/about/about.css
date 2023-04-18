@@ -115,10 +115,13 @@
 }
 
 @keyFrames descriptionShowing {
-    from {
+    0% {
         overflow: hidden;
     }
-    to {
+    99% {
+        overflow: hidden;
+    }
+    100% {
         overflow: visible;
     }
 
@@ -132,7 +135,7 @@
     animation-duration: 1s;
     animation-timing-function: steps(30, end); */
 
-    animation: descriptionTyping 1s steps(50, end), descriptionShowing 1s linear 2s;
+    animation: descriptionTyping 1s steps(50, end)/*, descriptionShowing 1.2s linear 2s*/;
     
     animation-fill-mode: forwards;
 }
