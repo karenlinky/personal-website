@@ -105,10 +105,6 @@
     }
 }
 
-.descriptionScrollableContainer {
-    overflow: auto;
-}
-
 @keyFrames descriptionTyping {
     from {
         min-width: 0;
