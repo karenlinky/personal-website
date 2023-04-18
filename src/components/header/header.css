@@ -5,6 +5,7 @@
     padding: 15px;
     position: fixed;
     background-color: var(--primary-background-color);
+    z-index: 100;
 }
 
 .headerSpace {
