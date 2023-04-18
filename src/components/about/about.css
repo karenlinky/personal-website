@@ -120,36 +120,15 @@
     }
 }
 
-@keyFrames descriptionShowing {
-    0% {
-        overflow: hidden;
-    }
-    99% {
-        overflow: hidden;
-    }
-    100% {
-        overflow: visible;
-    }
-
-}
-
 .descriptionLine {
     overflow: hidden;
     min-width: 0;
     max-width: 0;
     white-space: nowrap;
-    /* animation-name: descriptionTyping;
-    animation-duration: 1s;
-    animation-timing-function: steps(30, end); */
 
-    animation: descriptionTyping 1s steps(50, end)/*, descriptionShowing 1.2s linear 2s*/;
-    
+    animation: descriptionTyping 1s steps(50, end);
     animation-fill-mode: forwards;
 }
-
-/* .descriptionMask {
-    width: 100%;
-} */
 
 .descriptionContent {
     width: fit-content;
