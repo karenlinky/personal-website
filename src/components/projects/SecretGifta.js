@@ -3,7 +3,7 @@ import Chip from '../chip/Chip';
 import ListItem1 from '../listItems/ListItem1';
 import ProjectSection from './ProjectSection';
 
-import screenshot from '../../img/GenSScreenshot.jpg';
+import screenshot from '../../img/secretGiftaScreenshot.png';
 
 const SecretGifta = () => {
     const projectTitle = 'Secret Gifta';
