@@ -11,14 +11,18 @@ const MetaExperienceCard = ({ openNum, experienceNum, onCardClick, delay }) => {
   const location = 'Seattle, WA, US';
   const dateRange = '2022 May - 2022 Aug';
   const description = <div>
-    <div><Chip>ReactJS</Chip><Chip>Hack (PHP)</Chip></div>
-    <ListItem1>Developed <CardPrimaryText>the frontend</CardPrimaryText> of the alert-inbox page of the developer platform</ListItem1>
-    <ListItem2>Old library</ListItem2>
-    <div>Added a test-launch feature to the developer communication platform</div>
-    <div>Added validations to restrict recipient type of a test-launch</div>
-    <div>Added logic for message’s status check</div>
-    <div>Designed the UI using Figma</div>
-    <div>Added alert-template feature that allows users to create new alerts using templates</div>
+    <div><Chip>ReactJS</Chip><Chip>Hack (PHP)</Chip><Chip>UI Design</Chip></div>
+    <ListItem1>Upgraded the alert-inbox page of the developer communication platform using a new <CardPrimaryText>React component</CardPrimaryText> library</ListItem1>
+    <ListItem2>Increased <CardPrimaryText>consistency</CardPrimaryText> of the UI styling across the platform</ListItem2>
+    <ListItem2>Enhanced the <CardPrimaryText>visual appeal</CardPrimaryText> of the webpage by incorporating a library that aligns with the current UI design standards</ListItem2>
+    <ListItem1>Developed the both the <CardPrimaryText>frontend</CardPrimaryText> and <CardPrimaryText>backend</CardPrimaryText> of the <CardPrimaryText>test-launch feature</CardPrimaryText> of the developer communication platform</ListItem1>
+    <ListItem2>Allowed engineers and content designers to <CardPrimaryText>launch a message for testing purposes</CardPrimaryText> without getting content approvals</ListItem2>
+    <ListItem2>Enhanced <CardPrimaryText>efficiency</CardPrimaryText> by preventing users from wasting time waiting for approval</ListItem2>
+    <ListItem2>Added logic to <CardPrimaryText>validate and restrict</CardPrimaryText> the recipient type of a test-launch</ListItem2>
+    <ListItem2>Designed the <CardPrimaryText>UI</CardPrimaryText> using <CardPrimaryText>Figma</CardPrimaryText></ListItem2>
+    <ListItem1>Added the <CardPrimaryText>alert-template feature</CardPrimaryText> to the developer communication platform</ListItem1>
+    <ListItem2>Allowed users to <CardPrimaryText>select a template from a dropdown</CardPrimaryText> and compose a message using the selected template</ListItem2>
+    <ListItem2>Increased <CardPrimaryText>efficiency</CardPrimaryText> by sparing users from having to write a message from scratch</ListItem2>
   </div>;
     
   return (

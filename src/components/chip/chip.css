@@ -1,7 +1,7 @@
 @import url("../../constants.css");
 
 .chip {
-    padding: 3px 10px;
+    padding: 2px 15px;
     background-color: var(--card-text-color);
     color: var(--primary-text-color);
     text-align: center;
