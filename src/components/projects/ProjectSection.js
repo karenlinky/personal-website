@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 import ListItemHeader from '../listItems/ListItemHeader';
 import './projects.css';
 
 
 const ProjectSection = ({ projectTitle, projectParticipationType, projectChips, projectDescr, projectInvolvement, projectImage, className, imageOnLeft }) => {
+
+    const { ref, inView, entry } = useInView({threshold: 0.35})
 
     const generalDescription = <div>
         <div className={'generalDescription'}>
@@ -27,18 +30,22 @@ const ProjectSection = ({ projectTitle, projectParticipationType, projectChips, 
     const leftColumn = imageOnLeft ? imageSection : textSection;
     const rightColumn = imageOnLeft ? textSection : imageSection;
   return (
-    <div className={'projectSection fadeIn' + (className ? ' ' + className : '')}>
-        {generalDescription}
-        <div className={'projectColumns'}>
-            <div className={'leftColumn column'}>
-                {leftColumn}
+    <>
+    <div ref={ref}>
+        <div className={'projectSection' + (inView ? ' showProjectSection' : '') + (className ? ' ' + className : '')}>
+            {generalDescription}
+            <div className={'projectColumns'}>
+                <div className={'leftColumn column'}>
+                    {leftColumn}
+                </div>
+                <div className={'rightColumn column'}>
+                    {rightColumn}
+                </div>
             </div>
-            <div className={'rightColumn column'}>
-                {rightColumn}
-            </div>
+            <div className={'projectChipsContainer'}>{projectChips}</div>
         </div>
-        <div className={'projectChipsContainer'}>{projectChips}</div>
     </div>
+    </>
   )
 }
 

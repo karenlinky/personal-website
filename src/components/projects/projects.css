@@ -3,6 +3,12 @@
     /* border-top: 0.5px solid var(--primary-text-color); */
     /* border-bottom: 0.5px solid var(--primary-text-color); */
     padding: 80px 0;
+    opacity: 0;
+    transition: 1000ms;
+}
+
+.showProjectSection {
+    opacity: 1;
 }
 
 .projectSection1 {
