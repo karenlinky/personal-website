@@ -1,5 +1,9 @@
 import React from 'react';
 import WorkExperienceCard from './WorkExperienceCard';
+import ListItem1 from '../listItems/ListItem1';
+import ListItem2 from '../listItems/ListItem2';
+import Chip from '../chip/Chip';
+import CardPrimaryText from '../card/CardPrimaryText';
 
 const KGSExperienceCard = ({ openNum, experienceNum, onCardClick, delay }) => {
   const company = 'KGS Research';
@@ -7,14 +11,13 @@ const KGSExperienceCard = ({ openNum, experienceNum, onCardClick, delay }) => {
   const location = 'Scarborough, ON, CA';
   const dateRange = '2020 Jan - 2020 Aug';
   const description = <div>
-    <div>Used ReactJS and Hack to build new features</div>
-    <div>Built an alert inbox page using a new React component library</div>
-    <div>Added a test-launch feature to the developer communication platform</div>
-    <div>Added validations to restrict recipient type of a test-launch</div>
-    <div>Added logic for message’s status check</div>
-    <div>Designed the UI using Figma</div>
-    <div>Added alert-template feature that allows users to create new alerts using templates</div>
-  </div>;
+  <div><Chip>JavaScript</Chip><Chip>HTML</Chip></div>
+  <ListItem1>Programmed and set up surveys before launching</ListItem1>
+  <ListItem2>Used HTML tags to <CardPrimaryText>format question text</CardPrimaryText></ListItem2>
+  <ListItem2>Handled <CardPrimaryText>skip logic</CardPrimaryText> using conditional statements</ListItem2>
+  <ListItem1>Wrote scripts to <CardPrimaryText>randomize answer options</CardPrimaryText> with a specific arrangement</ListItem1>
+  <ListItem1>Wrote scripts to <CardPrimaryText>validate</CardPrimaryText> participants' responses</ListItem1>
+</div>;
     
   return (
     <WorkExperienceCard
