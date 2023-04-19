@@ -3,7 +3,9 @@
     /* --primary-background-menu-color: black; */
     --primary-background-color: rgb(0, 0, 0);
     --menu-bar-height: 65px;
-    --primary-color: rgb(13, 93, 191);
-    /* --primary-color: rgb(0, 94, 255); */
-    --card-text-color: rgb(117, 193, 255);
+    --primary-color: rgb(102, 155, 245);
+    --card-text-color: rgb(102, 155, 245);
+    
+    /* --primary-color: rgb(13, 93, 191); */
+    /* --card-text-color: rgb(117, 193, 255); */
 }
