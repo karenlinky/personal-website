@@ -1,0 +1,27 @@
+.projectSection {
+    margin-top: 250px;
+}
+
+.textSection {
+    width: 50%;
+}
+
+.generalDescription {
+    /* border-bottom: 0.5px solid white; */
+}
+
+.projectTitle {
+    font-size: 2.3em;
+}
+
+.projectDescr {
+    margin-top: 10px;
+}
+
+.participationType {
+    margin-left: 10px;
+}
+
+.projectChipsContainer {
+    margin-top: 25px;
+}

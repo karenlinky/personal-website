@@ -1,7 +1,7 @@
 import React from 'react';
 import './separator.css';
 
-const Separator = ({margin}) => {
+const Separator = ({ margin }) => {
   return (
     <div className={'separator' + margin} />
   )
