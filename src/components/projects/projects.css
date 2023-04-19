@@ -1,5 +1,12 @@
 .projectSection {
-    margin-top: 250px;
+    /* margin-top: 250px; */
+    /* border-top: 0.5px solid var(--primary-text-color); */
+    /* border-bottom: 0.5px solid var(--primary-text-color); */
+    padding: 80px 0;
+}
+
+.projectSection1 {
+    padding-top: 0;
 }
 
 .projectColumns {
@@ -35,7 +42,7 @@
 }
 
 .projectTitle {
-    font-size: 2.3em;
+    font-size: 1.8em;
 }
 
 .projectDescr {

@@ -32,6 +32,7 @@ const GenS = () => {
             projectDescr={projectDescr}
             projectInvolvement={projectInvolvement}
             projectImage={projectImage}
+            className={'projectSection1'}
         />
     )
 }
