@@ -1,0 +1,38 @@
+@keyframes scrollIndicatorFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scrollIndicatorAnim {
+    0% {
+        color: rgb(120, 120, 120);
+        font-size: 4em;
+    }
+    50% {
+        color: rgb(255, 255, 255);
+        font-size: 3em;
+    }
+    100% {
+        color: rgb(120, 120, 120);
+        font-size: 4em;
+    }
+}
+
+.scrollIndicatorContainer {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.scrollIndicator {
+    opacity: 0;
+    font-size: 3em;
+    color: rgb(120, 120, 120);
+    animation: scrollIndicatorFadeIn 1s linear 1s forwards, scrollIndicatorAnim 1s infinite;
+}

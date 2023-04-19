@@ -10,7 +10,7 @@
 .pageHeaderSection {
     animation: fadeIn 1s;
     animation-fill-mode: forwards;
-    margin: 30vh 0 30vh 0;
+    margin: 30vh 0 50vh 0;
 }
 
 .pageHeader {

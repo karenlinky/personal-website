@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import ListItemHeader from '../listItems/ListItemHeader';
 import './projects.css';
@@ -6,7 +6,7 @@ import './projects.css';
 
 const ProjectSection = ({ projectTitle, projectParticipationType, projectChips, projectDescr, projectInvolvement, projectImage, className, imageOnLeft }) => {
 
-    const { ref, inView, entry } = useInView({threshold: 0.35})
+    const { ref, inView, entry } = useInView({threshold: 0.3})
 
     const generalDescription = <div>
         <div className={'generalDescription'}>
