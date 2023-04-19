@@ -51,7 +51,7 @@ const Card = ({ children, className, expandableContent, cardContentClassName, op
         {expandableContent !== null ?
           <div className={'expandableContent' + (openNum === experienceNum ? ' showExpandableContent' : '')}>
             <CardDivider />
-            {expandableContent}
+            <div className={'scollableExpandableContent'}>{expandableContent}</div>
           </div> :
           null
         }

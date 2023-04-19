@@ -49,6 +49,12 @@
 
 .showExpandableContent {
     max-height: 500px;
+    /* overflow: auto; */
+}
+
+.scollableExpandableContent {
+    max-height: 300px;
+    overflow: auto;
 }
 
 .workExperiencesCard {
