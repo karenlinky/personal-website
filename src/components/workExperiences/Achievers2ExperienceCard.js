@@ -3,11 +3,9 @@ import WorkExperienceCard from './WorkExperienceCard';
 import ListItem1 from '../listItems/ListItem1';
 import ListItem2 from '../listItems/ListItem2';
 import Chip from '../chip/Chip';
-import Separator from '../sectionSeparator/Separator';
 import CardPrimaryText from '../card/CardPrimaryText';
 
 const Achievers2ExperienceCard = ({ openNum, experienceNum, onCardClick, delay }) => {
-  const margin = <Separator margin={'25'} />;
   const company = 'Achievers';
   const position = 'SWE Intern';
   const location = 'Toronto, ON, CA';

@@ -1,5 +1,9 @@
 import React from 'react';
 import WorkExperienceCard from './WorkExperienceCard';
+import ListItem1 from '../listItems/ListItem1';
+import ListItem2 from '../listItems/ListItem2';
+import Chip from '../chip/Chip';
+import CardPrimaryText from '../card/CardPrimaryText';
 
 const Achievers1ExperienceCard = ({ openNum, experienceNum, onCardClick, delay }) => {
   const company = 'Achievers';
@@ -7,10 +11,11 @@ const Achievers1ExperienceCard = ({ openNum, experienceNum, onCardClick, delay }
   const location = 'Toronto, ON, CA';
   const dateRange = '2021 Jan - 2021 Apr';
   const description = <div>
-    <div>Used php to develop the backend of the Listen product
-➢ Unit testing
-➢ Allowed the application to switch between database port 
-according to the SQL query being executed</div>
+    <div><Chip>PHP</Chip></div>
+    <ListItem1>Unit test</ListItem1>
+    <ListItem2>Performed <CardPrimaryText>unit testing</CardPrimaryText></ListItem2>
+    <ListItem2>Used <CardPrimaryText>PHPUnit</CardPrimaryText> to mock method calls and data</ListItem2>
+    <ListItem1>Allowed the application to <CardPrimaryText>switch between database port</CardPrimaryText> according to the SQL query being executed</ListItem1>
   </div>;
     
   return (

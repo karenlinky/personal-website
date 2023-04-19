@@ -18,13 +18,13 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2e2e2e;
+  background: #414141;
   /* border-radius: 15px; */
 }
   
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(83, 83, 83);
+  background: rgb(117, 117, 117);
   border-radius: 5px;
 }
 
