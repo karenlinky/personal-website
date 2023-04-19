@@ -52,7 +52,7 @@
     /* overflow: auto; */
 }
 
-.scollableExpandableContent {
+.scrollableExpandableContent {
     max-height: 300px;
     overflow: auto;
 }
