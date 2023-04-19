@@ -5,7 +5,7 @@ import ProjectSection from './ProjectSection';
 
 import screenshot from '../../img/GenSScreenshot.jpg';
 
-const GenS = () => {
+const GenS = ({ imageOnLeft }) => {
     const projectTitle = 'Gen S';
     const projectParticipationType = '2023W CS446 Group 10 Project';
     const projectChips = <div><Chip>Android Development</Chip><Chip>Kotlin</Chip><Chip>UI Design</Chip><Chip>Architecture Design</Chip></div>
@@ -33,6 +33,7 @@ const GenS = () => {
             projectInvolvement={projectInvolvement}
             projectImage={projectImage}
             className={'projectSection1'}
+            imageOnLeft={imageOnLeft}
         />
     )
 }

@@ -5,7 +5,7 @@ import ProjectSection from './ProjectSection';
 
 import screenshot from '../../img/secretGiftaScreenshot.png';
 
-const SecretGifta = () => {
+const SecretGifta = ({ imageOnLeft }) => {
     const projectTitle = 'Secret Gifta';
     const projectParticipationType = 'Personal Project';
     const projectChips = <div><Chip>Web App</Chip><Chip>ReactJS</Chip><Chip>CSS</Chip><Chip>Responsive frontend</Chip><Chip>Python</Chip><Chip>SQL</Chip></div>;
@@ -30,6 +30,7 @@ const SecretGifta = () => {
             projectDescr={projectDescr}
             projectInvolvement={projectInvolvement}
             projectImage={projectImage}
+            imageOnLeft={imageOnLeft}
         />
     )
 }

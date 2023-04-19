@@ -3,7 +3,7 @@ import ListItemHeader from '../listItems/ListItemHeader';
 import './projects.css';
 
 
-const ProjectSection = ({ projectTitle, projectParticipationType, projectChips, projectDescr, projectInvolvement, projectImage, className }) => {
+const ProjectSection = ({ projectTitle, projectParticipationType, projectChips, projectDescr, projectInvolvement, projectImage, className, imageOnLeft }) => {
 
     const generalDescription = <div>
         <div className={'generalDescription'}>
@@ -23,12 +23,19 @@ const ProjectSection = ({ projectTitle, projectParticipationType, projectChips, 
             {projectImage}
         </div>
     </div>
+
+    const leftColumn = imageOnLeft ? imageSection : textSection;
+    const rightColumn = imageOnLeft ? textSection : imageSection;
   return (
     <div className={'projectSection fadeIn' + (className ? ' ' + className : '')}>
         {generalDescription}
         <div className={'projectColumns'}>
-            {textSection}
-            {imageSection}
+            <div className={'leftColumn column'}>
+                {leftColumn}
+            </div>
+            <div className={'rightColumn column'}>
+                {rightColumn}
+            </div>
         </div>
         <div className={'projectChipsContainer'}>{projectChips}</div>
     </div>

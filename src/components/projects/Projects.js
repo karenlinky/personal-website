@@ -13,7 +13,7 @@ const Projects = () => {
         <ResponsivePage>
             <PageHeader label={'Projects'} descr={descr} />
             <GenS />
-            <SecretGifta />
+            <SecretGifta imageOnLeft/>
         </ResponsivePage>
         </div>
     )
