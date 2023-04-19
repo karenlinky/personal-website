@@ -9,6 +9,8 @@ import KGSExperienceCard from './KGSExperienceCard copy';
 import '../content/content.css';
 
 const WorkExperiences = () => {
+  const descr = <><div>I've had the opportunity to work with a variety of organizations.</div>
+  <div>Each of which has helped me develop invaluable skills and experience.</div><div>Here are a few highlights from my work experience.</div></>
 
   const [openNum, setOpenNum] = useState('');
 
@@ -23,7 +25,7 @@ const WorkExperiences = () => {
   return (
     <div className={'fullPageBody'}>
       <ResponsivePage>
-        <PageHeader label={'Work Experiences'} />
+        <PageHeader label={'Work Experiences'} descr={descr}/>
         <div>
         <MetaExperienceCard openNum={openNum} experienceNum={3} onCardClick={onCardClick} delay={'100ms'} />
         <Separator margin={'25'} />

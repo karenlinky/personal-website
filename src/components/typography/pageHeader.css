@@ -7,9 +7,12 @@
     }
 }
 
-.pageHeader {
-    font-size: 2em;
-    margin: 50px 0 50px 20px;
+.pageHeaderSection {
     animation: fadeIn 1s;
     animation-fill-mode: forwards;
+    margin: 100px 0 120px 0;
+}
+
+.pageHeader {
+    font-size: 2em;
 }
