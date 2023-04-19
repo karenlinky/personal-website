@@ -3,7 +3,7 @@ import './about.css';
 
 const DescriptionLanguageButton = ({ children, selected, onClick }) => {
   return (
-    <div className={'languageButton' + (selected ? ' selectedButton' : ' notSelectedButton')} onClick={onClick}>{children}</div>
+    <div className={'languageButton fadeIn' + (selected ? ' selectedButton' : ' notSelectedButton')} onClick={onClick}>{children}</div>
   )
 }
 

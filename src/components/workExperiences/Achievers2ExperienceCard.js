@@ -9,13 +9,17 @@ const Achievers2ExperienceCard = ({ openNum, experienceNum, onCardClick, delay }
   const location = 'Toronto, ON, CA';
   const dateRange = '2021 Sept - 2021 Dec';
   const description = <div>
-    <div>Used ReactJS and Hack to build new features</div>
-    <div>Built an alert inbox page using a new React component library</div>
-    <div>Added a test-launch feature to the developer communication platform</div>
-    <div>Added validations to restrict recipient type of a test-launch</div>
-    <div>Added logic for message’s status check</div>
-    <div>Designed the UI using Figma</div>
-    <div>Added alert-template feature that allows users to create new alerts using templates</div>
+    <div>Used ReactJS, scss to develop the frontend
+➢ Used Formik and Yup to validate user-input
+➢ Place a larger and blurried copy of an image/GIF behind the 
+original image
+➢ Fixed styling bugs
+ Used python to develop the backend
+➢ Wrote a class to validate request data
+➢ Wrote scripts to crop image/GIFs size, and upload them to 
+a GCS bucket
+➢ Fixed bug occurred while fetching data from GCS
+ Used Kubernetes commands to help debugging</div>
   </div>;
     
   return (

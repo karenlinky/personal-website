@@ -7,13 +7,10 @@ const Achievers1ExperienceCard = ({ openNum, experienceNum, onCardClick, delay }
   const location = 'Toronto, ON, CA';
   const dateRange = '2021 Jan - 2021 Apr';
   const description = <div>
-    <div>Used ReactJS and Hack to build new features</div>
-    <div>Built an alert inbox page using a new React component library</div>
-    <div>Added a test-launch feature to the developer communication platform</div>
-    <div>Added validations to restrict recipient type of a test-launch</div>
-    <div>Added logic for message’s status check</div>
-    <div>Designed the UI using Figma</div>
-    <div>Added alert-template feature that allows users to create new alerts using templates</div>
+    <div>Used php to develop the backend of the Listen product
+➢ Unit testing
+➢ Allowed the application to switch between database port 
+according to the SQL query being executed</div>
   </div>;
     
   return (
