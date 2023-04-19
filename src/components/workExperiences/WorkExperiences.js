@@ -1,7 +1,6 @@
 import React, { useCallback, useState } from 'react';
 import ResponsivePage from '../responsivePage/ResponsivePage';
 import PageHeader from '../typography/PageHeader';
-import HeaderSpace from '../header/HeaderSpace';
 import Separator from '../sectionSeparator/Separator';
 import MetaExperienceCard from './MetaExperienceCard';
 import Achievers1ExperienceCard from './Achievers1ExperienceCard';
@@ -24,7 +23,6 @@ const WorkExperiences = () => {
   return (
     <div className={'fullPageBody'}>
       <ResponsivePage>
-        <HeaderSpace />
         <PageHeader label={'Work Experiences'} />
         <div>
         <MetaExperienceCard openNum={openNum} experienceNum={3} onCardClick={onCardClick} delay={'100ms'} />

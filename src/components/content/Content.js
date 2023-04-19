@@ -4,6 +4,7 @@ import React from 'react';
 import About from '../about/About';
 import WorkExperiences from "../workExperiences/WorkExperiences";
 import Projects from "../projects/Projects";
+import HeaderSpace from "../header/HeaderSpace";
 import './content.css'
 
 const Content = () => {
@@ -11,6 +12,7 @@ const Content = () => {
     <div className={'fullPageContent'}>
       <BrowserRouter>
         <Header />
+        <HeaderSpace />
         <Routes>
           <Route path={'/home'} element={<About />} />
           <Route path={'/work_experiences'} element={<WorkExperiences />} />

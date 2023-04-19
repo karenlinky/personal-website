@@ -1,7 +1,7 @@
 @import url("../../constants.css");
 
 .fullPageContent {
-    min-height: 100vh;
+    height: 100vh;
     /* background: rgb(0,0,0);
     background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 43%, rgba(25,25,25,1) 70%, rgba(40,40,40,1) 100%); */
     /* background: rgb(0,0,0);
@@ -18,4 +18,5 @@
 
 .fullPageBody {
     height: calc(100% - var(--menu-bar-height));
+    overflow: auto;
 }

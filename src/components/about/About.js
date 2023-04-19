@@ -2,7 +2,6 @@ import React from 'react';
 import PrimaryButton from '../buttons/PrimaryButtonLink';
 import Separator from '../sectionSeparator/Separator';
 import IconButtonGroup from '../iconButton/IconButtonGroup';
-import HeaderSpace from '../header/HeaderSpace';
 import AboutDescription from './AboutDescription';
 import '../../App.css'
 import '../content/content.css';
@@ -12,7 +11,6 @@ const About = () => {
   return (
     <>
       <div className={'fullPageBody'}>
-        <HeaderSpace />
         <div className={'aboutContent'}>
           <div className={'nameDescriptionContainer'}>
             <div className={'name notHighlightable'}>
