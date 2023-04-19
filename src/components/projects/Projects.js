@@ -2,6 +2,7 @@ import React from 'react';
 import ResponsivePage from '../responsivePage/ResponsivePage';
 import PageHeader from '../typography/PageHeader';
 import GenS from './GenS';
+import SecretGifta from './SecretGifta';
 
 const Projects = () => {
     const descr = <><div>Over the years, I have completed several projects.</div>
@@ -12,6 +13,7 @@ const Projects = () => {
         <ResponsivePage>
             <PageHeader label={'Projects'} descr={descr} />
             <GenS />
+            <SecretGifta />
         </ResponsivePage>
         </div>
     )

@@ -14,7 +14,7 @@ const ProjectSection = ({ projectTitle, projectParticipationType, projectChips, 
     </div>
 
     const textSection = <div className={'textSection'}>
-        <ListItemHeader>My contributions</ListItemHeader>
+        <ListItemHeader>My tasks</ListItemHeader>
         {projectInvolvement}
     </div>
 
