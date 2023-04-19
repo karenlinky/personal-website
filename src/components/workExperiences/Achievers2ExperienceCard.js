@@ -20,7 +20,7 @@ const Achievers2ExperienceCard = ({ openNum, experienceNum, onCardClick, delay }
     <ListItem1>Added styling to images</ListItem1>
     <ListItem2>Created a <CardPrimaryText>blurred</CardPrimaryText> copy of an image, <CardPrimaryText>proportionally enlarged</CardPrimaryText> it, and utilized it as a background</ListItem2>
     <ListItem2>Put the original image on top of the blurried image</ListItem2>
-    <ListItem1>Fixed bugs</ListItem1>
+    <ListItem1>Fixed <CardPrimaryText>frontend</CardPrimaryText> and <CardPrimaryText>backend</CardPrimaryText> bugs</ListItem1>
     <ListItem2>Made the UI more <CardPrimaryText>responsive</CardPrimaryText> by removing unwanted white spaces according to the screensize</ListItem2>
     <ListItem2>Fixed <CardPrimaryText>permission issue</CardPrimaryText></ListItem2>
     <ListItem2>Fixed bug occurred while fetching data from GCS</ListItem2>
