@@ -11,7 +11,7 @@ const MetaExperienceCard = ({ openNum, experienceNum, onCardClick, delay }) => {
   const location = 'Seattle, WA, US';
   const dateRange = '2022 May - 2022 Aug';
   const description = <div>
-    <div><Chip>ReactJS</Chip><Chip>Hack (PHP)</Chip><Chip>UI Design</Chip></div>
+    <div><Chip>ReactJS</Chip><Chip>CSS</Chip><Chip>Hack (PHP)</Chip><Chip>UI Design</Chip></div>
     <ListItem1>Upgraded the alert-inbox page of the developer communication platform using a new <CardPrimaryText>React component</CardPrimaryText> library</ListItem1>
     <ListItem2>Increased <CardPrimaryText>consistency</CardPrimaryText> of the UI styling across the platform</ListItem2>
     <ListItem2>Enhanced the <CardPrimaryText>visual appeal</CardPrimaryText> of the webpage by incorporating a library that aligns with the current UI design standards</ListItem2>
