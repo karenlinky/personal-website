@@ -1,7 +1,7 @@
 import React from 'react';
 import ResponsivePage from '../responsivePage/ResponsivePage';
 import PageHeader from '../typography/PageHeader';
-import ProjectSection from './ProjectSection';
+import GenS from './GenS';
 
 const Projects = () => {
     const descr = <><div>Over the years, I have completed several projects.</div>
@@ -11,7 +11,7 @@ const Projects = () => {
         <div className={'fullPageBody'}>
         <ResponsivePage>
             <PageHeader label={'Projects'} descr={descr} />
-            <ProjectSection />
+            <GenS />
         </ResponsivePage>
         </div>
     )

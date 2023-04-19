@@ -5,7 +5,7 @@ import Separator from '../sectionSeparator/Separator';
 import MetaExperienceCard from './MetaExperienceCard';
 import Achievers1ExperienceCard from './Achievers1ExperienceCard';
 import Achievers2ExperienceCard from './Achievers2ExperienceCard';
-import KGSExperienceCard from './KGSExperienceCard copy';
+import KGSExperienceCard from './KGSExperienceCard';
 import '../content/content.css';
 
 const WorkExperiences = () => {
