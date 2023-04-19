@@ -75,6 +75,9 @@
 
 .cardPrimaryText {
     color: var(--card-text-color);
+    /* text-decoration: underline; */
+    font-weight: 500;
+    /* font-size: 1.1em; */
 }
 
 .baseContentContainer {

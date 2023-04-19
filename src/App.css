@@ -13,19 +13,19 @@ body {
 ::-webkit-scrollbar {
   height: 10px;
   width: 10px;
-  background-color: none;
+  background-color: black;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background: #2e2e2e;
-  border-radius: 15px;
+  /* border-radius: 15px; */
 }
   
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgb(83, 83, 83);
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 /* Handle on hover */
