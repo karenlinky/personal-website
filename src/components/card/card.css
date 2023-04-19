@@ -70,3 +70,30 @@
 .cardPrimaryText {
     color: var(--card-text-color);
 }
+
+.baseContentContainer {
+    width: 100%;
+    display: flex;
+}
+
+.baseContent {
+    flex: 1;
+}
+
+.expandableArrowContainer {
+    flex: 0;
+    position: relative;
+}
+
+.expandableArrow {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.expandableArrowButton {
+    color: grey;
+}
