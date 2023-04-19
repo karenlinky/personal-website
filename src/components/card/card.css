@@ -66,3 +66,7 @@
     background-color: var(--primary-text-color);
     background-color: var(--card-text-color);
 }
+
+.cardPrimaryText {
+    color: var(--card-text-color);
+}

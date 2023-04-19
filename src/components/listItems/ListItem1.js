@@ -1,12 +1,12 @@
 import React from 'react';
-import { FaLaptopCode } from 'react-icons/fa'
+import { FaLaptop } from 'react-icons/fa'
 import './listItems.css';
 
 const ListItem1 = ({ children }) => {
   return (
     <div className={'listItem1 listItem'}>
       <div className={'bulletPoint'}>
-        <FaLaptopCode />
+        <FaLaptop />
       </div>
       <div className={'listItemContent'}>
         {children}

@@ -1,0 +1,11 @@
+@import url("../../constants.css");
+
+.chip {
+    padding: 3px 10px;
+    background-color: var(--card-text-color);
+    color: var(--primary-text-color);
+    text-align: center;
+    display: inline-block;
+    border-radius: 20px;
+    margin: 1px 3px 1px 0;
+}
