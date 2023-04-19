@@ -1,8 +1,12 @@
 import React from 'react';
+import ListItemHeader from '../listItems/ListItemHeader';
 import ListItem1 from '../listItems/ListItem1';
 import Chip from '../chip/Chip';
-import Separator from '../sectionSeparator/Separator';
+
 import './projects.css';
+
+import screenshot from '../../img/GenSScreenshot.jpg';
+
 
 const ProjectSection = () => {
     const projectTitle = 'Gen S';
@@ -16,11 +20,16 @@ const ProjectSection = () => {
     </>
 
     const projectInvolvement = <div>
-        <ListItem1>Built the UI of the auto-generate plan and manually generate plan page</ListItem1>
+        <ListItem1 className={'lessSpaceListItem1'}>Built the UI of the auto-generate plan and manually generate plan page</ListItem1>
         <ListItem1>Created date and time picker fragments for reusability purposes</ListItem1>
         <ListItem1>Designed the UI using Figma</ListItem1>
         <ListItem1>Participated in the process of designing architecture</ListItem1>
     </div>
+
+    const projectImage = <img className={'projectImage'} src={screenshot} alt={'Gen S Screenshot'} />
+    const projectImages = <>
+    {projectImage}
+    </>
 
     const generalDescription = <div>
         <div className={'generalDescription'}>
@@ -31,13 +40,23 @@ const ProjectSection = () => {
     </div>
 
     const textSection = <div className={'textSection'}>
-        <div className={'projectChipsContainer'}>{projectChips}</div>
+        <ListItemHeader>My contributions</ListItemHeader>
         {projectInvolvement}
+    </div>
+
+    const imageSection = <div className={'imageSection'}>
+        <div className={'projectImages'}>
+            {projectImages}
+        </div>
     </div>
   return (
     <div className={'projectSection'}>
         {generalDescription}
-        {textSection}
+        <div className={'projectColumns'}>
+            {textSection}
+            {imageSection}
+        </div>
+        <div className={'projectChipsContainer'}>{projectChips}</div>
     </div>
   )
 }

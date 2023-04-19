@@ -2,8 +2,36 @@
     margin-top: 250px;
 }
 
-.textSection {
-    width: 50%;
+.projectColumns {
+    margin-top: 24px;
+    display: flex;
+    height: min-content;
+}
+
+.textSection, .imageSection {
+    flex: 1;
+}
+
+.imageSection {
+   position: relative;
+}
+
+.projectImages {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 100%;
+    width: 100%;
+    padding: 0 5px;
+    text-align: center;
+}
+
+.projectImage {
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
 }
 
 .generalDescription {

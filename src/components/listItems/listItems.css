@@ -1,3 +1,7 @@
+.listItemHeader {
+    font-size: 1.3em;
+}
+
 .listItem {
     width: 100%;
     display: flex;
@@ -12,6 +16,10 @@
 
 .listItem1 {
     margin-top: 32px;
+}
+
+.lessSpaceListItem1 {
+    margin-top: 12px;
 }
 
 .listItem2 {
