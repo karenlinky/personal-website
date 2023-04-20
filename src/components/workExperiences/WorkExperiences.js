@@ -27,10 +27,6 @@ const WorkExperiences = () => {
 
   const [showingTitle, setShowingTitle] = useState(false);
   const [showingActualContent, setShowingActualContent] = useState(false);
-  // const [showIndicator, setShowIndicator] = useState(true);
-  // const hideIndicator = () => {
-  //   setShowIndicator(false);
-  // }
 
   const experiencesId = 'experiences';
 
@@ -45,7 +41,7 @@ const WorkExperiences = () => {
     <div className={'fullPageBody'}>
       <ScrollIndicator showIndicator={showingTitle && !showingActualContent} onClick={scrollDown} />
       <ResponsivePage>
-        <PageHeader label={'Work Experiences'} descr={descr} setShowingHeader={setShowingTitle}/>
+        <PageHeader short label={'Work Experiences'} descr={descr} setShowingHeader={setShowingTitle}/>
         <div>
         <ContentStartIndicator id={experiencesId} />
         <ScrollObserver threshold={.3} onInViewChange={setShowingActualContent}>

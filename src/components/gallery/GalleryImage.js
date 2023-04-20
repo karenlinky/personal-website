@@ -1,22 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import './gallery.css';
 
-const GalleryImage = ({ children }) => {
+const GalleryImage = ({ children, threshold, onInViewChange }) => {
 
-    const { ref, inView } = useInView({threshold: 0.2})
-    // useEffect(() => {
-    //     onInViewChange(inView);
-    // }, [inView, onInViewChange]);
+    const { ref, inView } = useInView({threshold: 0});
 
-    // return (
-    //     <div ref={ref}>{children}</div>
-    // )
-
-    // const [inView, setInView] = useState(false);
+    useEffect(() => {
+        if (onInViewChange != null) {
+            onInViewChange(inView);
+        }
+    }, [inView, onInViewChange]);
 
     return (
-        <div ref={ref} className={'galleryImage' + (inView ? ' showGalleryImage' : ' hideGalleryImage')}>
+        <div ref={ref} className={'galleryImage' + (inView === false ? ' hideGalleryContainer' : ' showGalleryImage')}>
             {children}
         </div>
     )

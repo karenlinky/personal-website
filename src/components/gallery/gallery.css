@@ -6,21 +6,26 @@
     overflow-y:hidden;
 
     /* box-shadow: 0 0 5px 10px #555; */
+
+    opacity: 1;
+    transition-duration: 500ms;
+}
+
+.hideGalleryContainer {
+    opacity: 0;
 }
 
 .gallery {
-    /* display: inline-block; */
     width: fit-content;
     white-space: nowrap;
     height: 100%;
 }
 
 .galleryImage {
-    /* height: 400px; */
-    display: inline;
+    display: inline-block;
     height: 100%;
     padding: 0 20px;
-    transition: 1000ms;
+    transition-duration: 1000ms;
 }
 
 .galleryImage > img {

@@ -21,6 +21,13 @@
     transition: 1s;
 }
 
+
+.shortHeaderSection {
+    margin: 10vh 0 2vh;
+    padding-bottom: 3vh;
+    border: none;
+}
+
 .showHeader {
     opacity: 1;
 }

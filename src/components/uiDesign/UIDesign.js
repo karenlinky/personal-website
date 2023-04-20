@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import ResponsivePage from '../responsivePage/ResponsivePage';
 import PageHeader from '../typography/PageHeader';
-import ContentStartIndicator from '../misc/ContentStartIndicator';
 import ScrollIndicator from '../scrollIndicator/ScrollIndicator';
-import ScrollObserver from '../scrollObserver/ScrollObserver';
 import Gallery from '../gallery/Gallery';
 import GalleryImage from '../gallery/GalleryImage';
+import './uiDesign.css';
 
 import genS1 from '../../img/uiDesign/gen_s_ui_1.png';
 import genS2 from '../../img/uiDesign/gen_s_ui_2.png';
@@ -34,29 +33,29 @@ const UIDesign = () => {
         }
     }
 
-  return (
-    <div className={'fullPageBody'}>
-      <ScrollIndicator showIndicator={showingTitle && !showingActualContent} onClick={scrollDown} />
-      <ResponsivePage>
-        <PageHeader label={'UI Design'} descr={descr} setShowingHeader={setShowingTitle}/>
-        <div>
-        <ContentStartIndicator id={uiDesignId} />
-        <ScrollObserver threshold={.3} onInViewChange={setShowingActualContent}>
-            <Gallery>
-            <GalleryImage><img src={genS1} alt={'gen_s_1'} /></GalleryImage>
-            <GalleryImage><img src={genS2} alt={'gen_s_2'} /></GalleryImage>
-            <GalleryImage><img src={genS3} alt={'gen_s_3'} /></GalleryImage>
-            <GalleryImage><img src={genS4} alt={'gen_s_4'} /></GalleryImage>
-            <GalleryImage><img src={genS5} alt={'gen_s_5'} /></GalleryImage>
-            <GalleryImage><img src={genS6} alt={'gen_s_6'} /></GalleryImage>
-            <GalleryImage><img src={genS7} alt={'gen_s_7'} /></GalleryImage>
-            <GalleryImage><img src={genS8} alt={'gen_s_8'} /></GalleryImage>
+    const threshold = 0.1;
+
+    return (
+        <div className={'fullPageBody'}>
+        <ScrollIndicator showIndicator={showingTitle && !showingActualContent} onClick={scrollDown} />
+        <ResponsivePage>
+            {/* <PageHeader label={'UI Design'} descr={descr} setShowingHeader={setShowingTitle}/> */}
+            <PageHeader short label={'UI Design'} descr={descr} setShowingHeader={setShowingTitle}/>
+            {/* <div id={uiDesignId} /> */}
+            <div id={uiDesignId} className={'uiGallery'} />
+            <Gallery onInViewChange={setShowingActualContent}>
+                <GalleryImage threshold={threshold}><img src={genS1} alt={'gen_s_1'} /></GalleryImage>
+                <GalleryImage threshold={threshold}><img src={genS2} alt={'gen_s_2'} /></GalleryImage>
+                <GalleryImage threshold={threshold}><img src={genS3} alt={'gen_s_3'} /></GalleryImage>
+                <GalleryImage threshold={threshold}><img src={genS4} alt={'gen_s_4'} /></GalleryImage>
+                <GalleryImage threshold={threshold}><img src={genS5} alt={'gen_s_5'} /></GalleryImage>
+                <GalleryImage threshold={threshold}><img src={genS6} alt={'gen_s_6'} /></GalleryImage>
+                <GalleryImage threshold={threshold}><img src={genS7} alt={'gen_s_7'} /></GalleryImage>
+                <GalleryImage threshold={threshold}><img src={genS8} alt={'gen_s_8'} /></GalleryImage>
             </Gallery>
-        </ScrollObserver>
+        </ResponsivePage>
         </div>
-      </ResponsivePage>
-    </div>
-  )
+    )
 }
 
 export default UIDesign
