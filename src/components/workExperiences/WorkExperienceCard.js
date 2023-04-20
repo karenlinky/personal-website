@@ -6,7 +6,7 @@ import CardSubheader from '../card/CardSubheader';
 
 const WorkExperienceCard = ({ company, position, location, dateRange, description, openNum, experienceNum, onCardClick }) => {
 
-  const { ref, inView } = useInView({threshold: 0.5})
+  const { ref, inView } = useInView({threshold: 0.3})
 
   return (
     <div ref={ref}>

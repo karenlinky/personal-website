@@ -35,7 +35,7 @@ const WorkExperiences = () => {
       <ResponsivePage>
         <PageHeader label={'Work Experiences'} descr={descr}/>
         <div>
-        <ScrollIndicatorTracker threshold={.5} onScrolledIn={hideIndicator}>
+        <ScrollIndicatorTracker threshold={.3} onScrolledIn={hideIndicator}>
           <MetaExperienceCard openNum={openNum} experienceNum={3} onCardClick={onCardClick} />
         </ScrollIndicatorTracker>
         <Separator margin={'25'} />
