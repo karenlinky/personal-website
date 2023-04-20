@@ -1,0 +1,14 @@
+.gallery {
+    text-align: center;
+}
+
+.galleryImage {
+    /* height: 400px; */
+    height: 50vh;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.galleryImage > img {
+    height: 100%;
+}
