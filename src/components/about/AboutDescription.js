@@ -5,11 +5,6 @@ import DescriptionLanguageButton from './DescriptionLanguageButton';
 import './about.css';
 
 const AboutDescription = () => {
-    // const descriptionStart = <>
-    //     <span className={'descriptionPurple'}>{'const '}</span> 
-    //     <span className={'descriptionBlue'}>{'me '}</span> 
-    //     <span className={'descriptionRed'}>{'='}</ span>
-    // </>
   
     const descriptionTag = <>
         <span className={'descriptionPurple'}>{'const '}</span> 
@@ -119,8 +114,8 @@ const AboutDescription = () => {
             <div className={'languageSeparator'} />
             <div className={'codeContainer'}>
                 <div className={'description'}>
-                    {openCode == 0 ? ReactCode : null}
-                    {openCode == 1 ? PythonCode : null}
+                    {openCode === 0 ? ReactCode : null}
+                    {openCode === 1 ? PythonCode : null}
                 </div>
             </div>
             </span>

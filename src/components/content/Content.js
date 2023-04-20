@@ -6,6 +6,7 @@ import WorkExperiences from "../workExperiences/WorkExperiences";
 import Projects from "../projects/Projects";
 import HeaderSpace from "../header/HeaderSpace";
 import './content.css'
+import UIDesign from "../uiDesign/UIDesign";
 
 const Content = () => {
   return (
@@ -17,6 +18,7 @@ const Content = () => {
           <Route path={'/home'} element={<About />} />
           <Route path={'/work_experiences'} element={<WorkExperiences />} />
           <Route path={'/projects'} element={<Projects />} />
+          <Route path={'/ui_design'} element={<UIDesign />} />
         </Routes>
       </BrowserRouter>
     </div>
