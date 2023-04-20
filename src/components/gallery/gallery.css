@@ -1,12 +1,23 @@
+.galleryContainer {
+    /* text-align: center; */
+    width: 100%;
+    height: 50vh;
+    overflow-x: auto;
+    overflow-y:hidden;
+}
+
 .gallery {
-    text-align: center;
+    /* display: inline-block; */
+    width: fit-content;
+    white-space: nowrap;
+    height: 100%;
 }
 
 .galleryImage {
     /* height: 400px; */
-    height: 50vh;
-    display: inline-block;
-    padding: 10px 20px;
+    display: inline;
+    height: 100%;
+    padding: 0 20px;
 }
 
 .galleryImage > img {

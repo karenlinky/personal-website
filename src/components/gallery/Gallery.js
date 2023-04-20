@@ -3,7 +3,9 @@ import './gallery.css';
 
 const Gallery = ({ children }) => {
   return (
-    <div className={'gallery'}>{children}</div>
+    <div className={'galleryContainer'}>
+      <div className={'gallery'}>{children}</div>
+    </div>
   )
 }
 

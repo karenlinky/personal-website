@@ -8,10 +8,15 @@
 }
 
 .pageHeaderSection {
-    /* animation: fadeIn 1s;
-    animation-fill-mode: forwards; */
-    /* margin: 30vh 0 calc(50vh-20px) 0; */
-    margin: 30vh 0 40vh 0;
+    /* with border */
+    /* padding: 10vh 80px 10vh ;
+    margin: 20vh 0;
+    border: 2px solid var(--primary-text-color); */
+
+    padding-bottom: 5vh;
+    margin: 30vh 0 35vh;
+    border-bottom: 2px solid var(--primary-text-color);
+    /* margin: 30vh 0 40vh; */
     opacity: 0;
     transition: 1s;
 }
