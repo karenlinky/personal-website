@@ -2,7 +2,7 @@
     /* margin-top: 250px; */
     /* border-top: 0.5px solid var(--primary-text-color); */
     /* border-bottom: 0.5px solid var(--primary-text-color); */
-    padding: 80px 0;
+    padding: 100px 0;
     opacity: 0;
     transition: 1000ms;
 }

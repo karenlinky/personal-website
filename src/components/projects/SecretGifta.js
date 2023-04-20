@@ -21,7 +21,7 @@ const SecretGifta = ({ imageOnLeft }) => {
         <ListItem1>Wrote queries to store and fetch matching results from the database</ListItem1>
     </div>
 
-    const projectImage = <img className={'projectImage'} src={screenshot} alt={'Gen S Screenshot'} />
+    const projectImage = <img className={'projectImage'} src={screenshot} alt={'Secret Gifta Screenshot'} />
     return (
         <ProjectSection
             projectTitle={projectTitle}

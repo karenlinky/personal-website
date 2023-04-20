@@ -21,7 +21,7 @@ const ChefsHat = ({ imageOnLeft }) => {
         <ListItem1>Wrote queries designe to fetch recipes from the database based on specific keywords</ListItem1>
     </div>
 
-    const projectImage = <img className={'projectImage'} src={screenshot} alt={'Gen S Screenshot'} />
+    const projectImage = <img className={'projectImage'} src={screenshot} alt={'Chef\'s Hat Screenshot'} />
     return (
         <ProjectSection
             projectTitle={projectTitle}

@@ -4,6 +4,7 @@ import PageHeader from '../typography/PageHeader';
 import GenS from './GenS';
 import SecretGifta from './SecretGifta';
 import ChefsHat from './ChefsHat';
+import SpaceInvader from './SpaceInvader';
 import ScrollObserver from '../scrollObserver/ScrollObserver';
 import ScrollIndicator from '../scrollIndicator/ScrollIndicator';
 import ContentStartIndicator from '../misc/ContentStartIndicator';
@@ -35,6 +36,7 @@ const Projects = () => {
                 </ScrollObserver>
                 <SecretGifta imageOnLeft/>
                 <ChefsHat />
+                <SpaceInvader imageOnLeft/>
             </ResponsivePage>
         </div>
     )
