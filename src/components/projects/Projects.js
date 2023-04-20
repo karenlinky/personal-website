@@ -31,7 +31,7 @@ const Projects = () => {
             <ResponsivePage>
                 <PageHeader label={'Projects'} descr={descr} setShowingHeader={setShowingTitle}  />
                 <ContentStartIndicator id={projectsId} />
-                <ScrollObserver threshold={0.3} onInViewChange={setShowingActualContent}>
+                <ScrollObserver threshold={0.2} onInViewChange={setShowingActualContent}>
                     <GenS />
                 </ScrollObserver>
                 <SecretGifta imageOnLeft/>
