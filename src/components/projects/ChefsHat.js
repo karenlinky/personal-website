@@ -5,7 +5,7 @@ import ProjectSection from './ProjectSection';
 
 import screenshot from '../../img/chefsHatScreenshot.png';
 
-const ChefsHat = ({ imageOnLeft }) => {
+const ChefsHat = ({ imageOnLeft, id }) => {
     const projectTitle = 'Chef\'s Hat';
     const projectParticipationType = 'Group Project';
     const projectChips = <div><Chip>Web App</Chip><Chip>HTML</Chip><Chip>CSS</Chip><Chip>JavaScript</Chip><Chip>SQL</Chip></div>;
@@ -31,6 +31,7 @@ const ChefsHat = ({ imageOnLeft }) => {
             projectInvolvement={projectInvolvement}
             projectImage={projectImage}
             imageOnLeft={imageOnLeft}
+            id={id}
         />
     )
 }

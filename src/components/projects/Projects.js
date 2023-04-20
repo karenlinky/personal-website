@@ -16,10 +16,17 @@ const Projects = () => {
     const [showingTitle, setShowingTitle] = useState(false);
     const [showingActualContent, setShowingActualContent] = useState(false);
 
-    const projectsId = 'projects';
+    const ids = {
+        genS: 'gen-s',
+        secretGifta: 'secret-gifta',
+        chefsHat: 'chef-s-hat',
+        spaceInvader: 'space-invader',
+    }
+
+    const firstId = ids.genS;
   
     const scrollDown = () => {
-      const element = document.getElementById(projectsId);
+      const element = document.getElementById(firstId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
@@ -30,13 +37,13 @@ const Projects = () => {
             <ScrollIndicator showIndicator={showingTitle && !showingActualContent} onClick={scrollDown} />
             <ResponsivePage>
                 <PageHeader label={'Projects'} descr={descr} setShowingHeader={setShowingTitle}  />
-                <ContentStartIndicator id={projectsId} />
-                <ScrollObserver threshold={0.2} onInViewChange={setShowingActualContent}>
-                    <GenS />
+                {/* <ContentStartIndicator id={projectsId} /> */}
+                <ScrollObserver threshold={0.4} onInViewChange={setShowingActualContent}>
+                    <GenS id={ids.genS}/>
                 </ScrollObserver>
-                <SecretGifta imageOnLeft/>
-                <ChefsHat />
-                <SpaceInvader imageOnLeft/>
+                <SecretGifta imageOnLeft id={ids.secretGifta}/>
+                <ChefsHat id={ids.chefsHat}/>
+                <SpaceInvader imageOnLeft id={ids.spaceInvader}/>
             </ResponsivePage>
         </div>
     )

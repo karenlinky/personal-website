@@ -5,7 +5,7 @@ import ProjectSection from './ProjectSection';
 
 import screenshot from '../../img/GenSScreenshot.jpg';
 
-const GenS = ({ imageOnLeft }) => {
+const GenS = ({ imageOnLeft, id }) => {
     const projectTitle = 'Gen S';
     const projectParticipationType = 'Group Project';
     const projectChips = <div><Chip>Android Development</Chip><Chip>Kotlin</Chip><Chip>UI Design</Chip><Chip>Architecture Design</Chip></div>
@@ -34,6 +34,7 @@ const GenS = ({ imageOnLeft }) => {
             projectImage={projectImage}
             className={'projectSection1'}
             imageOnLeft={imageOnLeft}
+            id={id}
         />
     )
 }

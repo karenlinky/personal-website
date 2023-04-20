@@ -5,7 +5,7 @@ import ProjectSection from './ProjectSection';
 
 import screenshot from '../../img/spaceInvaderScreenshot.png';
 
-const SpaceInvader = ({ imageOnLeft }) => {
+const SpaceInvader = ({ imageOnLeft, id }) => {
     const projectTitle = 'Space Invader';
     const projectParticipationType = 'Personal Project';
     const projectChips = <div><Chip>Java</Chip><Chip>OOP</Chip></div>;
@@ -30,6 +30,7 @@ const SpaceInvader = ({ imageOnLeft }) => {
             projectInvolvement={projectInvolvement}
             projectImage={projectImage}
             imageOnLeft={imageOnLeft}
+            id={id}
         />
     )
 }

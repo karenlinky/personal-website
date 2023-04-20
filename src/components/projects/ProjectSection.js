@@ -4,9 +4,9 @@ import ListItemHeader from '../listItems/ListItemHeader';
 import './projects.css';
 
 
-const ProjectSection = ({ projectTitle, projectParticipationType, projectChips, projectDescr, projectInvolvement, projectImage, className, imageOnLeft }) => {
+const ProjectSection = ({ projectTitle, projectParticipationType, projectChips, projectDescr, projectInvolvement, projectImage, className, imageOnLeft, id }) => {
 
-    const { ref, inView } = useInView({threshold: 0.2})
+    const { ref, inView } = useInView({threshold: 0.4})
 
     const generalDescription = <div>
         <div className={'generalDescription'}>
@@ -31,7 +31,7 @@ const ProjectSection = ({ projectTitle, projectParticipationType, projectChips, 
     const rightColumn = imageOnLeft ? textSection : imageSection;
   return (
     <>
-    <div ref={ref}>
+    <div id={id} ref={ref}>
         <div className={'projectSection' + (inView ? ' showProjectSection' : '') + (className ? ' ' + className : '')}>
             {generalDescription}
             <div className={'projectColumns'}>
