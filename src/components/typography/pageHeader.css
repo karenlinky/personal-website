@@ -10,7 +10,8 @@
 .pageHeaderSection {
     /* animation: fadeIn 1s;
     animation-fill-mode: forwards; */
-    margin: 30vh 0 50vh 0;
+    /* margin: 30vh 0 calc(50vh-20px) 0; */
+    margin: 30vh 0 40vh 0;
     opacity: 0;
     transition: 1s;
 }

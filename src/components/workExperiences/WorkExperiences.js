@@ -2,6 +2,7 @@ import React, { useCallback, useState } from 'react';
 import ResponsivePage from '../responsivePage/ResponsivePage';
 import PageHeader from '../typography/PageHeader';
 import Separator from '../sectionSeparator/Separator';
+import ContentStartIndicator from '../misc/ContentStartIndicator';
 import ScrollIndicator from '../scrollIndicator/ScrollIndicator';
 import ScrollIndicatorTracker from '../scrollIndicator/ScrollIndicatorTracker';
 import MetaExperienceCard from './MetaExperienceCard';
@@ -29,12 +30,22 @@ const WorkExperiences = () => {
     setShowIndicator(false);
   }
 
+  const experiencesId = 'experiences';
+
+  const scrollDown = () => {
+    const element = document.getElementById(experiencesId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   return (
     <div className={'fullPageBody'}>
-      <ScrollIndicator showIndicator={showIndicator} />
+      <ScrollIndicator showIndicator={showIndicator} onClick={scrollDown} />
       <ResponsivePage>
         <PageHeader label={'Work Experiences'} descr={descr}/>
         <div>
+        <ContentStartIndicator id={experiencesId} />
         <ScrollIndicatorTracker threshold={.3} onScrolledIn={hideIndicator}>
           <MetaExperienceCard openNum={openNum} experienceNum={3} onCardClick={onCardClick} />
         </ScrollIndicatorTracker>

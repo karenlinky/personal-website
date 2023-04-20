@@ -10,15 +10,15 @@
 @keyframes scrollIndicatorAnim {
     0% {
         color: rgb(120, 120, 120);
-        font-size: 4em;
+        font-size: 3em;
     }
     50% {
         color: rgb(255, 255, 255);
-        font-size: 3em;
+        font-size: 2em;
     }
     100% {
         color: rgb(120, 120, 120);
-        font-size: 4em;
+        font-size: 3em;
     }
 }
 
@@ -32,7 +32,8 @@
 
 .scrollIndicator {
     opacity: 0;
-    font-size: 3em;
+    font-size: 4em;
     color: rgb(120, 120, 120);
     animation: scrollIndicatorFadeIn 1s linear 1s forwards, scrollIndicatorAnim 1s infinite;
+    cursor: pointer;
 }
