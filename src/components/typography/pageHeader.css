@@ -8,9 +8,15 @@
 }
 
 .pageHeaderSection {
-    animation: fadeIn 1s;
-    animation-fill-mode: forwards;
+    /* animation: fadeIn 1s;
+    animation-fill-mode: forwards; */
     margin: 30vh 0 50vh 0;
+    opacity: 0;
+    transition: 1s;
+}
+
+.showHeader {
+    opacity: 1;
 }
 
 .pageHeader {
