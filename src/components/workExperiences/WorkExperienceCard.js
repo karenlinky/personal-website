@@ -1,15 +1,15 @@
-import React from 'react';
-import { useInView } from 'react-intersection-observer';
+import React, { useState } from 'react';
+import ScrollObserver from '../scrollObserver/ScrollObserver';
 import Card from '../card/Card';
 import CardHeader from '../card/CardHeader';
 import CardSubheader from '../card/CardSubheader';
 
 const WorkExperienceCard = ({ company, position, location, dateRange, description, openNum, experienceNum, onCardClick }) => {
 
-  const { ref, inView } = useInView({threshold: 0.3})
+  const [inView, setInView] = useState(false)
 
   return (
-    <div ref={ref}>
+    <ScrollObserver threshold={.3} onInViewChange={setInView}>
       <Card
           className={'workExperiencesCard' + (inView ? '' : ' hideCard')}
           cardContentClassName={'workExperiencesContent'}
@@ -21,7 +21,7 @@ const WorkExperienceCard = ({ company, position, location, dateRange, descriptio
           <CardSubheader>{location}</CardSubheader>
           <CardSubheader>{dateRange}</CardSubheader>
       </Card>
-    </div>
+    </ScrollObserver>
   )
 }
 
