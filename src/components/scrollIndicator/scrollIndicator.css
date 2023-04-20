@@ -37,5 +37,5 @@
     opacity: 0;
     font-size: 4em;
     color: rgb(120, 120, 120);
-    animation: scrollIndicatorFadeIn 1s linear 1s forwards, scrollIndicatorAnim 1s infinite;
+    animation: scrollIndicatorFadeIn 1s linear 3s forwards, scrollIndicatorAnim 1s infinite;
 }
