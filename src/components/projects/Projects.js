@@ -5,9 +5,9 @@ import GenS from './GenS';
 import SecretGifta from './SecretGifta';
 import ChefsHat from './ChefsHat';
 import SpaceInvader from './SpaceInvader';
+import UltramanRagdoll from './UltramanRagdoll';
 import ScrollObserver from '../scrollObserver/ScrollObserver';
 import ScrollIndicator from '../scrollIndicator/ScrollIndicator';
-import ContentStartIndicator from '../misc/ContentStartIndicator';
 
 const Projects = () => {
     const descr = <><div>Over the years, I have completed several projects.</div>
@@ -21,6 +21,7 @@ const Projects = () => {
         secretGifta: 'secret-gifta',
         chefsHat: 'chef-s-hat',
         spaceInvader: 'space-invader',
+        ultramanRagdoll: 'ultraman-ragdoll',
     }
 
     const firstId = ids.genS;
@@ -43,6 +44,7 @@ const Projects = () => {
                 <SecretGifta imageOnLeft id={ids.secretGifta}/>
                 <ChefsHat id={ids.chefsHat}/>
                 <SpaceInvader imageOnLeft id={ids.spaceInvader}/>
+                <UltramanRagdoll id={ids.ultramanRagdoll} />
             </ResponsivePage>
         </div>
     )

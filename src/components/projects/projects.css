@@ -54,7 +54,8 @@
 }
 
 .projectTitle {
-    font-size: 1.8em;
+    font-size: 2.5em;
+    color: var(--primary-color);
 }
 
 .projectDescr {
