@@ -1,20 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
+import ScrollObserver from '../scrollObserver/ScrollObserver';
 import './pageHeader.css';
 
 const PageHeader = ({ label, descr }) => {
 
-  const { ref, inView } = useInView({threshold: 0.5})
+  const [inView, setInView] = useState(false);
 
   return (
-    <div ref={ref} className={'pageHeaderSection' + (inView ? ' showHeader' : '')}>
-      <div className="pageHeader">
-        {label}
+    <ScrollObserver threshold={.5} onInViewChange={setInView}>
+      <div className={'pageHeaderSection' + (inView ? ' showHeader' : '')}>
+        <div className="pageHeader">
+          {label}
+        </div>
+        {descr ? <div className="pageHeaderDescription">
+          {descr}
+        </div> : null}
       </div>
-      {descr ? <div className="pageHeaderDescription">
-        {descr}
-      </div> : null}
-    </div>
+    </ScrollObserver>
   )
 }
 
