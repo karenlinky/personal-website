@@ -7,7 +7,7 @@ import screenshot from '../../img/GenSScreenshot.jpg';
 
 const GenS = ({ imageOnLeft }) => {
     const projectTitle = 'Gen S';
-    const projectParticipationType = '2023W CS446 Group 10 Project';
+    const projectParticipationType = 'Group Project';
     const projectChips = <div><Chip>Android Development</Chip><Chip>Kotlin</Chip><Chip>UI Design</Chip><Chip>Architecture Design</Chip></div>
     const projectDescr = <>
     <div>As students with busy schedule,

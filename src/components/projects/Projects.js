@@ -3,6 +3,7 @@ import ResponsivePage from '../responsivePage/ResponsivePage';
 import PageHeader from '../typography/PageHeader';
 import GenS from './GenS';
 import SecretGifta from './SecretGifta';
+import ChefsHat from './ChefsHat';
 import ScrollIndicator from '../scrollIndicator/ScrollIndicator';
 import ScrollIndicatorTracker from '../scrollIndicator/ScrollIndicatorTracker';
 
@@ -24,6 +25,7 @@ const Projects = () => {
                     <GenS />
                 </ScrollIndicatorTracker>
                 <SecretGifta imageOnLeft/>
+                <ChefsHat />
             </ResponsivePage>
         </div>
     )
