@@ -6,7 +6,7 @@ import './projects.css';
 
 const ProjectSection = ({ projectTitle, projectParticipationType, projectChips, projectDescr, projectInvolvement, projectImage, className, imageOnLeft }) => {
 
-    const { ref, inView, entry } = useInView({threshold: 0.3})
+    const { ref, inView } = useInView({threshold: 0.3})
 
     const generalDescription = <div>
         <div className={'generalDescription'}>

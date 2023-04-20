@@ -2,6 +2,8 @@ import React, { useCallback, useState } from 'react';
 import ResponsivePage from '../responsivePage/ResponsivePage';
 import PageHeader from '../typography/PageHeader';
 import Separator from '../sectionSeparator/Separator';
+import ScrollIndicator from '../scrollIndicator/ScrollIndicator';
+import ScrollIndicatorTracker from '../scrollIndicator/ScrollIndicatorTracker';
 import MetaExperienceCard from './MetaExperienceCard';
 import Achievers1ExperienceCard from './Achievers1ExperienceCard';
 import Achievers2ExperienceCard from './Achievers2ExperienceCard';
@@ -22,18 +24,26 @@ const WorkExperiences = () => {
     }
   }, [openNum])
 
+  const [showIndicator, setShowIndicator] = useState(true);
+  const hideIndicator = () => {
+    setShowIndicator(false);
+  }
+
   return (
     <div className={'fullPageBody'}>
+      <ScrollIndicator showIndicator={showIndicator} />
       <ResponsivePage>
         <PageHeader label={'Work Experiences'} descr={descr}/>
         <div>
-        <MetaExperienceCard openNum={openNum} experienceNum={3} onCardClick={onCardClick} delay={'100ms'} />
+        <ScrollIndicatorTracker threshold={.2} onScrolledIn={hideIndicator}>
+          <MetaExperienceCard openNum={openNum} experienceNum={3} onCardClick={onCardClick} />
+        </ScrollIndicatorTracker>
         <Separator margin={'25'} />
-        <Achievers2ExperienceCard openNum={openNum} experienceNum={2} onCardClick={onCardClick} delay={'200ms'} />
+        <Achievers2ExperienceCard openNum={openNum} experienceNum={2} onCardClick={onCardClick} />
         <Separator margin={'25'} />
-        <Achievers1ExperienceCard openNum={openNum} experienceNum={1} onCardClick={onCardClick} delay={'300ms'} />
+        <Achievers1ExperienceCard openNum={openNum} experienceNum={1} onCardClick={onCardClick} />
         <Separator margin={'25'} />
-        <KGSExperienceCard openNum={openNum} experienceNum={0} onCardClick={onCardClick} delay={'400ms'} />
+        <KGSExperienceCard openNum={openNum} experienceNum={0} onCardClick={onCardClick} />
         </div>
       </ResponsivePage>
     </div>

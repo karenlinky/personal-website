@@ -5,7 +5,7 @@ import Chip from '../chip/Chip';
 import ListItem1 from '../listItems/ListItem1';
 import ListItem2 from '../listItems/ListItem2';
 
-const MetaExperienceCard = ({ openNum, experienceNum, onCardClick, delay }) => {
+const MetaExperienceCard = ({ openNum, experienceNum, onCardClick }) => {
   const company = 'Meta';
   const position = 'SWE Intern';
   const location = 'Seattle, WA, US';
@@ -48,8 +48,7 @@ const MetaExperienceCard = ({ openNum, experienceNum, onCardClick, delay }) => {
         description={description}
         openNum={openNum}
         experienceNum={experienceNum}
-        onCardClick={onCardClick}
-        delay={delay} />
+        onCardClick={onCardClick} />
   )
 }
 

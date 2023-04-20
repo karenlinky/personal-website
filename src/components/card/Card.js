@@ -5,16 +5,11 @@ import { FaCaretLeft, FaCaretDown } from 'react-icons/fa';
 
 import './card.css';
 
-const Card = ({ children, className, expandableContent, cardContentClassName, openNum, experienceNum, onCardClick, delay }) => {
+const Card = ({ children, className, expandableContent, cardContentClassName, openNum, experienceNum, onCardClick }) => {
 
   var additionalClassName = "";
   if (expandableContent !== null) {
     additionalClassName = " expandable"
-  }
-
-  var style = {};
-  if (delay !== null) {
-    style['animationDelay'] = delay;
   }
 
 //   const [showExpandableContent, setShowExpandableContent] = useState(false);
@@ -31,7 +26,6 @@ const Card = ({ children, className, expandableContent, cardContentClassName, op
   return (
     <div
     className={'card' + additionalClassName + (className ? ' ' + className : '')}
-    style={style}
     onClick={onClick}>
       <CardContent className={cardContentClassName ? cardContentClassName : ''}>
         <div className={'baseContentContainer'}>

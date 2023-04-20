@@ -5,7 +5,7 @@ import ListItem2 from '../listItems/ListItem2';
 import Chip from '../chip/Chip';
 import CardPrimaryText from '../card/CardPrimaryText';
 
-const KGSExperienceCard = ({ openNum, experienceNum, onCardClick, delay }) => {
+const KGSExperienceCard = ({ openNum, experienceNum, onCardClick }) => {
   const company = 'KGS Research';
   const position = 'Programmer (Internship)';
   const location = 'Scarborough, ON, CA';
@@ -28,8 +28,7 @@ const KGSExperienceCard = ({ openNum, experienceNum, onCardClick, delay }) => {
     description={description}
     openNum={openNum}
     experienceNum={experienceNum}
-    onCardClick={onCardClick}
-    delay={delay} />
+    onCardClick={onCardClick} />
   )
 }
 

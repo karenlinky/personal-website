@@ -5,7 +5,7 @@ import ListItem2 from '../listItems/ListItem2';
 import Chip from '../chip/Chip';
 import CardPrimaryText from '../card/CardPrimaryText';
 
-const Achievers1ExperienceCard = ({ openNum, experienceNum, onCardClick, delay }) => {
+const Achievers1ExperienceCard = ({ openNum, experienceNum, onCardClick }) => {
   const company = 'Achievers';
   const position = 'SWE Intern';
   const location = 'Toronto, ON, CA';
@@ -27,8 +27,7 @@ const Achievers1ExperienceCard = ({ openNum, experienceNum, onCardClick, delay }
       description={description}
       openNum={openNum}
       experienceNum={experienceNum}
-      onCardClick={onCardClick}
-      delay={delay} />
+      onCardClick={onCardClick} />
   )
 }
 
