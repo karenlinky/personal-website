@@ -15,7 +15,7 @@
 
     padding-bottom: 5vh;
     margin: 30vh 0 35vh;
-    border-bottom: 2px solid var(--primary-text-color);
+    /* border-bottom: 2px solid var(--primary-text-color); */
     /* margin: 30vh 0 40vh; */
     opacity: 0;
     transition: 1s;
