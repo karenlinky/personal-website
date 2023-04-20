@@ -1,9 +1,11 @@
 @keyframes scrollIndicatorFadeIn {
     0% {
         opacity: 0;
+        cursor: auto;
     }
     100% {
         opacity: 1;
+        cursor: pointer;
     }
 }
 
@@ -36,5 +38,4 @@
     font-size: 4em;
     color: rgb(120, 120, 120);
     animation: scrollIndicatorFadeIn 1s linear 1s forwards, scrollIndicatorAnim 1s infinite;
-    cursor: pointer;
 }

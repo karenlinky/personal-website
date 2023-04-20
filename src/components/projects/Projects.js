@@ -37,7 +37,6 @@ const Projects = () => {
             <ScrollIndicator showIndicator={showingTitle && !showingActualContent} onClick={scrollDown} />
             <ResponsivePage>
                 <PageHeader label={'Projects'} descr={descr} setShowingHeader={setShowingTitle}  />
-                {/* <ContentStartIndicator id={projectsId} /> */}
                 <ScrollObserver threshold={0.4} onInViewChange={setShowingActualContent}>
                     <GenS id={ids.genS}/>
                 </ScrollObserver>
