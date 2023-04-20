@@ -4,18 +4,16 @@ import PageHeader from '../typography/PageHeader';
 import GenS from './GenS';
 import SecretGifta from './SecretGifta';
 import ChefsHat from './ChefsHat';
+import ScrollObserver from '../scrollObserver/ScrollObserver';
 import ScrollIndicator from '../scrollIndicator/ScrollIndicator';
-import ScrollIndicatorTracker from '../scrollIndicator/ScrollIndicatorTracker';
 import ContentStartIndicator from '../misc/ContentStartIndicator';
 
 const Projects = () => {
     const descr = <><div>Over the years, I have completed several projects.</div>
         <div>Each one has presented its own unique set of challenges and here are a few of projects that I am proud of.</div></>
 
-    const [showIndicator, setShowIndicator] = useState(true);
-    const hideIndicator = () => {
-        setShowIndicator(false);
-    }
+    const [showingTitle, setShowingTitle] = useState(false);
+    const [showingActualContent, setShowingActualContent] = useState(false);
 
     const projectsId = 'projects';
   
@@ -28,13 +26,13 @@ const Projects = () => {
 
     return (
         <div className={'fullPageBody'}>
-            <ScrollIndicator showIndicator={showIndicator} onClick={scrollDown} />
+            <ScrollIndicator showIndicator={showingTitle && !showingActualContent} onClick={scrollDown} />
             <ResponsivePage>
-                <PageHeader label={'Projects'} descr={descr} />
+                <PageHeader label={'Projects'} descr={descr} setShowingHeader={setShowingTitle}  />
                 <ContentStartIndicator id={projectsId} />
-                <ScrollIndicatorTracker threshold={0.3} onScrolledIn={hideIndicator}>
+                <ScrollObserver threshold={0.3} onInViewChange={setShowingActualContent}>
                     <GenS />
-                </ScrollIndicatorTracker>
+                </ScrollObserver>
                 <SecretGifta imageOnLeft/>
                 <ChefsHat />
             </ResponsivePage>

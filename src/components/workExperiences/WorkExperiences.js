@@ -4,7 +4,7 @@ import PageHeader from '../typography/PageHeader';
 import Separator from '../sectionSeparator/Separator';
 import ContentStartIndicator from '../misc/ContentStartIndicator';
 import ScrollIndicator from '../scrollIndicator/ScrollIndicator';
-import ScrollIndicatorTracker from '../scrollIndicator/ScrollIndicatorTracker';
+import ScrollObserver from '../scrollObserver/ScrollObserver';
 import MetaExperienceCard from './MetaExperienceCard';
 import Achievers1ExperienceCard from './Achievers1ExperienceCard';
 import Achievers2ExperienceCard from './Achievers2ExperienceCard';
@@ -25,10 +25,12 @@ const WorkExperiences = () => {
     }
   }, [openNum])
 
-  const [showIndicator, setShowIndicator] = useState(true);
-  const hideIndicator = () => {
-    setShowIndicator(false);
-  }
+  const [showingTitle, setShowingTitle] = useState(false);
+  const [showingActualContent, setShowingActualContent] = useState(false);
+  // const [showIndicator, setShowIndicator] = useState(true);
+  // const hideIndicator = () => {
+  //   setShowIndicator(false);
+  // }
 
   const experiencesId = 'experiences';
 
@@ -41,14 +43,14 @@ const WorkExperiences = () => {
 
   return (
     <div className={'fullPageBody'}>
-      <ScrollIndicator showIndicator={showIndicator} onClick={scrollDown} />
+      <ScrollIndicator showIndicator={showingTitle && !showingActualContent} onClick={scrollDown} />
       <ResponsivePage>
-        <PageHeader label={'Work Experiences'} descr={descr}/>
+        <PageHeader label={'Work Experiences'} descr={descr} setShowingHeader={setShowingTitle}/>
         <div>
         <ContentStartIndicator id={experiencesId} />
-        <ScrollIndicatorTracker threshold={.3} onScrolledIn={hideIndicator}>
+        <ScrollObserver threshold={.3} onInViewChange={setShowingActualContent}>
           <MetaExperienceCard openNum={openNum} experienceNum={3} onCardClick={onCardClick} />
-        </ScrollIndicatorTracker>
+        </ScrollObserver>
         <Separator margin={'25'} />
         <Achievers2ExperienceCard openNum={openNum} experienceNum={2} onCardClick={onCardClick} />
         <Separator margin={'25'} />
