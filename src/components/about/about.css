@@ -210,7 +210,7 @@
 
 .languageButton {
     color: var(--primary-text-color);
-    background-color: rgb(67, 67, 67);
+    background-color: var(--icon-button-bg);
     padding: 5px 8px 3px 8px;
     text-align: center;
     display: inline-block;
@@ -224,7 +224,7 @@
 
 .notSelectedButton:hover {
     cursor: pointer;
-    background-color: rgb(94, 94, 94);
+    background-color: var(--icon-button-hover-bg);
 }
 
 .languageSeparator {

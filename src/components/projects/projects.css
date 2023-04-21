@@ -11,8 +11,11 @@
     padding-top: 10vh;
 } */
 
-.projectColumns {
+.projectSectionDetailsSeparator {
     margin-top: 24px;
+}
+
+.projectColumns {
     display: flex;
     height: min-content;
 }
@@ -70,24 +73,86 @@
     margin-top: 25px;
 }
 
+.detailsSelector {
+    /* display: none; */
+    margin-bottom: 2px;
+}
+
+.detailsSelectorButtonContainer {
+    display: inline-block;
+    font-size: 1em;
+    padding: 3px 8px 0;
+    border-radius: 5px;
+}
+
+.listButton {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.imageButton {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.detailsSelectorButtonContainerSelected {
+    background-color: var(--primary-color);
+    cursor: auto;
+}
+
+.detailsSelectorButtonContainerNotSelected {
+    background-color: var(--icon-button-bg);
+    cursor: pointer;
+}
+
+.detailsSelectorButtonContainerNotSelected:hover {
+    background-color: var(--icon-button-hover-bg);
+}
+
+/* .narrowProjectImages {
+    display: none;
+} */
+
+.narrowDetails {
+    display: none;
+}
+
+.narrowTextSection {
+    position: relative;
+}
+
+.narrowProjectImages {
+    display: block;
+}
+
+.hideNarrowText {
+    visibility: hidden;
+}
+
 @media (max-width: 699px) {
     .projectColumns {
+        display: none;
+    }
+
+    .narrowDetails {
         display: block;
     }
+
+    /* .detailsSelector {
+        display: block;
+    } */
     
-    .column {
+    /* .column {
         display: block;
         width: 100%;
         min-height: fit-content;
-    }
+    } */
 
-    .projectImages, .projectImage {
-        /* position: static;
-        -ms-transform: translateX(0);
-        transform: translateX(0);
-        max-height: 200px;
-        margin-top: 10px;
-        margin-bottom: 10px; */
+    /* .imageSection {
         display: none;
-    }
+    } */
+
+    /* .textSection {
+        position: relative;
+    } */
 }
