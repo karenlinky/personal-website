@@ -94,7 +94,7 @@
     padding-left: 20px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
     .aboutContent {
         width: 100%;
     }
@@ -106,7 +106,7 @@
 }
 
 
-@media (max-width: 670px) {
+@media (max-width: 800px) {
     .aboutContent {    
         display: block;
     }
@@ -197,6 +197,14 @@
     position: fixed;
     bottom: 10px;
     right: 10px;
+}
+
+
+
+@media (max-width: 699px) {
+    .icons {
+        display: none;
+    }
 }
 
 
