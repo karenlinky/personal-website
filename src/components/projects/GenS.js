@@ -12,7 +12,7 @@ const GenS = ({ imageOnLeft, id }) => {
     const projectDescr = <>
     <div>As students with busy schedule,
         we recognize the significance of scheduling our activities in advance and abstaining from procrastination.</div>
-        <div>Therefore, we developed an app that enables users to create personalized study schedules based on their preferences and availability.
+        <div>Therefore, we developed an app that enables users to create personalized study schedules based on their preferences and availabilies.
     </div>
     </>
 
@@ -20,7 +20,7 @@ const GenS = ({ imageOnLeft, id }) => {
         <ListItem1 className={'lessSpaceListItem1'}>Built the UI of the auto-generate plan and manually generate plan page</ListItem1>
         <ListItem1>Created date and time picker fragments for reusability purposes</ListItem1>
         <ListItem1>Designed the UI using Figma</ListItem1>
-        <ListItem1>Participated in the process of designing architecture</ListItem1>
+        <ListItem1>Participated in the architecture design process</ListItem1>
     </div>
 
     const projectImage = <img className={'projectImage'} src={screenshot} alt={'Gen S Screenshot'} />

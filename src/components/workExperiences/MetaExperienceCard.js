@@ -17,7 +17,7 @@ const MetaExperienceCard = ({ openNum, experienceNum, onCardClick }) => {
     <ListItem2>Enhanced the <CardPrimaryText>visual appeal</CardPrimaryText> of the webpage to align it better with the current UI design standards</ListItem2>
     <ListItem1>Developed the both the <CardPrimaryText>frontend</CardPrimaryText> and <CardPrimaryText>backend</CardPrimaryText> of the <CardPrimaryText>test-launch feature</CardPrimaryText> of the developer communication platform</ListItem1>
     <ListItem2>Allowed engineers and content designers to <CardPrimaryText>launch a message for testing purposes</CardPrimaryText> without getting content approvals</ListItem2>
-    <ListItem2>Enhanced <CardPrimaryText>efficiency</CardPrimaryText> by preventing users from wasting time waiting for approval</ListItem2>
+    <ListItem2>Enhanced <CardPrimaryText>efficiency</CardPrimaryText> by preventing users from wasting time waiting for approvals</ListItem2>
     <ListItem2>Added logic to <CardPrimaryText>validate and restrict</CardPrimaryText> the recipient type of a test-launch</ListItem2>
     <ListItem2>Designed the <CardPrimaryText>UI</CardPrimaryText> using <CardPrimaryText>Figma</CardPrimaryText></ListItem2>
     <ListItem1>Added the <CardPrimaryText>alert-template feature</CardPrimaryText> to the developer communication platform</ListItem1>

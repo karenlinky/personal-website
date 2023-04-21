@@ -15,8 +15,8 @@ const UltramanRagdoll = ({ imageOnLeft, id }) => {
     </>
 
     const projectInvolvement = <div>
-        <ListItem1 className={'lessSpaceListItem1'}>Used strategy pattern to specify the pivot point used for rotation and scaling of each body parts</ListItem1>
-        <ListItem1>Created translate, rotate and scale parent classes that define the transformation behaviour, and have the body part classes inherit from those parent classes accordingly</ListItem1>
+        <ListItem1 className={'lessSpaceListItem1'}>Used strategy pattern to specify the pivot point of rotation and scaling of each body parts</ListItem1>
+        <ListItem1>Developed parent classes for translation, rotation, and scaling, which determine the transformation behavior of all body parts. Incorporated the desired transformation behaviour to each body part class by inheriting from those parent classes</ListItem1>
         <ListItem1>Used matrix multiplication to apply transformations</ListItem1>
     </div>
 

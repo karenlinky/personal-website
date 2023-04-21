@@ -16,7 +16,7 @@ const SecretGifta = ({ imageOnLeft, id }) => {
 
     const projectInvolvement = <div>
         <ListItem1 className={'lessSpaceListItem1'}>Used Formik and Yup to validate user-input on the frontend</ListItem1>
-        <ListItem1>Used useContext hook to manage modal type message</ListItem1>
+        <ListItem1>Used useContext hook to manage modal type messages</ListItem1>
         <ListItem1>Wrote an algorithm to match users with other participants using a graph data structure</ListItem1>
         <ListItem1>Wrote queries to store and fetch matching results from the database</ListItem1>
     </div>

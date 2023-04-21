@@ -12,7 +12,7 @@ const Achievers2ExperienceCard = ({ openNum, experienceNum, onCardClick }) => {
   const dateRange = '2021 Sept - 2021 Dec';
   const description = <div>
     <div><Chip>ReactJS</Chip><Chip>SCSS</Chip><Chip>Python</Chip><Chip>OOP</Chip></div>
-    <ListItem1>Added <CardPrimaryText>user-input validation</CardPrimaryText> for announcement form</ListItem1>
+    <ListItem1>Added <CardPrimaryText>user-input validation</CardPrimaryText> for the announcement edit form</ListItem1>
     <ListItem2>Used <CardPrimaryText>Formik</CardPrimaryText> and <CardPrimaryText>Yup</CardPrimaryText> to validate user-input on the frontend</ListItem2>
     <ListItem2>Wrote a class to <CardPrimaryText>validate request data</CardPrimaryText> received on the backend</ListItem2>
     <ListItem1>Added styling to images</ListItem1>

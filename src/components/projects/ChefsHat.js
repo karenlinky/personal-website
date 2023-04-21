@@ -15,10 +15,10 @@ const ChefsHat = ({ imageOnLeft, id }) => {
     </>
 
     const projectInvolvement = <div>
-        <ListItem1 className={'lessSpaceListItem1'}>Handled user authentication - creating new account, storing and validating hashed password, signing in/out</ListItem1>
-        <ListItem1>Built a form for users to create and update recipes, as well as update the corresponding content within the database</ListItem1>
+        <ListItem1 className={'lessSpaceListItem1'}>Handled user authentication - creating new accounts, storing and validating hashed password, logging in and out</ListItem1>
+        <ListItem1>Built a form for users to create and edit recipes, and developed the backend to update the corresponding content within the database</ListItem1>
         <ListItem1>Designed SQL table structures</ListItem1>
-        <ListItem1>Wrote queries designe to fetch recipes from the database based on specific keywords</ListItem1>
+        <ListItem1>Wrote queries designed to fetch recipes from the database based on specific keywords</ListItem1>
     </div>
 
     const projectImage = <img className={'projectImage'} src={screenshot} alt={'Chef\'s Hat Screenshot'} />

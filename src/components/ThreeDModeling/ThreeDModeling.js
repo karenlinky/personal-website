@@ -5,20 +5,19 @@ import ScrollIndicator from '../scrollIndicator/ScrollIndicator';
 import Gallery from '../gallery/Gallery';
 import GalleryImage from '../gallery/GalleryImage';
 
-import curryFishball from '../../img/3dModels/CurryFishball.png';
+// import curryFishball from '../../img/3dModels/CurryFishball.png';
 import gameController from '../../img/3dModels/GameController.png';
 import gamingHeadset from '../../img/3dModels/GamingHeadset.png';
 import glock from '../../img/3dModels/Glock.png';
 import katana from '../../img/3dModels/Katana.png';
 import livingRoom from '../../img/3dModels/LivingRoom.png';
 import macBookPro from '../../img/3dModels/MacBookPro.png';
-import salmon from '../../img/3dModels/Salmon.png';
+// import salmon from '../../img/3dModels/Salmon.png';
 
 import '../content/content.css';
 
 const ThreeDModeling = () => {
-    const descr = <><div>Other than coding, I also do 3D modelling as a hobby,</div>
-    <div>and I am thrilled to share some of my creations with you.</div></>
+    const descr = <><div>I also do 3D modelling as a hobby, and I am thrilled to share some of my creations with you.</div></>
 
     const [showingTitle, setShowingTitle] = useState(false);
     const [showingActualContent, setShowingActualContent] = useState(false);
@@ -47,8 +46,8 @@ const ThreeDModeling = () => {
                 <GalleryImage threshold={threshold}><img src={glock} alt={'glock model'} /></GalleryImage>
                 <GalleryImage threshold={threshold}><img src={macBookPro} alt={'Mac Book Pro model'} /></GalleryImage>
                 <GalleryImage threshold={threshold}><img src={livingRoom} alt={'living room model'} /></GalleryImage>
-                <GalleryImage threshold={threshold}><img src={salmon} alt={'salmon model'} /></GalleryImage>
-                <GalleryImage threshold={threshold}><img src={curryFishball} alt={'curry fishball model'} /></GalleryImage>
+                {/* <GalleryImage threshold={threshold}><img src={salmon} alt={'salmon model'} /></GalleryImage>
+                <GalleryImage threshold={threshold}><img src={curryFishball} alt={'curry fishball model'} /></GalleryImage> */}
             </Gallery>
         </ResponsivePage>
         </div>

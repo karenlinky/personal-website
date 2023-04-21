@@ -11,7 +11,7 @@ const Achievers1ExperienceCard = ({ openNum, experienceNum, onCardClick }) => {
   const location = 'Toronto, ON, CA';
   const dateRange = '2021 Jan - 2021 Apr';
   const description = <div>
-    <div><Chip>PHP</Chip></div>
+    <div><Chip>PHP</Chip><Chip>Unit Test</Chip></div>
     <ListItem1>Unit test</ListItem1>
     <ListItem2>Performed <CardPrimaryText>unit testing</CardPrimaryText></ListItem2>
     <ListItem2>Used <CardPrimaryText>PHPUnit</CardPrimaryText> to mock method calls and data</ListItem2>
