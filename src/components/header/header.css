@@ -60,7 +60,22 @@
     }
 }
 
+.narrowMenuContainer {
+    overflow: hidden;
+    min-height: fit-content;
+}
 
+.narrowMenuList {
+    min-height: 0;
+    max-height: 0;
+    transition-duration: 500ms;
+    margin-top: 0;
+}
+
+.showNarrowMenuList {
+    min-height: 100vh;
+    max-height: 100vh;
+}
 
 .menuIcon {
     color: var(--primary-text-color);
@@ -70,6 +85,14 @@
 .menuIcon:hover {
     cursor: pointer;
 }
+
+.menuListItem {
+    display: block;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    padding: 20px 15px;
+}
+
 
 @media (min-width: 700px) {
     .narrowHeaderBar {
