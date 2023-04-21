@@ -2,9 +2,9 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './header.css';
 
-const MenuListItem = ({ label, to }) => {
+const MenuListItem = ({ label, to, closeMenu }) => {
   return (
-    <NavLink className={'menuListItem'} to={to} >{ label }</NavLink>
+    <div onClick={closeMenu}><NavLink className={'menuListItem'} to={to} >{ label }</NavLink></div>
   )
 }
 
