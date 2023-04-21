@@ -11,8 +11,8 @@ const GenS = ({ imageOnLeft, id }) => {
     const projectChips = <div><Chip>Android Development</Chip><Chip>Kotlin</Chip><Chip>UI Design</Chip><Chip>Architecture Design</Chip></div>
     const projectDescr = <>
     <div>As students with busy schedule,
-        we recognize the significance of scheduling our activities in advance and abstaining from procrastination.</div>
-        <div>Therefore, we developed an app that enables users to create personalized study schedules based on their preferences and availabilies.
+        we recognize the significance of scheduling our activities in advance and abstaining from procrastination.
+        Therefore, we developed an app that enables users to create personalized study schedules based on their preferences and availabilies.
     </div>
     </>
 

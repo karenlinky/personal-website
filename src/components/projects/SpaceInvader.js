@@ -10,8 +10,8 @@ const SpaceInvader = ({ imageOnLeft, id }) => {
     const projectParticipationType = 'Personal Project';
     const projectChips = <div><Chip>Java</Chip><Chip>OOP</Chip></div>;
     const projectDescr = <>
-    <div>Space Invader is a popular game in the 1970s and 1980s.</div>
-    <div>The objective of this project is to replicate the game using Java.</div>
+    <div>Space Invader is a popular game in the 1970s and 1980s.
+    The objective of this project is to replicate the game using Java.</div>
     </>
 
     const projectInvolvement = <div>

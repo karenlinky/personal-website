@@ -10,8 +10,8 @@ const UltramanRagdoll = ({ imageOnLeft, id }) => {
     const projectParticipationType = 'Personal Project';
     const projectChips = <div><Chip>Java</Chip><Chip>OOP</Chip></div>;
     const projectDescr = <>
-    <div>Ultraman was one of my favourite character when I was a kid.</div>
-    <div>This project allows users to freely move, rotate, and scale an ultraman's body part, such as the torso, arms, upper and lower legs, through drag and drop.</div>
+    <div>Ultraman was one of my favourite character when I was a kid.
+    This project allows users to freely move, rotate, and scale an ultraman's body part, such as the torso, arms, upper and lower legs, through drag and drop.</div>
     </>
 
     const projectInvolvement = <div>
