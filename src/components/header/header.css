@@ -50,7 +50,7 @@
     transform: scaleX(1);
 }
 
-.active::after {
+.menuItem.active::after {
     transform: scaleX(1);
 }
 
@@ -96,6 +96,10 @@
     color: var(--primary-text-color);
     text-decoration: none;
     padding: 20px 15px;
+}
+
+.menuListItem.active {
+    text-decoration: underline;
 }
 
 
