@@ -1,5 +1,6 @@
 import React from 'react';
 import MenuItem from './MenuItem';
+
 import './header.css';
 
 const MenuBar = () => {

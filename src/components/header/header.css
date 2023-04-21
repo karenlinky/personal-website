@@ -50,6 +50,10 @@
     transform: scaleX(1);
 }
 
+.active::after {
+    transform: scaleX(1);
+}
+
 @media (max-width: 699px) {
     .wideHeaderBar {
         display: none;
