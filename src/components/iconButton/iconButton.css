@@ -1,6 +1,15 @@
+.iconButtonLink {
+    display: inline-block;
+    margin: 0 5px;
+}
+
 .iconButton {
     width: 35px;
     height: 35px;
-    display: inline-block;
-    margin: 0 5px;
+    color: rgb(173, 173, 173);
+    transition-duration: 500ms;
+}
+
+.iconButton:hover {
+    color: rgb(226, 226, 226);
 }

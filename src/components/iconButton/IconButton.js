@@ -1,9 +1,9 @@
 import React from 'react';
 import './iconButton.css';
 
-const IconButton = ({children}) => {
+const IconButton = ({children, to}) => {
   return (
-    <div className={'iconButton'}>{children}</div>
+    <a target="_blank" href={to} className={'iconButtonLink'}>{children}</a>
   )
 }
 
