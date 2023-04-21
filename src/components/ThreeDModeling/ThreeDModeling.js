@@ -17,8 +17,8 @@ import salmon from '../../img/3dModels/Salmon.png';
 import '../content/content.css';
 
 const ThreeDModeling = () => {
-    const descr = <><div>Other than coding, I also do 3D modelling as a hobby.</div>
-    <div>I am thrilled to share some of my creations with you.</div></>
+    const descr = <><div>Other than coding, I also do 3D modelling as a hobby,</div>
+    <div>and I am thrilled to share some of my creations with you.</div></>
 
     const [showingTitle, setShowingTitle] = useState(false);
     const [showingActualContent, setShowingActualContent] = useState(false);
