@@ -74,7 +74,6 @@
     min-height: 0;
     max-height: 0;
     transition-duration: 500ms;
-    margin-top: 0;
 }
 
 .showNarrowMenuList {
@@ -91,11 +90,15 @@
     cursor: pointer;
 }
 
-.menuListItem {
+.menuListItem, .narrowMenuIconGroup {
     display: block;
     color: var(--primary-text-color);
     text-decoration: none;
     padding: 20px 15px;
+}
+
+.narrowMenuIconGroup {
+    padding-top: 30px;
 }
 
 .menuListItem.active {
