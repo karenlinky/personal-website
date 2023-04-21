@@ -17,7 +17,7 @@ import macBookPro from '../../img/3dModels/MacBookPro.png';
 import '../content/content.css';
 
 const ThreeDModeling = () => {
-    const descr = <><div>I also do 3D modelling as a hobby, and I am thrilled to share some of my creations with you.</div></>
+    const descr = <><div>I also do 3D modeling as a hobby, and I am thrilled to share some of my creations!</div></>
 
     const [showingTitle, setShowingTitle] = useState(false);
     const [showingActualContent, setShowingActualContent] = useState(false);
