@@ -13,12 +13,14 @@ const MenuList = () => {
   return (
     <div className={'narrowMenuContainer' + (showMenuList ? ' showNarrowMenuContainer' :  ' hideNarrowMenuContainer')}>
         <FaBars onClick={toggleMenu} className={'menuIcon'}/>
-        <div className={'narrowMenuList' + (showMenuList ? ' showNarrowMenuList' :  ' hideNarrowMenuList')}>
-          <MenuListItem label={'Home'} to={'/home'}/>
-          <MenuListItem label={'Work Experiences'} to={'/work_experiences'}/>
-          <MenuListItem label={'Projects'} to={'projects'}/>
-          <MenuListItem label={'UI Design'} to={'ui_design'}/>
-          <MenuListItem label={'3D Modeling'} to={'3d_modeling'}/>
+        <div className={'narrowMenuScrollable'}>
+          <div className={'narrowMenuList' + (showMenuList ? ' showNarrowMenuList' :  ' hideNarrowMenuList')}>
+            <MenuListItem label={'Home'} to={'/home'}/>
+            <MenuListItem label={'Work Experiences'} to={'/work_experiences'}/>
+            <MenuListItem label={'Projects'} to={'projects'}/>
+            <MenuListItem label={'UI Design'} to={'ui_design'}/>
+            <MenuListItem label={'3D Modeling'} to={'3d_modeling'}/>
+          </div>
         </div>
     </div>
   )
