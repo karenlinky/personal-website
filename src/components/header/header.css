@@ -98,7 +98,7 @@
 }
 
 .narrowMenuIconGroup {
-    padding-top: 30px;
+    padding: 20px 10px 80px;
 }
 
 .menuListItem.active {
@@ -110,4 +110,8 @@
     .narrowHeaderBar {
         display: none;
     }
+}
+
+.narrowMenuScrollable::-webkit-scrollbar {
+    display: none;
 }
