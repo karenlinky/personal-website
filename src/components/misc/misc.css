@@ -1,3 +1,7 @@
-.topOfContent {
+.topOfContent:not(.lessSpaceTopOfContent) {
     padding-top: 10vh;
+}
+
+.lessSpaceTopOfContent {
+    padding-top: 5vh;
 }

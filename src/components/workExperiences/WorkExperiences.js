@@ -43,7 +43,7 @@ const WorkExperiences = () => {
       <ResponsivePage>
         <PageHeader short label={'Work Experiences'} descr={descr} setShowingHeader={setShowingTitle}/>
         <div>
-        <ContentStartIndicator id={experiencesId} />
+        <ContentStartIndicator lessSpace id={experiencesId} />
         <ScrollObserver threshold={.3} onInViewChange={setShowingActualContent}>
           <MetaExperienceCard openNum={openNum} experienceNum={3} onCardClick={onCardClick} />
         </ScrollObserver>
