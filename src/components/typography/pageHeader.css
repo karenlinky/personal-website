@@ -19,8 +19,32 @@
     /* margin: 30vh 0 40vh; */
     opacity: 0;
     transition: 1s;
+
+    display: flex;
 }
 
+.pageHeaderTextContainer {
+    flex: 1;
+}
+
+.pageHeaderTextContainer.hasImage {
+    padding-left: 50px;
+}
+
+.pageHeaderImageWrapper {
+    flex: 0;
+}
+
+.pageHeaderImageContainer {
+    width: 150px;
+    padding: 3px;
+}
+
+.pageHeaderImage {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
 
 .shortHeaderSection {
     margin: 10vh 0 2vh;
@@ -34,4 +58,14 @@
 
 .pageHeader {
     font-size: 2em;
+}
+
+@media (max-width: 699px) {
+    .pageHeaderSection {
+        display: block;
+    }
+
+    .pageHeaderTextContainer.hasImage {
+        padding-left: 0;
+    }
 }
