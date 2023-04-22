@@ -7,6 +7,7 @@ import screenshot from '../../img/spaceInvaderScreenshot.png';
 
 const SpaceInvader = ({ imageOnLeft, id }) => {
     const projectTitle = 'Space Invader';
+    const projectLink = 'https://github.com/karenlinky/space-invader';
     const projectParticipationType = 'Personal Project';
     const projectChips = <div><Chip>Java</Chip><Chip>OOP</Chip></div>;
     const projectDescr = <>
@@ -24,6 +25,7 @@ const SpaceInvader = ({ imageOnLeft, id }) => {
     return (
         <ProjectSection
             projectTitle={projectTitle}
+            projectLink={projectLink}
             projectParticipationType={projectParticipationType}
             projectChips={projectChips}
             projectDescr={projectDescr}

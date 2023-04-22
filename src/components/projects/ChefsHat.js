@@ -7,6 +7,7 @@ import screenshot from '../../img/chefsHatScreenshot.png';
 
 const ChefsHat = ({ imageOnLeft, id }) => {
     const projectTitle = 'Chef\'s Hat';
+    const projectLink = 'https://github.com/karenlinky/chef-s-hat';
     const projectParticipationType = 'Group Project';
     const projectChips = <div><Chip>Web App</Chip><Chip>HTML</Chip><Chip>CSS</Chip><Chip>JavaScript</Chip><Chip>SQL</Chip></div>;
     const projectDescr = <>
@@ -25,6 +26,7 @@ const ChefsHat = ({ imageOnLeft, id }) => {
     return (
         <ProjectSection
             projectTitle={projectTitle}
+            projectLink={projectLink}
             projectParticipationType={projectParticipationType}
             projectChips={projectChips}
             projectDescr={projectDescr}

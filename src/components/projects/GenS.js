@@ -7,6 +7,7 @@ import screenshot from '../../img/GenSScreenshot.jpg';
 
 const GenS = ({ imageOnLeft, id }) => {
     const projectTitle = 'Gen S';
+    const projectLink = 'https://github.com/karenlinky/gen-s';
     const projectParticipationType = 'Group Project';
     const projectChips = <div><Chip>Android Development</Chip><Chip>Kotlin</Chip><Chip>UI Design</Chip><Chip>Architecture Design</Chip></div>
     const projectDescr = <>
@@ -27,6 +28,7 @@ const GenS = ({ imageOnLeft, id }) => {
     return (
         <ProjectSection
             projectTitle={projectTitle}
+            projectLink={projectLink}
             projectParticipationType={projectParticipationType}
             projectChips={projectChips}
             projectDescr={projectDescr}

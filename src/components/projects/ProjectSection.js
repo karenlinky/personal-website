@@ -1,17 +1,24 @@
 import React, { useState, useCallback } from 'react';
 import { useInView } from 'react-intersection-observer';
-import { FaListAlt, FaImage } from 'react-icons/fa';
+import { FaGithub, FaListAlt, FaImage } from 'react-icons/fa';
 import ListItemHeader from '../listItems/ListItemHeader';
 import './projects.css';
 
 
-const ProjectSection = ({ projectTitle, projectParticipationType, projectChips, projectDescr, projectInvolvement, projectImage, className, imageOnLeft, id }) => {
+const ProjectSection = ({ projectTitle, projectLink, projectParticipationType, projectChips, projectDescr, projectInvolvement, projectImage, className, imageOnLeft, id }) => {
 
     const { ref, inView } = useInView({threshold: 0.4})
 
     const generalDescription = <div>
         <div className={'generalDescription'}>
-            <span className={'projectTitle'}>{projectTitle}</span>
+            {projectLink ?
+                <>
+                <a target={'_blank'} rel={'noreferrer'} href={projectLink} className={'projectLinkContainer'}><span className={'projectTitle'}>{projectTitle}</span>
+                <span className={'projectLink'}><FaGithub /></span></a>
+                </> :
+                <span className={'projectTitle'}>{projectTitle}</span>
+            }
+            <div/>
             <span className={'participationType'}> -- {projectParticipationType}</span>
         </div>
         <div className={'projectDescr'}>{projectDescr}</div>

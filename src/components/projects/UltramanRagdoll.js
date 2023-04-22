@@ -7,6 +7,7 @@ import screenshot from '../../img/ultramanRagdollScreenshot.png';
 
 const UltramanRagdoll = ({ imageOnLeft, id }) => {
     const projectTitle = 'Ultraman Ragdoll';
+    const projectLink = 'https://github.com/karenlinky/ultraman-ragdoll';
     const projectParticipationType = 'Personal Project';
     const projectChips = <div><Chip>Java</Chip><Chip>OOP</Chip></div>;
     const projectDescr = <>
@@ -24,6 +25,7 @@ const UltramanRagdoll = ({ imageOnLeft, id }) => {
     return (
         <ProjectSection
             projectTitle={projectTitle}
+            projectLink={projectLink}
             projectParticipationType={projectParticipationType}
             projectChips={projectChips}
             projectDescr={projectDescr}

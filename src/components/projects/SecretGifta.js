@@ -7,6 +7,7 @@ import screenshot from '../../img/secretGiftaScreenshot.png';
 
 const SecretGifta = ({ imageOnLeft, id }) => {
     const projectTitle = 'Secret Gifta';
+    const projectLink = 'https://github.com/karenlinky/secret-gifta';
     const projectParticipationType = 'Personal Project';
     const projectChips = <div><Chip>Web App</Chip><Chip>ReactJS</Chip><Chip>CSS</Chip><Chip>Responsive frontend</Chip><Chip>Python</Chip><Chip>SQL</Chip></div>;
     const projectDescr = <>
@@ -25,6 +26,7 @@ const SecretGifta = ({ imageOnLeft, id }) => {
     return (
         <ProjectSection
             projectTitle={projectTitle}
+            projectLink={projectLink}
             projectParticipationType={projectParticipationType}
             projectChips={projectChips}
             projectDescr={projectDescr}
