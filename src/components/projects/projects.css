@@ -121,9 +121,9 @@
     position: relative;
 }
 
-.narrowProjectImages {
+/* .narrowProjectImages {
     display: block;
-}
+} */
 
 .hideNarrowText {
     visibility: hidden;
