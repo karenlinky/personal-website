@@ -37,6 +37,7 @@
     animation-name: nameFadeIn;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    font-weight: 300;
 }
 
 .nameColor {
@@ -54,8 +55,9 @@
 
 .nameDescriptionDivider {
     width: 0;
-    height: 5px;
+    height: 3px;
     background-color: var(--primary-text-color);
+    /* background-color: var(--primary-color); */
     margin: 15px 0;
 
     animation-name: expandNameDescriptionDivider;
@@ -79,6 +81,7 @@
     opacity: 0;
     padding: 20px 30px;
     background-color: rgb(17, 17, 17);
+    /* border: 1px solid var(--primary-text-color); */
     border: 1px solid var(--primary-color);
     border-radius: 10px;
     animation-name: descriptionContainerFadein;
@@ -169,6 +172,33 @@
 }
 
 .descriptionPurple {
+    color: rgb(196, 231, 255);
+}
+
+.descriptionBlue {
+    /* color: rgb(131, 154, 229); */
+    color: var(--primary-color);
+}
+
+.descriptionRed {
+    /* color: rgb(109, 148, 255); */
+    color: grey;
+}
+
+.descriptionGreen {
+    color: rgb(255, 255, 255);
+}
+
+.descriptionYellow{
+    /* color: rgb(165, 171, 255); */
+    color: var(--primary-color);
+}
+
+.descriptionGrey{
+    color: grey;
+}
+
+/* .descriptionPurple {
     color: rgb(240, 139, 218);
 }
 
@@ -190,7 +220,7 @@
 
 .descriptionGrey{
     color: grey;
-}
+} */
 
 
 .icons {
