@@ -1,7 +1,4 @@
 .projectSection {
-    /* margin-top: 250px; */
-    /* border-top: 0.5px solid var(--primary-text-color); */
-    /* border-bottom: 0.5px solid var(--primary-text-color); */
     padding: 10vh 0;
     opacity: 0;
     transition: 1000ms;
@@ -165,21 +162,11 @@
         display: block;
     }
 
-    /* .detailsSelector {
-        display: block;
-    } */
-    
-    /* .column {
-        display: block;
-        width: 100%;
-        min-height: fit-content;
-    } */
+    .projectSection {
+        padding: 40vh 0;
+    }
 
-    /* .imageSection {
-        display: none;
-    } */
-
-    /* .textSection {
-        position: relative;
-    } */
+    .projectSection:first-of-type {
+        padding-top: 0vh;
+    }
 }

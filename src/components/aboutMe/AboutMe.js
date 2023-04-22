@@ -15,7 +15,7 @@ const AboutMe = () => {
     return (
         <div className={'fullPageBody'}>
             <ResponsivePage>
-                <PageHeader threshold={0} label={'I\'m Karen'} descr={descr} img={{img: profilePic, alt: 'profile picture'}}/>
+                <PageHeader shortTopPadding threshold={0} label={'I\'m Karen'} descr={descr} img={{img: profilePic, alt: 'profile picture'}}/>
             </ResponsivePage>
         </div>
     )

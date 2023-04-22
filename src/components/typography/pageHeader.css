@@ -68,4 +68,13 @@
     .pageHeaderTextContainer.hasImage {
         padding-left: 0;
     }
+
+    .pageHeaderSection {
+        margin-top: 25vh;
+        margin-bottom: 25vh;
+    }
+
+    .shortTopPadding {
+        margin-top: 5vh;
+    }
 }
