@@ -47,7 +47,9 @@ const ProjectSection = ({ projectTitle, projectParticipationType, projectChips, 
             {projectInvolvement}
         </div> 
         <div className={'narrowProjectImages'}>
-            {showSectionNumber === imageTabNum ?projectImage : null}
+            <div className={'narrowProjectRelative'}>
+                {showSectionNumber === imageTabNum ?projectImage : null}
+            </div>
         </div>
     </div>
 
