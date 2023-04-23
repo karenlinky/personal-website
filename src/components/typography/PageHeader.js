@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ScrollObserver from '../scrollObserver/ScrollObserver';
 import './pageHeader.css';
 
-const PageHeader = ({ label, threshold, descr, setShowingHeader, short, img, shortTopPadding }) => {
+const PageHeader = ({ label, threshold, descr, setShowingHeader, short, img, shortTopPadding, fixPosition }) => {
 
   const [inView, setInView] = useState(false);
   const [descrInView, setDescrInView] = useState(false);
@@ -23,7 +23,10 @@ const PageHeader = ({ label, threshold, descr, setShowingHeader, short, img, sho
 
   return (
     <>
-      <div className={'pageHeaderSection' + (inView || descrInView ? ' showHeader' : '') + (short ? ' shortHeaderSection' : '') + (shortTopPadding ? ' shortTopPadding' : '')}>
+      <div className={'pageHeaderSection' +
+      (inView || descrInView ? ' showHeader' : '') +
+      (short ? ' shortHeaderSection' : '') +
+      (shortTopPadding ? ' shortTopPadding' : '')}>
         {img ?
         <div className={'pageHeaderImageWrapper'}>
           <div className={'pageHeaderImageContainer'}>
