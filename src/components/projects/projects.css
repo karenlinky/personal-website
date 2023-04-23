@@ -1,15 +1,9 @@
 .projectSection {
     margin-top: 10vh;
-    padding: 10vh 0;
+    padding: 5vh 0;
     opacity: 0;
-    transition: 1000ms;
-}
-
-.projectSection {
-    margin-top: 10vh;
-    padding: 10vh 0;
-    opacity: 0;
-    transition: 2000ms;
+    transition: 500ms;
+    transform: translateY(15vh);
 }
 
 .projectSectionDetailsSeparator {
@@ -27,6 +21,12 @@
 
 .showProjectSection {
     opacity: 1;
+    transform: translateY(0);
+}
+
+.hasBeenInView {
+    opacity: 0;
+    transform: translateY(0);
 }
 
 .imageSection {
@@ -64,6 +64,7 @@
 .projectTitle {
     font-size: 2.5em;
     color: var(--primary-color);
+    margin-left: -2px;
 }
 
 .projectLink {
@@ -78,7 +79,7 @@
 }
 
 .participationType {
-    /* margin-left: 10px; */
+    /* margin-left: 23px; */
 }
 
 .projectChipsContainer {

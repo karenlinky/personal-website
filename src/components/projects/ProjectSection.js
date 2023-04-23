@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { FaGithub, FaListAlt, FaImage } from 'react-icons/fa';
 import ListItemHeader from '../listItems/ListItemHeader';
@@ -8,6 +8,14 @@ import './projects.css';
 const ProjectSection = ({ projectTitle, projectLink, projectParticipationType, projectChips, projectDescr, projectInvolvement, projectImage, className, imageOnLeft, id }) => {
 
     const { ref, inView } = useInView({threshold: 0.2})
+
+    const [ hasBeenInView, setHasBeenInView ] = useState(false);
+
+    useEffect(() => {
+        if (inView) {
+            setHasBeenInView(true);
+        }
+    }, [inView, setHasBeenInView]);
 
     const generalDescription = <div>
         <div className={'generalDescription'}>
@@ -19,7 +27,7 @@ const ProjectSection = ({ projectTitle, projectLink, projectParticipationType, p
                 <span className={'projectTitle'}>{projectTitle}</span>
             }
             <div/>
-            <span className={'participationType'}> -- {projectParticipationType}</span>
+            <span className={'participationType'}>{projectParticipationType}</span>
         </div>
         <div className={'projectDescr'}>{projectDescr}</div>
     </div>
@@ -65,7 +73,7 @@ const ProjectSection = ({ projectTitle, projectLink, projectParticipationType, p
   return (
     <>
     <div id={id} ref={ref}>
-        <div className={'projectSection' + (inView ? ' showProjectSection' : '') + (className ? ' ' + className : '')}>
+        <div className={'projectSection' + (inView ? ' showProjectSection' : (hasBeenInView ? ' hasBeenInView' : '')) + (className ? ' ' + className : '')}>
             {generalDescription}
             <div className={'projectSectionDetailsSeparator'} />
             <div className={'narrowDetails'}>
