@@ -23,7 +23,7 @@
     height: fit-content;
     max-width: 100%;
     padding: 0 20px;
-    transition-duration: 1000ms;
+    transition-duration: 1500ms;
 }
 
 .galleryImage > img {
