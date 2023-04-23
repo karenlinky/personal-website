@@ -5,20 +5,16 @@
     max-width: 1200px; 
     padding: 20px;
     margin: auto;
-    /* padding-top: 17vh; */
     padding-top: calc(50vh - 320px);
-    /* display: flex; */
     display: block;
 }
 
 .nameDescriptionContainer, .codeIconContainer {
     display: inline-block;
-    /* flex: 1; */
     width: 50%;
 }
 
 .codeIconContainer {
-    /* max-height: 500px; */
     max-width: 50%;
     text-align: center;
 }
@@ -58,7 +54,6 @@
     width: 0;
     height: 3px;
     background-color: var(--primary-text-color);
-    /* background-color: var(--primary-color); */
     margin: 15px 0;
 
     animation-name: expandNameDescriptionDivider;
@@ -83,7 +78,6 @@
     padding: 20px 30px;
     background-color: rgb(17, 17, 17);
     border: 1px solid var(--primary-text-color);
-    /* border: 1px solid var(--primary-color); */
     border-radius: 10px;
     animation-name: descriptionContainerFadein;
     animation-duration: 0.5s;
@@ -155,17 +149,14 @@
 }
 
 .descriptionLine3 {
-    /* animation-delay: 2s; */
     animation-delay: 2.4s;
 }
 
 .descriptionLine4 {
-    /* animation-delay: 3s; */
     animation-delay: 3s;
 }
 
 .descriptionLine5 {
-    /* animation-delay: 3.8s; */
     animation-delay: 3.8s;
 }
 
@@ -178,13 +169,11 @@
 }
 
 .descriptionBlue {
-    /* color: rgb(131, 154, 229); */
     color: var(--primary-color);
     color: rgb(194, 238, 255);
 }
 
 .descriptionRed {
-    /* color: rgb(109, 148, 255); */
     color: grey;
 }
 
@@ -193,7 +182,6 @@
 }
 
 .descriptionYellow{
-    /* color: rgb(165, 171, 255); */
     color: rgb(194, 238, 255);
 }
 
