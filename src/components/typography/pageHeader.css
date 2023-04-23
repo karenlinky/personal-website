@@ -14,13 +14,18 @@
     border: 2px solid var(--primary-text-color); */
 
     padding-bottom: 5vh;
-    margin: 30vh 0 35vh;
+    margin: 30vh 0 45vh;
     /* border-bottom: 2px solid var(--primary-text-color); */
     /* margin: 30vh 0 40vh; */
     opacity: 0;
     transition: 1s;
 
     display: flex;
+}
+
+.shortTopPadding {
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .pageHeaderTextContainer {
@@ -69,7 +74,7 @@
         padding-left: 0;
     }
 
-    .pageHeaderSection {
+    .pageHeaderSection:not(.shortTopPadding) {
         margin-top: 25vh;
         margin-bottom: 25vh;
     }
