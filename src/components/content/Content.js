@@ -8,6 +8,7 @@ import ThreeDModeling from '../ThreeDModeling/ThreeDModeling';
 import Projects from '../projects/Projects';
 import AboutMe from "../aboutMe/AboutMe";
 import HeaderSpace from '../header/HeaderSpace';
+import Redirection from "../redirection/Redirection";
 import './content.css'
 
 const Content = () => {
@@ -23,6 +24,7 @@ const Content = () => {
           <Route path={'/ui_design'} element={<UIDesign />} />
           <Route path={'/3d_modeling'} element={<ThreeDModeling />} />
           <Route path={'/about_me'} element={<AboutMe />} />
+          <Route path={'*'} element={<Redirection />} />
         </Routes>
       </BrowserRouter>
     </div>

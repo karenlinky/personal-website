@@ -5,17 +5,25 @@ import './pageHeader.css';
 const PageHeader = ({ label, threshold, descr, setShowingHeader, short, img, shortTopPadding }) => {
 
   const [inView, setInView] = useState(false);
+  const [descrInView, setDescrInView] = useState(false);
 
   const updateInView = (newInView) => {
     setInView(newInView);
     if (setShowingHeader != null) {
-      setShowingHeader(newInView)
+      setShowingHeader(newInView || descrInView)
+    }
+  }
+
+  const updateDescrInView = (newInView) => {
+    setDescrInView(newInView);
+    if (setShowingHeader != null) {
+      setShowingHeader(newInView || inView)
     }
   }
 
   return (
     <>
-      <div className={'pageHeaderSection' + (inView ? ' showHeader' : '') + (short ? ' shortHeaderSection' : '') + (shortTopPadding ? ' shortTopPadding' : '')}>
+      <div className={'pageHeaderSection' + (inView || descrInView ? ' showHeader' : '') + (short ? ' shortHeaderSection' : '') + (shortTopPadding ? ' shortTopPadding' : '')}>
         {img ?
         <div className={'pageHeaderImageWrapper'}>
           <div className={'pageHeaderImageContainer'}>
@@ -31,7 +39,9 @@ const PageHeader = ({ label, threshold, descr, setShowingHeader, short, img, sho
             </ScrollObserver>
           </div>
           {descr ? <div className="pageHeaderDescription">
-            {descr}
+            <ScrollObserver threshold={0} onInViewChange={updateDescrInView}>
+              {descr}
+            </ScrollObserver>
           </div> : null}
         </div>
       </div>

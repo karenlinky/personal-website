@@ -23,8 +23,8 @@ const About = () => {
             <div className={'nameDescriptionDivider'} />
             <AboutDescription />
             <Separator margin={'75'} />
-            <ButtonLink className={'fadeIn'} label={'About Me'} to={'/about_me'}/>
-            <ButtonLink secondary addPadding className={'fadeIn'} label={'My Experiences'} to={'/work_experiences'}/>
+            <ButtonLink addPadding className={'fadeIn'} label={'About Me'} to={'/about_me'}/>
+            <ButtonLink secondary className={'fadeIn'} label={'My Experiences'} to={'/work_experiences'}/>
           </div>
           <div className={'codeIconContainer'}>
             {/* {showAnimation ? <Spline scene="https://prod.spline.design/B9pJa24JBcb8CusO/scene.splinecode" /> : null} */}
