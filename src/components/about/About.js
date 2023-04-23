@@ -17,8 +17,8 @@ const About = () => {
               KA YING
             </div>
             <div className={'name notHighlightable'}>
-                <span className={'nameColor'}>KAREN</span> LIN
-                {/* KAREN LIN */}
+                {/* <span className={'nameColor'}>KAREN</span> LIN */}
+                KAREN LIN
             </div>
             <div className={'nameDescriptionDivider'} />
             <AboutDescription />

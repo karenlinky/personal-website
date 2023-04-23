@@ -27,7 +27,7 @@ const PageHeader = ({ label, threshold, descr, setShowingHeader, short, img, sho
         {img ?
         <div className={'pageHeaderImageWrapper'}>
           <div className={'pageHeaderImageContainer'}>
-            <img className={'pageHeaderImage'} src={img.img} alt={img.alt} />
+            <img className={'pageHeaderImage fadeIn'} src={img.img} alt={img.alt} />
           </div>
         </div> :
         null
