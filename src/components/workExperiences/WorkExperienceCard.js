@@ -9,7 +9,7 @@ const WorkExperienceCard = ({ company, position, location, dateRange, descriptio
   const [inView, setInView] = useState(false)
 
   return (
-    <ScrollObserver threshold={.3} onInViewChange={setInView}>
+    <ScrollObserver threshold={.2} onInViewChange={setInView}>
       <Card
           className={'workExperiencesCard' + (inView ? '' : ' hideCard')}
           cardContentClassName={'workExperiencesContent'}

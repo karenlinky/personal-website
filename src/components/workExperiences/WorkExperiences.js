@@ -44,7 +44,7 @@ const WorkExperiences = () => {
         <PageHeader short label={'Work Experiences'} descr={descr} setShowingHeader={setShowingTitle}/>
         <div>
         <ContentStartIndicator lessSpace id={experiencesId} />
-        <ScrollObserver threshold={.3} onInViewChange={setShowingActualContent}>
+        <ScrollObserver threshold={.2} onInViewChange={setShowingActualContent}>
           <MetaExperienceCard openNum={openNum} experienceNum={3} onCardClick={onCardClick} />
         </ScrollObserver>
         <Separator margin={'25'} />

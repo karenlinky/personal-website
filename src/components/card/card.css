@@ -112,3 +112,25 @@
 .expandableArrowButton {
     color: grey;
 }
+
+
+
+@media (max-width: 699px) {
+    /* .card {
+        padding-left: 10px;
+        padding-right: 10px;
+    } */
+
+    .workExperiencesContent {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+
+@media (max-width: 399px) {
+    .workExperiencesContent {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}

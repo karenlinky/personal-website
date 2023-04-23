@@ -16,7 +16,7 @@ const Achievers2ExperienceCard = ({ openNum, experienceNum, onCardClick }) => {
     <ListItem1>Added <CardPrimaryText>user-input validation</CardPrimaryText> for the announcement edit form</ListItem1>
     <ListItem2>Used <CardPrimaryText>Formik</CardPrimaryText> and <CardPrimaryText>Yup</CardPrimaryText> to validate user-input on the frontend</ListItem2>
     <ListItem2>Wrote a class to <CardPrimaryText>validate request data</CardPrimaryText> received on the backend</ListItem2>
-    <ListItem1>Added styling to images of regognition post edit form</ListItem1>
+    <ListItem1>Added styling to images/GIFs of regognition post edit form</ListItem1>
     <ListItem2>Created a <CardPrimaryText>blurred</CardPrimaryText> copy of an image, <CardPrimaryText>proportionally enlarged</CardPrimaryText> it, and used it as a background</ListItem2>
     <ListItem2>Put the original image on top of the blurried image</ListItem2>
     <ImageExample />
