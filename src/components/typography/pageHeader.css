@@ -74,7 +74,7 @@
         padding-left: 0;
     }
 
-    .pageHeaderSection:not(.shortTopPadding) {
+    .pageHeaderSection:not(.shortTopPadding):not(.shortHeaderSection) {
         margin-top: 25vh;
         margin-bottom: 25vh;
     }
