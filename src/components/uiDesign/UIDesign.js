@@ -19,7 +19,7 @@ import '../content/content.css';
 
 const UIDesign = () => {
     const descr = <><div>While I am a software engineer, I also participate in the UI design process.</div>
-    <div>I have gained experience in UI design through my internships and projects, and here are a few designs I made with Figma.</div></>
+    <div>I have gained experience in UI design through my internships and projects, and here are a few designs I made for a project using Figma.</div></>
 
     const [showingTitle, setShowingTitle] = useState(false);
     const [showingActualContent, setShowingActualContent] = useState(false);
