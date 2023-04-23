@@ -5,7 +5,8 @@
     max-width: 1200px; 
     padding: 20px;
     margin: auto;
-    padding-top: 17vh;
+    /* padding-top: 17vh; */
+    padding-top: calc(50vh - 320px);
     /* display: flex; */
     display: block;
 }
