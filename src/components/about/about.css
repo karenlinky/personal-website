@@ -38,7 +38,6 @@
     animation-name: nameFadeIn;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    font-weight: 400;
 }
 
 .nameColor {
@@ -92,7 +91,6 @@
 
 .description {
     font-family: monospace, 'Courier New', Courier;
-    /* font-family:'Courier New', Courier, monospace; */
 }
 
 .descriptionIndented {
@@ -201,29 +199,29 @@
     color: grey;
 }
 
-/* .descriptionPurple {
+.hovering>.descriptionPurple {
     color: rgb(240, 139, 218);
 }
 
-.descriptionBlue {
+.hovering>.descriptionBlue {
     color: rgb(131, 154, 229);
 }
 
-.descriptionRed {
+.hovering>.descriptionRed {
     color: rgb(234, 132, 132);
 }
 
-.descriptionGreen {
+.hovering>.descriptionGreen {
     color: rgb(144, 230, 144);
 }
 
-.descriptionYellow{
+.hovering>.descriptionYellow{
     color: rgb(242, 242, 133);
 }
 
-.descriptionGrey{
+.hovering>.descriptionGrey{
     color: grey;
-} */
+}
 
 
 .icons {

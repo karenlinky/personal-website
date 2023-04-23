@@ -5,6 +5,8 @@ import DescriptionLanguageButton from './DescriptionLanguageButton';
 import './about.css';
 
 const AboutDescription = () => {
+
+    const [hovering, setHovering] = useState(false);
   
     const descriptionTag = <>
         <span className={'descriptionPurple'}>{'const '}</span> 
@@ -40,12 +42,12 @@ const AboutDescription = () => {
     </>
 
     const ReactCode = <>
-    <DescriptionLine lineNumber={'1'} content={descriptionTag} />
+    <DescriptionLine hovering={hovering} lineNumber={'1'} content={descriptionTag} />
     <div className={'descriptionIndented'}>
-        <DescriptionLine lineNumber={'2'} content={descriptionSchool} />
-        <DescriptionLine lineNumber={'3'} content={descriptionDegree} />
-        <DescriptionLine lineNumber={'4'} content={descriptionMajor} />
-        <DescriptionLine lineNumber={'5'} content={descriptionPeriod}/>
+        <DescriptionLine hovering={hovering} lineNumber={'2'} content={descriptionSchool} />
+        <DescriptionLine hovering={hovering} lineNumber={'3'} content={descriptionDegree} />
+        <DescriptionLine hovering={hovering} lineNumber={'4'} content={descriptionMajor} />
+        <DescriptionLine hovering={hovering} lineNumber={'5'} content={descriptionPeriod}/>
     </div>
     </>;
 
@@ -86,12 +88,12 @@ const AboutDescription = () => {
     </>
 
     const PythonCode = <>
-    <DescriptionLine lineNumber={'1'} content={pythonTag} />
+    <DescriptionLine hovering={hovering} lineNumber={'1'} content={pythonTag} />
     <div className={'descriptionIndented'}>
-        <DescriptionLine lineNumber={'2'} content={pythonSchool} />
-        <DescriptionLine lineNumber={'3'} content={pythonDegree} />
-        <DescriptionLine lineNumber={'4'} content={pythonMajor} />
-        <DescriptionLine lineNumber={'5'} content={pythonPeriod}/>
+        <DescriptionLine hovering={hovering} lineNumber={'2'} content={pythonSchool} />
+        <DescriptionLine hovering={hovering} lineNumber={'3'} content={pythonDegree} />
+        <DescriptionLine hovering={hovering} lineNumber={'4'} content={pythonMajor} />
+        <DescriptionLine hovering={hovering} lineNumber={'5'} content={pythonPeriod}/>
     </div>
     </>;
 
@@ -107,7 +109,7 @@ const AboutDescription = () => {
 
 
     return (
-        <div className={'descriptionContainer'}>
+        <div className={'descriptionContainer'} onMouseEnter={() => {setHovering(true)}} onMouseLeave={() => {setHovering(false)}}>
             <span className={'descriptionScrollableContainer'}>
             <DescriptionLanguageButton selected={openCode === 0} onClick={openReact}><FaReact /></DescriptionLanguageButton>
             <DescriptionLanguageButton selected={openCode === 1} onClick={openPython}><FaPython /></DescriptionLanguageButton>
