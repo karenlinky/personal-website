@@ -1,5 +1,5 @@
 import React from 'react';
-import PrimaryButton from '../buttons/PrimaryButtonLink';
+import ButtonLink from '../buttons/ButtonLink';
 import Separator from '../sectionSeparator/Separator';
 import IconButtonGroup from '../iconButton/IconButtonGroup';
 import AboutDescription from './AboutDescription';
@@ -23,7 +23,8 @@ const About = () => {
             <div className={'nameDescriptionDivider'} />
             <AboutDescription />
             <Separator margin={'75'} />
-            <PrimaryButton className={'fadeIn'} label={'About me'} to={'/about_me'}/>
+            <ButtonLink className={'fadeIn'} label={'About Me'} to={'/about_me'}/>
+            <ButtonLink secondary addPadding className={'fadeIn'} label={'My Experiences'} to={'/work_experiences'}/>
           </div>
           <div className={'codeIconContainer'}>
             {/* {showAnimation ? <Spline scene="https://prod.spline.design/B9pJa24JBcb8CusO/scene.splinecode" /> : null} */}
