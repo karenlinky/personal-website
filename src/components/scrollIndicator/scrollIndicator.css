@@ -12,15 +12,15 @@
 @keyframes scrollIndicatorAnim {
     0% {
         color: rgb(120, 120, 120);
-        font-size: 3em;
+        font-size: 4em;
     }
     50% {
         color: rgb(255, 255, 255);
-        font-size: 2em;
+        font-size: 3em;
     }
     100% {
         color: rgb(120, 120, 120);
-        font-size: 3em;
+        font-size: 4em;
     }
 }
 
