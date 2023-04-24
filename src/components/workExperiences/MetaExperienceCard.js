@@ -22,7 +22,7 @@ const MetaExperienceCard = ({ openNum, experienceNum, onCardClick }) => {
     <ListItem2>Designed the <CardPrimaryText>UI</CardPrimaryText> using <CardPrimaryText>Figma</CardPrimaryText></ListItem2>
     <ListItem1>Added the <CardPrimaryText>alert-template feature</CardPrimaryText> to the developer communication platform</ListItem1>
     <ListItem2>Allowed users to <CardPrimaryText>select a template from a dropdown</CardPrimaryText> and compose a message using the selected template</ListItem2>
-    <ListItem2>Increased <CardPrimaryText>efficiency</CardPrimaryText> by sparing users from having to write a message from scratch</ListItem2>
+    <ListItem2>Increased <CardPrimaryText>efficiency</CardPrimaryText> by eliminating the need for users to compose a message from scratch</ListItem2>
   </div>;
   // const description = <div>
   //   <div><Chip>ReactJS</Chip><Chip>CSS</Chip><Chip>Hack (PHP)</Chip><Chip>UI Design</Chip></div>

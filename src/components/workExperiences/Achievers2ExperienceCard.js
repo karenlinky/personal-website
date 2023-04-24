@@ -22,7 +22,7 @@ const Achievers2ExperienceCard = ({ openNum, experienceNum, onCardClick }) => {
     <ImageExample />
     <ListItem1>Fixed <CardPrimaryText>frontend</CardPrimaryText> and <CardPrimaryText>backend</CardPrimaryText> bugs</ListItem1>
     <ListItem2>Made the UI more <CardPrimaryText>responsive</CardPrimaryText> by removing unwanted white spaces according to the screensize</ListItem2>
-    <ListItem2>Fixed <CardPrimaryText>permission issue</CardPrimaryText></ListItem2>
+    <ListItem2>Fixed <CardPrimaryText>permission issues</CardPrimaryText></ListItem2>
     <ListItem2>Fixed bug occurred while fetching data from GCS</ListItem2>
     <ListItem1>Handled storing images</ListItem1>
     <ListItem2>Wrote scripts to <CardPrimaryText>scale</CardPrimaryText> and <CardPrimaryText>crop</CardPrimaryText> images/GIFs, and upload them to a <CardPrimaryText>GCS bucket</CardPrimaryText></ListItem2>
