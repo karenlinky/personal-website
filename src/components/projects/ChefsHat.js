@@ -5,7 +5,7 @@ import ProjectSection from './ProjectSection';
 
 import screenshot from '../../img/chefsHatScreenshot.png';
 
-const ChefsHat = ({ imageOnLeft, id }) => {
+const ChefsHat = ({ imageOnLeft, id, openDetail }) => {
     const projectTitle = 'Chef\'s Hat';
     const projectLink = 'https://github.com/karenlinky/chef-s-hat';
     const projectParticipationType = 'Group Project';
@@ -34,6 +34,7 @@ const ChefsHat = ({ imageOnLeft, id }) => {
             projectImage={projectImage}
             imageOnLeft={imageOnLeft}
             id={id}
+            openDetail={openDetail}
         />
     )
 }

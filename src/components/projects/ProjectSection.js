@@ -11,11 +11,12 @@ const ProjectSection = (
     projectImage,
     className,
     imageOnLeft,
-    id }) => {
+    id,
+    openDetail }) => {
   return (
     <>
     <div id={id} className={'projectCardResponsive'}>
-      <div className={'projectCard'}>
+      <div className={'projectCard'} onClick={openDetail}>
         <div className={'projectContentContainer'}>
           <div className={'projectImageContainer'}>
             <img src={projectImage} className={'projectImage'} />

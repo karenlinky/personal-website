@@ -1,0 +1,53 @@
+@keyframes openModal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+}
+
+.modalOverlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.836);
+}
+
+.modalWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: calc(80vh - 80px);
+    background-color: var(--card-bg-color);
+    border: rgb(78, 78, 78) 1px solid;
+    border-radius: 15px;
+    max-width: 1000px;
+    max-height: 700px;
+    padding: 20px;
+
+    opacity: 0;
+    animation: openModal 500ms forwards;
+}
+
+.closeModalButton {
+    font-size: 1.5em;
+    cursor: pointer;
+    display: inline-block;
+}
+
+@media (max-width: 450px) {
+    .modalWrapper {
+        width: 95%;
+    }
+}
