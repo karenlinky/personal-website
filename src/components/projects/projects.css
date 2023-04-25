@@ -1,4 +1,110 @@
-.projectSection {
+.projectCardResponsive {
+    padding: 6px 6px;
+    float: left;
+    width: 33.3333333333%;
+    /* height: 500px; */
+}
+
+.projectCard {
+    color: var(--primary-text-color);
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
+    cursor: pointer;
+    transition-duration: 500ms;
+    /* height: 100%; */
+}
+
+.projectCard:hover {
+    transform: scale(1.02);
+    background-color: var(--card-bg-hover);
+}
+
+.projectImageContainer {
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.projectImage {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: grayscale(50%) brightness(70%);
+}
+
+.projectImage:hover {
+    /* filter: blur(5px) grayscale(20%) brightness(20%); */
+    filter: none;
+}
+
+.projectCardDescriptionWrapper {
+    height: 150px;
+    padding: 20px;
+}
+
+.projectCardDescriptionContainer {
+    overflow-x: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.projectTitle {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.projectChips {
+    margin-top: 5px;
+    /* white-space: nowrap;
+    overflow-x: auto; */
+}
+
+.clearfix {
+    clear: both;
+}
+
+@media (max-width: 1420px) {
+  .projectCardResponsive {
+    width: 49.99999%;
+    margin: 6px 0;
+    /* height: 600px; */
+  }
+}
+
+@media (max-width: 860px) {
+    .projectGallery {
+        width: 70%;
+        margin: auto;
+    }
+    .projectCardResponsive {
+        width: 100%;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .projectCardDescriptionWrapper {
+        height:200px;
+    }
+}
+
+@media (max-width: 500px) {
+    .projectGallery {
+        width: 100%;
+    }
+    .projectCardResponsive {
+        width: 100%;
+    }
+}
+
+
+/* .projectSection {
     margin-top: 10vh;
     padding: 5vh 0;
     opacity: 0;
@@ -78,18 +184,8 @@
     margin-top: 10px;
 }
 
-.participationType {
-    /* margin-left: 23px; */
-}
-
 .projectChipsContainer {
     margin-top: 25px;
-}
-
-.detailsSelector {
-    /* display: none; */
-    /* margin-bottom: 2px;
-    border-bottom: var(--primary-color) 1px solid; */
 }
 
 .detailsSelectorButtonContainer {
@@ -148,12 +244,6 @@
     border-top-right-radius: 10px;
 }
 
-/* .narrowProjectImages {
-    height: 100%;
-    width: 100%;
-    padding: 2px;
-} */
-
 .hideNarrowText {
     visibility: hidden;
 }
@@ -174,4 +264,4 @@
     .projectSection:first-of-type {
         padding-top: 0vh;
     }
-}
+} */

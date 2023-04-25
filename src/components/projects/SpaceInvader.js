@@ -9,7 +9,7 @@ const SpaceInvader = ({ imageOnLeft, id }) => {
     const projectTitle = 'Space Invader';
     const projectLink = 'https://github.com/karenlinky/space-invader';
     const projectParticipationType = 'Personal Project';
-    const projectChips = <div><Chip>Java</Chip><Chip>OOP</Chip></div>;
+    const projectChips = <><Chip>Java</Chip><Chip>OOP</Chip></>;
     const projectDescr = <>
     <div>Space Invader is a popular game in the 1970s and 1980s.
     The objective of this project is to replicate the game using Java.</div>
@@ -21,7 +21,7 @@ const SpaceInvader = ({ imageOnLeft, id }) => {
         <ListItem1>Added event listeners that enable players to move and shoot using keyboard keys and mouse</ListItem1>
     </div>
 
-    const projectImage = <img className={'projectImage'} src={screenshot} alt={'Space Invader Screenshot'} />
+    const projectImage = screenshot;
     return (
         <ProjectSection
             projectTitle={projectTitle}

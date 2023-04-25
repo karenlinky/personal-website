@@ -2,9 +2,6 @@ import React, { useCallback, useState } from 'react';
 import ResponsivePage from '../responsivePage/ResponsivePage';
 import PageHeader from '../typography/PageHeader';
 import Separator from '../sectionSeparator/Separator';
-import ContentStartIndicator from '../misc/ContentStartIndicator';
-import ScrollIndicator from '../scrollIndicator/ScrollIndicator';
-import ScrollObserver from '../scrollObserver/ScrollObserver';
 import MetaExperienceCard from './MetaExperienceCard';
 import Achievers1ExperienceCard from './Achievers1ExperienceCard';
 import Achievers2ExperienceCard from './Achievers2ExperienceCard';
@@ -25,35 +22,17 @@ const WorkExperiences = () => {
     }
   }, [openNum])
 
-  const [showingTitle, setShowingTitle] = useState(false);
-  const [showingActualContent, setShowingActualContent] = useState(false);
-
-  const experiencesId = 'experiences';
-
-  const scrollDown = () => {
-    const element = document.getElementById(experiencesId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
-
   return (
     <div className={'fullPageBody'}>
-      <ScrollIndicator showIndicator={showingTitle && !showingActualContent} onClick={scrollDown} />
       <ResponsivePage>
-        <PageHeader short label={'Work Experiences'} descr={descr} setShowingHeader={setShowingTitle}/>
-        <div>
-        <ContentStartIndicator lessSpace id={experiencesId} />
-        <ScrollObserver threshold={.2} onInViewChange={setShowingActualContent}>
-          <MetaExperienceCard openNum={openNum} experienceNum={3} onCardClick={onCardClick} />
-        </ScrollObserver>
+        <PageHeader paddingBottom label={'Work Experiences'} descr={descr}/>
+        <MetaExperienceCard openNum={openNum} experienceNum={3} onCardClick={onCardClick} />
         <Separator margin={'25'} />
         <Achievers2ExperienceCard openNum={openNum} experienceNum={2} onCardClick={onCardClick} />
         <Separator margin={'25'} />
         <Achievers1ExperienceCard openNum={openNum} experienceNum={1} onCardClick={onCardClick} />
         <Separator margin={'25'} />
         <KGSExperienceCard openNum={openNum} experienceNum={0} onCardClick={onCardClick} />
-        </div>
       </ResponsivePage>
     </div>
   )

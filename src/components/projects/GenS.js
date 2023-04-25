@@ -9,7 +9,7 @@ const GenS = ({ imageOnLeft, id }) => {
     const projectTitle = 'Gen S';
     const projectLink = 'https://github.com/karenlinky/gen-s';
     const projectParticipationType = 'Group Project';
-    const projectChips = <div><Chip>Android Development</Chip><Chip>Kotlin</Chip><Chip>UI Design</Chip><Chip>Architecture Design</Chip></div>
+    const projectChips = <><Chip>Android Development</Chip><Chip>Kotlin</Chip><Chip>UI Design</Chip><Chip>Architecture Design</Chip></>
     const projectDescr = <>
     <div>As students with busy schedule,
         we recognize the significance of scheduling our activities in advance and abstaining from procrastination.
@@ -24,7 +24,7 @@ const GenS = ({ imageOnLeft, id }) => {
         <ListItem1>Participated in the architecture design process</ListItem1>
     </div>
 
-    const projectImage = <img className={'projectImage'} src={screenshot} alt={'Gen S Screenshot'} />
+    const projectImage = screenshot;
     return (
         <ProjectSection
             projectTitle={projectTitle}

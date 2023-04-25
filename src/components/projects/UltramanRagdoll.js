@@ -9,7 +9,7 @@ const UltramanRagdoll = ({ imageOnLeft, id }) => {
     const projectTitle = 'Ultraman Ragdoll';
     const projectLink = 'https://github.com/karenlinky/ultraman-ragdoll';
     const projectParticipationType = 'Personal Project';
-    const projectChips = <div><Chip>Java</Chip><Chip>OOP</Chip></div>;
+    const projectChips = <><Chip>Java</Chip><Chip>OOP</Chip></>;
     const projectDescr = <>
     <div>Ultraman was one of my favourite character when I was a kid.
     This project allows users to freely move, rotate, and scale an ultraman's body part, such as the torso, arms, upper and lower legs, through drag and drop.</div>
@@ -21,7 +21,7 @@ const UltramanRagdoll = ({ imageOnLeft, id }) => {
         <ListItem1>Used matrix multiplication to apply transformations</ListItem1>
     </div>
 
-    const projectImage = <img className={'projectImage'} src={screenshot} alt={'Ultraman Ragdoll Screenshot'} />
+    const projectImage = screenshot;
     return (
         <ProjectSection
             projectTitle={projectTitle}
