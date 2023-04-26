@@ -58,8 +58,15 @@
     width: 100%;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 599px) {
     .modalWrapper {
         width: 95%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .modalContentWrapper {
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }

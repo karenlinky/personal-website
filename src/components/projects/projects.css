@@ -225,6 +225,10 @@
         top: 0;
         left: 0;
     }
+
+    .projectPopupImage {
+        max-width: 100;
+    }
 }
 
 
