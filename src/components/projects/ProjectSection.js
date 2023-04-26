@@ -18,6 +18,19 @@ const ProjectSection = (
   
   const [hovering, setHovering] = useState(false);
 
+  const listTabNum = 0;
+  const imageTabNum = 1;
+
+  const [ showSectionNumber, setShowSectionNumber ] = useState(listTabNum);
+
+  const openListTab = useCallback(() => {
+      setShowSectionNumber(listTabNum);
+  }, [setShowSectionNumber]);
+
+  const openImageTab = useCallback(() => {
+      setShowSectionNumber(imageTabNum);
+  }, [setShowSectionNumber]);
+
   const cardContent = <>
     <div className={'projectLink'}>
     <a target={'_blank'} rel={'noreferrer'} href={projectLink}>
@@ -29,6 +42,18 @@ const ProjectSection = (
     </div>
     <div className={'projectPopupDescription'}>
       {projectDescr}
+    </div>
+    <div className={'projectSectionSelector'}>
+      <div
+      onClick={openListTab}
+      className={'selectorButton listButton ' + (showSectionNumber === 0 ? 'show' : 'hide')}>
+          <FaListAlt />
+      </div>
+      <div
+      onClick={openImageTab}
+      className={'selectorButton imageButton ' + (showSectionNumber === 1 ? 'show' : 'hide')}>
+          <FaImage />
+      </div>
     </div>
     <div className={'projectPopupDetails'}>
       <div className={'projectPopupImageContainer'}>

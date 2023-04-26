@@ -117,10 +117,13 @@
     margin-left: 10px;
 }
 
+.projectPopupDescription {
+    margin-bottom: 20px;
+}
+
 .projectPopupDetails {
     width: 100%;
     display: flex;
-    margin-top: 20px;
 }
 
 .projectPopupImageContainer {
@@ -149,6 +152,48 @@
     margin-top: 20px;
     width: 100%;
     overflow-x: auto;
+}
+
+.projectSectionSelector {
+    display: none;
+}
+
+.projectSectionSelector {
+    width: 100%;
+}
+
+.selectorButton {
+    font-size: 1em;
+    padding: 3px 8px 0;
+    display: inline-block;
+}
+
+.selectorButton.listButton {
+    border-top-left-radius: 5px;
+}
+
+.selectorButton.imageButton {
+    border-top-right-radius: 5px;
+}
+
+.selectorButton.show {
+    background-color: rgb(173, 173, 173);
+}
+
+.selectorButton.hide {
+    background-color: rgb(83, 83, 83);
+}
+
+@media (max-width: 699px) {
+    .projectSectionSelector {
+        display: inline-block;
+    }
+    
+    .projectPopupDetails {
+        border-top: 1px rgb(173, 173, 173) solid;
+        border-top-right-radius: 10px;
+        padding-top: 15px;
+    }
 }
 
 
