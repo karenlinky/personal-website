@@ -1,6 +1,7 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { FaGithub, FaListAlt, FaImage } from 'react-icons/fa';
 import './projects.css';
+import Modal from '../modal/Modal';
 
 const ProjectSection = (
   { projectTitle,
@@ -12,9 +13,7 @@ const ProjectSection = (
     projectImage,
     className,
     imageOnLeft,
-    id,
-    openDetail,
-    setProjectDetail }) => {
+    id }) => {
   
   const [hovering, setHovering] = useState(false);
 
@@ -25,11 +24,13 @@ const ProjectSection = (
 
   const openListTab = useCallback(() => {
       setShowSectionNumber(listTabNum);
-  }, [setShowSectionNumber]);
+  }, [setShowSectionNumber, listTabNum]);
 
   const openImageTab = useCallback(() => {
       setShowSectionNumber(imageTabNum);
-  }, [setShowSectionNumber]);
+  }, [setShowSectionNumber, imageTabNum]);
+
+  const popupImg = <img src={projectImage} className={'projectPopupImage'} />;
 
   const cardContent = <>
     <div className={'projectLink'}>
@@ -57,13 +58,18 @@ const ProjectSection = (
     </div>
     <div className={'projectPopupDetails'}>
       <div className={'projectPopupImageContainer'}>
-        <img src={projectImage} className={'projectPopupImage'} />
+          {popupImg}
       </div>
       <div className={'projectPopupListContainer'}>
-        <div className={'projectPopupListHeading'}>
-          My tasks:
+        <div className={'projectPopupList ' + (showSectionNumber === 0 ? 'show' : 'hide')}>
+          <div className={'projectPopupListHeading'}>
+            My tasks:
+          </div>
+          {projectInvolvement}
         </div>
-        {projectInvolvement}
+        <div className={'projectNarrowImageContainer ' + (showSectionNumber === 1 ? 'show' : 'hide')}>
+          {popupImg}
+        </div>
       </div>
     </div>
     <div className={'projectPopupSkills'}>
@@ -71,13 +77,15 @@ const ProjectSection = (
     </div>
   </>;
 
+  const [showProjectDetail, setShowProjectDetail] = useState(false);
+
   const onCardClick = useCallback(() => {
-    openDetail();
-    setProjectDetail(cardContent);
-  }, [openDetail, setProjectDetail, cardContent]);
+    setShowProjectDetail(true);
+  }, [setShowProjectDetail]);
 
   return (
     <>
+    <Modal show={showProjectDetail} hideModal={() => {setShowProjectDetail(false)}}>{cardContent}</Modal>
     <div id={id} className={'projectCardResponsive'}>
       <div className={'projectCard'} onClick={() => onCardClick()} onMouseEnter={() => setHovering(true)} onMouseLeave={() => setHovering(false)}>
         <div className={'projectContentContainer'}>

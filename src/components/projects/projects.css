@@ -182,17 +182,48 @@
 
 .selectorButton.hide {
     background-color: rgb(83, 83, 83);
+    cursor: pointer;
 }
 
-@media (max-width: 699px) {
+.projectNarrowImageContainer {
+    display: none;
+}
+
+@media (max-width: 799px) {
     .projectSectionSelector {
         display: inline-block;
     }
-    
+
     .projectPopupDetails {
         border-top: 1px rgb(173, 173, 173) solid;
         border-top-right-radius: 10px;
         padding-top: 15px;
+        display: block;
+    }
+    
+    .projectPopupImageContainer {
+        display: none;
+    }
+    
+    .projectPopupListContainer {
+        display: block;
+    }
+
+    .projectPopupListContainer {
+        position: relative;
+    }
+
+    .projectPopupList.hide {
+        visibility: hidden;
+    }
+
+    .projectNarrowImageContainer.show {
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 }
 
