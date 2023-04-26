@@ -205,7 +205,6 @@
         display: none;
         position: static;
         width: 100%;
-        height: fit-content;
     }
     
     .projectPopupImageContainer.hide {
