@@ -5,7 +5,7 @@ import ProjectSection from './ProjectSection';
 
 import screenshot from '../../img/ultramanRagdollScreenshot.png';
 
-const UltramanRagdoll = ({ imageOnLeft, id, openDetail }) => {
+const UltramanRagdoll = ({ imageOnLeft, id, openDetail, setProjectDetail }) => {
     const projectTitle = 'Ultraman Ragdoll';
     const projectLink = 'https://github.com/karenlinky/ultraman-ragdoll';
     const projectParticipationType = 'Personal Project';
@@ -34,6 +34,7 @@ const UltramanRagdoll = ({ imageOnLeft, id, openDetail }) => {
             imageOnLeft={imageOnLeft}
             id={id}
             openDetail={openDetail}
+            setProjectDetail={setProjectDetail}
         />
     )
 }

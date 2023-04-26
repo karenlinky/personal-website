@@ -5,7 +5,7 @@ import ProjectSection from './ProjectSection';
 
 import screenshot from '../../img/spaceInvaderScreenshot.png';
 
-const SpaceInvader = ({ imageOnLeft, id, openDetail }) => {
+const SpaceInvader = ({ imageOnLeft, id, openDetail, setProjectDetail }) => {
     const projectTitle = 'Space Invader';
     const projectLink = 'https://github.com/karenlinky/space-invader';
     const projectParticipationType = 'Personal Project';
@@ -34,6 +34,7 @@ const SpaceInvader = ({ imageOnLeft, id, openDetail }) => {
             imageOnLeft={imageOnLeft}
             id={id}
             openDetail={openDetail}
+            setProjectDetail={setProjectDetail}
         />
     )
 }

@@ -9,7 +9,11 @@ const Modal = ({ children, show, hideModal }) => {
         <div className={'modalOverlay'} onClick={hideModal} />
         <div className={'modalWrapper'} >
             <div className={'closeModalButton'}><FaTimes  onClick={hideModal} /></div>
-            {children}
+            <div className={'modalContentWrapper'}>
+              <div className={'modalContentContainer'}>
+                {children}
+              </div>
+            </div>
         </div>
     </div> : null
   )

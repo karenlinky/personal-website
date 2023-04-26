@@ -38,8 +38,7 @@
     filter: grayscale(50%) brightness(70%);
 }
 
-.projectImage:hover {
-    /* filter: blur(5px) grayscale(20%) brightness(20%); */
+.projectImage.hovering {
     filter: none;
 }
 
@@ -101,6 +100,55 @@
     .projectCardResponsive {
         width: 100%;
     }
+}
+
+.projectPopupTitle {
+    font-size: 2.5em;
+}
+
+.projectPopupTitle, .projectPopupLinkContainer {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.projectPopupLinkContainer {
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+.projectPopupDetails {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.projectPopupImageContainer {
+    flex: 1;
+    position: relative;
+}
+
+.projectPopupImage {
+    position: absolute;
+    max-width: calc(100% - 20px);
+    max-height: calc(100% - 20px);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.projectPopupListContainer {
+    flex: 1;
+}
+
+.projectPopupListHeading {
+    font-size: 1.3em;
+}
+
+.projectPopupSkills {
+    margin-top: 20px;
+    width: 100%;
+    overflow-x: auto;
 }
 
 

@@ -5,7 +5,7 @@ import ProjectSection from './ProjectSection';
 
 import screenshot from '../../img/GenSScreenshot.jpg';
 
-const GenS = ({ imageOnLeft, id,  openDetail }) => {
+const GenS = ({ imageOnLeft, id,  openDetail,  setProjectDetail }) => {
     const projectTitle = 'Gen S';
     const projectLink = 'https://github.com/karenlinky/gen-s';
     const projectParticipationType = 'Group Project';
@@ -38,6 +38,7 @@ const GenS = ({ imageOnLeft, id,  openDetail }) => {
             imageOnLeft={imageOnLeft}
             id={id}
             openDetail={openDetail}
+            setProjectDetail={setProjectDetail}
         />
     )
 }

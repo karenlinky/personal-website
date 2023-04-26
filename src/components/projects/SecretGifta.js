@@ -5,7 +5,7 @@ import ProjectSection from './ProjectSection';
 
 import screenshot from '../../img/secretGiftaScreenshot.png';
 
-const SecretGifta = ({ imageOnLeft, id, openDetail }) => {
+const SecretGifta = ({ imageOnLeft, id, openDetail, setProjectDetail }) => {
     const projectTitle = 'Secret Gifta';
     const projectLink = 'https://github.com/karenlinky/secret-gifta';
     const projectParticipationType = 'Personal Project';
@@ -35,6 +35,7 @@ const SecretGifta = ({ imageOnLeft, id, openDetail }) => {
             imageOnLeft={imageOnLeft}
             id={id}
             openDetail={openDetail}
+            setProjectDetail={setProjectDetail}
         />
     )
 }

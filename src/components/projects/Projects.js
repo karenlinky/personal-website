@@ -31,18 +31,22 @@ const Projects = () => {
         setShowProjectDetail(false);
     }
 
+    const [projectDetail, setProjectDetail] = useState(<></>);
+
     return (
         <>
-        <Modal show={showProjectDetail} hideModal={closeProjectDetail}/>
+        <Modal show={showProjectDetail} hideModal={closeProjectDetail}>
+            {projectDetail}
+        </Modal>
         <div className={'fullPageBody'}>
         <ResponsivePage>
             <PageHeader short label={'Projects'} descr={descr} />
             <div className={'projectGallery'}>
-                <GenS id={ids.genS} openDetail={openProjectDetail}/>
-                <SecretGifta imageOnLeft id={ids.secretGifta} openDetail={openProjectDetail}/>
-                <ChefsHat id={ids.chefsHat} openDetail={openProjectDetail}/>
-                <SpaceInvader imageOnLeft id={ids.spaceInvader} openDetail={openProjectDetail}/>
-                <UltramanRagdoll id={ids.ultramanRagdoll} openDetail={openProjectDetail}/>
+                <GenS id={ids.genS} openDetail={openProjectDetail} setProjectDetail={setProjectDetail}/>
+                <SecretGifta imageOnLeft id={ids.secretGifta} openDetail={openProjectDetail} setProjectDetail={setProjectDetail}/>
+                <ChefsHat id={ids.chefsHat} openDetail={openProjectDetail} setProjectDetail={setProjectDetail}/>
+                <SpaceInvader imageOnLeft id={ids.spaceInvader} openDetail={openProjectDetail} setProjectDetail={setProjectDetail}/>
+                <UltramanRagdoll id={ids.ultramanRagdoll} openDetail={openProjectDetail} setProjectDetail={setProjectDetail}/>
                 <div className="clearfix"></div>
             </div>
         </ResponsivePage>
