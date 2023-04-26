@@ -57,19 +57,19 @@ const ProjectSection = (
       </div>
     </div>
     <div className={'projectPopupDetails'}>
-      <div className={'projectPopupImageContainer'}>
+      <div className={'projectPopupImageContainer ' + (showSectionNumber === 1 ? 'show' : 'hide')}>
           {popupImg}
       </div>
-      <div className={'projectPopupListContainer'}>
-        <div className={'projectPopupList ' + (showSectionNumber === 0 ? 'show' : 'hide')}>
+      <div className={'projectPopupListContainer ' + (showSectionNumber === 0 ? 'show' : 'hide')}>
+        {/* <div className={'projectPopupList ' + (showSectionNumber === 0 ? 'show' : 'hide')}> */}
           <div className={'projectPopupListHeading'}>
             My tasks:
           </div>
           {projectInvolvement}
-        </div>
-        <div className={'projectNarrowImageContainer ' + (showSectionNumber === 1 ? 'show' : 'hide')}>
+        {/* </div> */}
+        {/* <div className={'projectNarrowImageContainer ' + (showSectionNumber === 1 ? 'show' : 'hide')}>
           {popupImg}
-        </div>
+        </div> */}
       </div>
     </div>
     <div className={'projectPopupSkills'}>
