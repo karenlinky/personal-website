@@ -10,9 +10,9 @@ const AboutMe = () => {
     const descr = <><div>I'm a software engineer. I'm studying Computer Science at University of Waterloo and I'm graduating in 2023 April.
         I have gained experience in both front-end and back-end development through my internships and projects.
         I find full-stack development particularly interesting because of the sense of ownership it provides.
-        Moreover, I also enjoy working on the front-end, including UI design, because I like making visually impactful work.<br/>
+        Moreover, since I like making visually impactful work, I also enjoy working on the front-end, including UI design.<br/>
         I have a lot of hobbies. Other than coding, I like playing table tennis, basketball, ultimate frisbee and soccer, practicing wing chun, swimming, and doing 3D modeling.<br/><br/>
-        Email: kyklin@uwaterloo.ca
+        Email: karenlinky@gmail.com
         </div></>
     
     return (
