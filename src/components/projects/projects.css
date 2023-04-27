@@ -183,6 +183,11 @@
 .selectorButton.hide {
     background-color: rgb(83, 83, 83);
     cursor: pointer;
+    transition-duration: 250ms;
+}
+
+.selectorButton.hide:hover {
+    background-color: rgb(131, 131, 131);
 }
 
 /* .projectNarrowImageContainer {
@@ -200,6 +205,10 @@
         padding-top: 15px;
         display: block;
     }
+
+    /* .projectPopupDetailsContainer {
+        height: fit-content;
+    } */
     
     .projectPopupImageContainer {
         display: none;

@@ -19,7 +19,7 @@
 .modalOverlay {
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.836);
+    background-color: rgba(130, 130, 130, 0.175);
 }
 
 .modalWrapper {
@@ -27,7 +27,7 @@
     top: calc(50% + 30px);
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80vw;
+    width: 55vw;
     height: fit-content;
     background-color: var(--card-bg-color);
     border: rgb(78, 78, 78) 1px solid;
