@@ -11,7 +11,7 @@ import './projects.css';
 
 const Projects = () => {
     const descr = <><div>Over the years, I have completed several projects.</div>
-    <div>Each one has presented its own unique set of challenges and here are a few of projects that I am proud of.</div></>
+    <div>Each one has presented its own unique set of challenges. Here are a few of projects that I am proud of.</div></>
 
     const ids = {
         genS: 'gen-s',

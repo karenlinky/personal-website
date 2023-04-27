@@ -9,7 +9,7 @@ const GenS = ({ imageOnLeft, id,  openDetail,  setProjectDetail }) => {
     const projectTitle = 'Gen S';
     const projectLink = 'https://github.com/karenlinky/gen-s';
     const projectParticipationType = 'Group Project';
-    const projectChips = <><Chip>Android Development</Chip><Chip>Kotlin</Chip><Chip>UI Design</Chip><Chip>Architecture Design</Chip></>
+    const projectChips = <><Chip>Android App</Chip><Chip>Kotlin</Chip><Chip>UI Design</Chip><Chip>Architecture Design</Chip></>
     const projectDescr = <>
     <div>As students with busy schedule,
         we recognize the significance of scheduling our activities in advance and abstaining from procrastination.

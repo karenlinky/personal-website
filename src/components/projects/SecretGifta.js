@@ -9,7 +9,7 @@ const SecretGifta = ({ imageOnLeft, id, openDetail, setProjectDetail }) => {
     const projectTitle = 'Secret Gifta';
     const projectLink = 'https://github.com/karenlinky/secret-gifta';
     const projectParticipationType = 'Personal Project';
-    const projectChips = <><Chip>Web App</Chip><Chip>ReactJS</Chip><Chip>CSS</Chip><Chip>Responsive frontend</Chip><Chip>Python</Chip><Chip>SQL</Chip></>;
+    const projectChips = <><Chip>Web App</Chip><Chip>ReactJS</Chip><Chip>CSS</Chip><Chip>Responsive UI</Chip><Chip>Python</Chip><Chip>SQL</Chip></>;
     const projectDescr = <>
     <div>Every year, my family participates in Secret Santa by drawing names out of a plastic bag with pen and paper, which is a time-consuming process.
     As a solution, I created an app that streamlines the process by allowing users to randomly pick gift recipients with just a few clicks.</div>

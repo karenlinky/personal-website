@@ -2,6 +2,7 @@ import React from 'react'
 import ResponsivePage from '../responsivePage/ResponsivePage';
 import PageHeader from '../typography/PageHeader';
 import IconButtonGroup from '../iconButton/IconButtonGroup';
+import { FaEnvelope } from 'react-icons/fa'
 import './aboutMe.css';
 
 import profilePic from '../../img/profilePic/profilePic.jpg';
@@ -12,7 +13,7 @@ const AboutMe = () => {
         I find full-stack development particularly interesting because of the sense of ownership it provides.
         Moreover, since I like making visually impactful work, I also enjoy working on the front-end, including UI design.<br/>
         I have a lot of hobbies. Other than coding, I like playing table tennis, basketball, ultimate frisbee and soccer, practicing wing chun, swimming, and doing 3D modeling.<br/><br/>
-        Email: karenlinky@gmail.com
+        <a href={'mailto: karenlinky@gmail.com'} target={'_blank'} rel={'noreferrer'} className={'aboutMeEmail'} ><FaEnvelope className={'aboutMeEmailIcon'} />karenlinky@gmail.com</a>
         </div></>
     
     return (
