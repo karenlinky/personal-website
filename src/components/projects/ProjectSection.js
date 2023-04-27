@@ -2,6 +2,7 @@ import React, { useState, useCallback, useEffect } from 'react';
 import { FaGithub, FaListAlt, FaImage } from 'react-icons/fa';
 import './projects.css';
 import Modal from '../modal/Modal';
+import { useInView } from 'react-intersection-observer';
 
 const ProjectSection = (
   { projectTitle,
@@ -78,10 +79,19 @@ const ProjectSection = (
     setShowProjectDetail(true);
   }, [setShowProjectDetail]);
 
+  const { ref, inView } = useInView({threshold: 0.3});
+  
+  const [hasBeenInView, setHasBeenInView] = useState(false);
+  useEffect(() => {
+    if (inView) {
+      setHasBeenInView(inView);
+    }
+  })
+
   return (
     <>
     <Modal show={showProjectDetail} hideModal={() => {setShowProjectDetail(false)}}>{cardContent}</Modal>
-    <div id={id} className={'projectCardResponsive'}>
+    <div ref={ref} id={id} className={'projectCardResponsive ' + (hasBeenInView ? 'showCard' : 'hideCard')}>
       <div className={'projectCard'} onClick={() => onCardClick()} onMouseEnter={() => setHovering(true)} onMouseLeave={() => setHovering(false)}>
         <div className={'projectContentContainer'}>
           <div className={'projectImageContainer'}>

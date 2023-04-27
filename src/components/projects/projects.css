@@ -2,7 +2,17 @@
     padding: 6px 6px;
     float: left;
     width: 33.3333333333%;
-    /* height: 500px; */
+    transition: 500ms;
+}
+
+.projectCardResponsive.hideCard {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.projectCardResponsive.showCard {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .projectCard {
