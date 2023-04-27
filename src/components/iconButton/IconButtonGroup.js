@@ -8,7 +8,7 @@ const IconButtonGroup = () => {
     <>
     <IconButton to={'https://github.com/karenlinky'}><FaGithubSquare className={'iconButton'} /></IconButton>
     <IconButton to={'https://www.linkedin.com/in/karenlinky/'} ><FaLinkedin className={'iconButton'} /></IconButton>
-    <IconButton to={'mailto: kyklin@uwaterloo.ca'}><FaEnvelopeSquare className={'iconButton'} /></IconButton>
+    <IconButton to={'mailto: karenlinky@gmail.com'}><FaEnvelopeSquare className={'iconButton'} /></IconButton>
     </>
   )
 }

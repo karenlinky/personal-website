@@ -3,6 +3,7 @@ import ButtonLink from '../buttons/ButtonLink';
 import Separator from '../sectionSeparator/Separator';
 import IconButtonGroup from '../iconButton/IconButtonGroup';
 import AboutDescription from './AboutDescription';
+import resume from '../../resume/resume.pdf'
 import '../../App.css'
 import '../content/content.css';
 import './about.css';
@@ -24,10 +25,9 @@ const About = () => {
             <AboutDescription />
             <Separator margin={'75'} />
             <ButtonLink addPadding className={'fadeIn'} label={'About Me'} to={'/about_me'}/>
-            <ButtonLink secondary className={'fadeIn'} label={'My Experiences'} to={'/work_experiences'}/>
+            <ButtonLink secondary external className={'fadeIn'} label={'View Resume'} to={resume}/>
           </div>
           <div className={'codeIconContainer'}>
-            {/* {showAnimation ? <Spline scene="https://prod.spline.design/B9pJa24JBcb8CusO/scene.splinecode" /> : null} */}
           </div>
         </div>
       </div>
