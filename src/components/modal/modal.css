@@ -1,0 +1,81 @@
+@keyframes openModal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+}
+
+.modalOverlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(130, 130, 130, 0.175);
+}
+
+.modalWrapper {
+    position: absolute;
+    top: calc(50% + 32px);
+    /* top: 50%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55vw;
+    height: fit-content;
+    background-color: var(--card-bg-color);
+    border: rgb(78, 78, 78) 1px solid;
+    border-radius: 15px;
+    max-width: 1000px;
+    padding: 50px;
+
+    opacity: 0;
+    animation: openModal 500ms forwards;
+}
+
+.closeModalButton {
+    font-size: 1.5em;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.modalContentWrapper {
+    max-height: calc(70vh - 80px);
+    padding: 0 20px 20px;
+    overflow: auto;
+}
+
+.modalContentContainer {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+    width: 100%;
+}
+
+@media (max-width: 1199px) {
+    .modalWrapper {
+        width: 80%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 599px) {
+    .modalWrapper {
+        width: 95%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .modalContentWrapper {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

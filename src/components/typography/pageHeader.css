@@ -9,17 +9,21 @@
 
 .pageHeaderSection {
     padding-bottom: 5vh;
-    margin: 30vh 0 45vh;
+    margin: 10vh 0 5vh;
     opacity: 0;
     transition: 1s;
 
     display: flex;
 }
 
-.shortTopPadding {
+.aboutMe {
     padding-bottom: 0;
     margin-top: 25vh;
     margin-bottom: 0;
+}
+
+.shortBottomPadding {
+    padding-bottom: 1vh;
 }
 
 .pageHeaderTextContainer {
@@ -45,12 +49,6 @@
     border-radius: 50%;
 }
 
-.shortHeaderSection {
-    margin: 10vh 0 2vh;
-    padding-bottom: 3vh;
-    border: none;
-}
-
 .showHeader {
     opacity: 1;
 }
@@ -68,12 +66,8 @@
         padding-left: 0;
     }
 
-    .pageHeaderSection:not(.shortTopPadding):not(.shortHeaderSection) {
-        margin-top: 25vh;
-        margin-bottom: 25vh;
-    }
-
-    .shortTopPadding {
-        margin-top: 5vh;
+    .aboutMe {
+        margin-top: 0vh;
+        padding-top: 5vh;
     }
 }

@@ -11,9 +11,10 @@ body {
 }
 
 ::-webkit-scrollbar {
-  height: 10px;
-  width: 10px;
+  height: 5px;
+  width: 5px;
   background-color: black;
+  border: none;
 }
 
 /* Track */
@@ -31,6 +32,10 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(113, 113, 113);
+}
+
+::-webkit-scrollbar-corner {
+  background: none;
 }
 
 .notHighlightable {

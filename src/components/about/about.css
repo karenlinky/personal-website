@@ -5,7 +5,7 @@
     max-width: 1200px; 
     padding: 20px;
     margin: auto;
-    padding-top: calc(50vh - 320px);
+    padding-top: calc(50vh - 325px);
     display: block;
 }
 
@@ -121,8 +121,8 @@
         max-width: 0;
     }
     to {
-        min-width: 350px;
-        max-width: 350px;
+        min-width: fit-content;
+        max-width: 1000px;
     }
 }
 
@@ -161,7 +161,7 @@
 }
 
 .descriptionLine6 {
-    animation-delay: 4.3s;
+    animation-delay: 4.7s;
 }
 
 .descriptionPurple {

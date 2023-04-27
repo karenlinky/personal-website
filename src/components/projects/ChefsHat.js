@@ -5,11 +5,11 @@ import ProjectSection from './ProjectSection';
 
 import screenshot from '../../img/chefsHatScreenshot.png';
 
-const ChefsHat = ({ imageOnLeft, id }) => {
+const ChefsHat = ({ imageOnLeft, id, openDetail, setProjectDetail }) => {
     const projectTitle = 'Chef\'s Hat';
     const projectLink = 'https://github.com/karenlinky/chef-s-hat';
     const projectParticipationType = 'Group Project';
-    const projectChips = <div><Chip>Web App</Chip><Chip>HTML</Chip><Chip>CSS</Chip><Chip>JavaScript</Chip><Chip>SQL</Chip></div>;
+    const projectChips = <><Chip>Web App</Chip><Chip>HTML</Chip><Chip>CSS</Chip><Chip>JavaScript</Chip><Chip>SQL</Chip></>;
     const projectDescr = <>
     <div>We built a platform that allows users to manage recipes.
     It has several features such as creating new recipes, bookmarking favorites, searching and rating recipes.</div>
@@ -22,7 +22,7 @@ const ChefsHat = ({ imageOnLeft, id }) => {
         <ListItem1>Wrote queries designed to fetch recipes from the database based on specific keywords</ListItem1>
     </div>
 
-    const projectImage = <img className={'projectImage'} src={screenshot} alt={'Chef\'s Hat Screenshot'} />
+    const projectImage = screenshot;
     return (
         <ProjectSection
             projectTitle={projectTitle}
@@ -34,6 +34,8 @@ const ChefsHat = ({ imageOnLeft, id }) => {
             projectImage={projectImage}
             imageOnLeft={imageOnLeft}
             id={id}
+            openDetail={openDetail}
+            setProjectDetail={setProjectDetail}
         />
     )
 }

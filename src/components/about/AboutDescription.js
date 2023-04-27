@@ -38,9 +38,41 @@ const AboutDescription = () => {
         <span className={'descriptionPurple'}>{'period'}</span>
         <span className={'descriptionGrey'}>{'='}</span>
         <span className={'descriptionGreen'}>{'\'2018 Sept - 2023 Apr\''}</span>
-        <span className={'descriptionGrey'}>{' />;'}</span> 
     </>
-
+  
+    const descriptionSkillsCommon = <>
+    <span className={'descriptionPurple'}>{'skills'}</span>
+    <span className={'descriptionGrey'}>{'=['}</span>
+    <span className={'descriptionGreen'}>{'\'ReactJS\''}</span>
+    <span className={'descriptionGrey'}>{', '}</span>
+    <span className={'descriptionGreen'}>{'\'CSS\''}</span>
+    <span className={'descriptionGrey'}>{', '}</span>
+    <span className={'descriptionGreen'}>{'\'Python\''}</span>
+    <span className={'descriptionGrey'}>{', '}</span>
+    <span className={'descriptionGreen'}>{'\'Git\''}</span>
+    <span className={'descriptionGrey'}>{', '}</span>
+    <span className={'descriptionGreen'}>{'\'PHP\''}</span>
+    <span className={'descriptionGrey'}>{', '}</span>
+    <span className={'descriptionGreen'}>{'\'Kotlin\''}</span>
+    <span className={'descriptionGrey'}>{', '}</span>
+    <span className={'descriptionGreen'}>{'\'Sql\''}</span>
+    <span className={'descriptionGrey'}>{', '}</span>
+    <span className={'descriptionGreen'}>{'\'Bash\''}</span>
+    <span className={'descriptionGrey'}>{', '}</span>
+    <span className={'descriptionGreen'}>{'\'JavaScript\''}</span>
+    <span className={'descriptionGrey'}>{', '}</span>
+    <span className={'descriptionGreen'}>{'\'C++\''}</span>
+    <span className={'descriptionGrey'}>{', '}</span>
+    <span className={'descriptionGreen'}>{'\'C#\''}</span>
+    <span className={'descriptionGrey'}>{', '}</span>
+    <span className={'descriptionGreen'}>{'\'C\''}</span>
+    </>
+    
+    const descriptionSkills = <>
+    {descriptionSkillsCommon}
+    <span className={'descriptionGrey'}>{'] />;'}</span> 
+    </>
+    
     const ReactCode = <>
     <DescriptionLine hovering={hovering} lineNumber={'1'} content={descriptionTag} />
     <div className={'descriptionIndented'}>
@@ -48,6 +80,7 @@ const AboutDescription = () => {
         <DescriptionLine hovering={hovering} lineNumber={'3'} content={descriptionDegree} />
         <DescriptionLine hovering={hovering} lineNumber={'4'} content={descriptionMajor} />
         <DescriptionLine hovering={hovering} lineNumber={'5'} content={descriptionPeriod}/>
+        <DescriptionLine hovering={hovering} lineNumber={'6'} content={descriptionSkills}/>
     </div>
     </>;
 
@@ -84,7 +117,12 @@ const AboutDescription = () => {
         <span className={'descriptionPurple'}>{'period'}</span>
         <span className={'descriptionGrey'}>{'='}</span>
         <span className={'descriptionGreen'}>{'\'2018 Sept - 2023 Apr\''}</span>
-        <span className={'descriptionGrey'}>{');'}</span>
+        <span className={'descriptionGrey'}>{','}</span>
+    </>
+    
+    const pythonDescriptionSkills = <>
+    {descriptionSkillsCommon}
+    <span className={'descriptionGrey'}>{']);'}</span> 
     </>
 
     const PythonCode = <>
@@ -94,6 +132,7 @@ const AboutDescription = () => {
         <DescriptionLine hovering={hovering} lineNumber={'3'} content={pythonDegree} />
         <DescriptionLine hovering={hovering} lineNumber={'4'} content={pythonMajor} />
         <DescriptionLine hovering={hovering} lineNumber={'5'} content={pythonPeriod}/>
+        <DescriptionLine hovering={hovering} lineNumber={'6'} content={pythonDescriptionSkills}/>
     </div>
     </>;
 

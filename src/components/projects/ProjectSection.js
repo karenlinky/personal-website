@@ -1,108 +1,115 @@
 import React, { useState, useCallback, useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
 import { FaGithub, FaListAlt, FaImage } from 'react-icons/fa';
-import ListItemHeader from '../listItems/ListItemHeader';
 import './projects.css';
+import Modal from '../modal/Modal';
+import { useInView } from 'react-intersection-observer';
 
+const ProjectSection = (
+  { projectTitle,
+    projectLink,
+    projectParticipationType,
+    projectChips,
+    projectDescr,
+    projectInvolvement,
+    projectImage,
+    className,
+    imageOnLeft,
+    id }) => {
+  
+  const [hovering, setHovering] = useState(false);
 
-const ProjectSection = ({ projectTitle, projectLink, projectParticipationType, projectChips, projectDescr, projectInvolvement, projectImage, className, imageOnLeft, id }) => {
+  const listTabNum = 0;
+  const imageTabNum = 1;
 
-    const { ref, inView } = useInView({threshold: 0.2})
+  const [ showSectionNumber, setShowSectionNumber ] = useState(listTabNum);
 
-    const [ hasBeenInView, setHasBeenInView ] = useState(false);
+  const openListTab = useCallback(() => {
+      setShowSectionNumber(listTabNum);
+  }, [setShowSectionNumber, listTabNum]);
 
-    useEffect(() => {
-        if (inView) {
-            setHasBeenInView(true);
-        }
-    }, [inView, setHasBeenInView]);
+  const openImageTab = useCallback(() => {
+      setShowSectionNumber(imageTabNum);
+  }, [setShowSectionNumber, imageTabNum]);
 
-    const generalDescription = <div>
-        <div className={'generalDescription'}>
-            {projectLink ?
-                <>
-                <a target={'_blank'} rel={'noreferrer'} href={projectLink} className={'projectLinkContainer'}><span className={'projectTitle'}>{projectTitle}</span>
-                <span className={'projectLink'}><FaGithub /></span></a>
-                </> :
-                <span className={'projectTitle'}>{projectTitle}</span>
-            }
-            <div/>
-            <span className={'participationType'}>{projectParticipationType}</span>
-        </div>
-        <div className={'projectDescr'}>{projectDescr}</div>
+  const popupImg = <img src={projectImage} className={'projectPopupImage'} />;
+
+  const cardContent = <>
+    <div className={'projectLink'}>
+    <a target={'_blank'} rel={'noreferrer'} href={projectLink}>
+      <div className={'projectPopupTitle'}>
+        {projectTitle}
+      </div>
+      <div className={'projectPopupLinkContainer'}><FaGithub /></div>
+    </a>
     </div>
-
-    const listTabNum = 0;
-    const imageTabNum = 1;
-
-    const [ showSectionNumber, setShowSectionNumber ] = useState(listTabNum);
-
-    const openListTab = useCallback(() => {
-        setShowSectionNumber(listTabNum);
-    }, [setShowSectionNumber]);
-
-    const openImageTab = useCallback(() => {
-        setShowSectionNumber(imageTabNum);
-    }, [setShowSectionNumber]);
-
-    const textSection = <div className={'textSection'}>
-        <ListItemHeader>My tasks</ListItemHeader>
-        {projectInvolvement}
+    <div className={'projectPopupDescription'}>
+      {projectDescr}
     </div>
-
-    const imageSection = <div className={'imageSection'}>
-        <div className={'projectImages'}>
-            {projectImage}
-        </div>
+    <div className={'projectSectionSelector'}>
+      <div
+      onClick={openListTab}
+      className={'selectorButton listButton ' + (showSectionNumber === 0 ? 'show' : 'hide')}>
+          <FaListAlt />
+      </div>
+      <div
+      onClick={openImageTab}
+      className={'selectorButton imageButton ' + (showSectionNumber === 1 ? 'show' : 'hide')}>
+          <FaImage />
+      </div>
     </div>
-
-    const narrowDetails = <div className={'narrowTextSection'}>
-        <div className={'narrowText' + (showSectionNumber === imageTabNum ? ' hideNarrowText' : '')}>
-            <ListItemHeader>My tasks</ListItemHeader>
-            {projectInvolvement}
-        </div> 
-        <div className={'narrowProjectImages'}>
-            <div className={'narrowProjectRelative'}>
-                {showSectionNumber === imageTabNum ?projectImage : null}
-            </div>
-        </div>
+    <div className={'projectPopupDetails'}>
+      <div className={'projectPopupImageContainer ' + (showSectionNumber === 1 ? 'show' : 'hide')}>
+          {popupImg}
+      </div>
+      <div className={'projectPopupListContainer ' + (showSectionNumber === 0 ? 'show' : 'hide')}>
+          <div className={'projectPopupListHeading'}>
+            My tasks:
+          </div>
+          {projectInvolvement}
+      </div>
     </div>
+    <div className={'projectPopupSkills'}>
+      {projectChips}
+    </div>
+  </>;
 
-    const leftColumn = imageOnLeft ? imageSection : textSection;
-    const rightColumn = imageOnLeft ? textSection : imageSection;
+  const [showProjectDetail, setShowProjectDetail] = useState(false);
+
+  const onCardClick = useCallback(() => {
+    setShowProjectDetail(true);
+  }, [setShowProjectDetail]);
+
+  const { ref, inView } = useInView({threshold: 0.3});
+  
+  const [hasBeenInView, setHasBeenInView] = useState(false);
+  useEffect(() => {
+    if (inView) {
+      setHasBeenInView(inView);
+    }
+  })
+
   return (
     <>
-    <div id={id} ref={ref}>
-        <div className={'projectSection' + (inView ? ' showProjectSection' : (hasBeenInView ? ' hasBeenInView' : '')) + (className ? ' ' + className : '')}>
-            {generalDescription}
-            <div className={'projectSectionDetailsSeparator'} />
-            <div className={'narrowDetails'}>
-                <div className={'detailsSelector'}>
-                    <div
-                    onClick={openListTab}
-                    className={'listButton detailsSelectorButtonContainer ' +
-                    (showSectionNumber === listTabNum ? 'detailsSelectorButtonContainerSelected' : 'detailsSelectorButtonContainerNotSelected')}>
-                        <FaListAlt />
-                    </div>
-                    <div
-                    onClick={openImageTab}
-                    className={'imageButton detailsSelectorButtonContainer ' +
-                    (showSectionNumber === imageTabNum ? 'detailsSelectorButtonContainerSelected' : 'detailsSelectorButtonContainerNotSelected')}>
-                        <FaImage />
-                    </div>
-                </div>
-                {narrowDetails}
+    <Modal show={showProjectDetail} hideModal={() => {setShowProjectDetail(false)}}>{cardContent}</Modal>
+    <div ref={ref} id={id} className={'projectCardResponsive ' + (hasBeenInView ? 'showCard' : 'hideCard')}>
+      <div className={'projectCard'} onClick={() => onCardClick()} onMouseEnter={() => setHovering(true)} onMouseLeave={() => setHovering(false)}>
+        <div className={'projectContentContainer'}>
+          <div className={'projectImageContainer'}>
+            <img src={projectImage} className={'projectImage' + (hovering ? ' hovering' : '')} />
+          </div>
+          <div className={'projectCardDescriptionWrapper'}>
+            <div className={'projectCardDescriptionContainer'}>
+              <div className={'projectTitle'}>
+                {projectTitle}
+              </div>
+              {projectParticipationType}
+              <div className={'projectChips'}>
+                {projectChips}
+              </div>
             </div>
-            <div className={'projectColumns'}>
-                <div className={'leftColumn column'}>
-                    {leftColumn}
-                </div>
-                <div className={'rightColumn column'}>
-                    {rightColumn}
-                </div>
-            </div>
-            <div className={'projectChipsContainer'}>{projectChips}</div>
+          </div>
         </div>
+      </div>
     </div>
     </>
   )
