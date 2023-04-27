@@ -31,7 +31,7 @@ const ProjectSection = (
       setShowSectionNumber(imageTabNum);
   }, [setShowSectionNumber, imageTabNum]);
 
-  const popupImg = <img src={projectImage} className={'projectPopupImage'} />;
+  const popupImg = <img src={projectImage} alt={'project screenshot'} className={'projectPopupImage'} />;
 
   const cardContent = <>
     <div className={'projectLink'}>
@@ -86,7 +86,7 @@ const ProjectSection = (
     if (inView) {
       setHasBeenInView(inView);
     }
-  })
+  }, [inView, setHasBeenInView])
 
   return (
     <>
@@ -95,7 +95,7 @@ const ProjectSection = (
       <div className={'projectCard'} onClick={() => onCardClick()} onMouseEnter={() => setHovering(true)} onMouseLeave={() => setHovering(false)}>
         <div className={'projectContentContainer'}>
           <div className={'projectImageContainer'}>
-            <img src={projectImage} className={'projectImage' + (hovering ? ' hovering' : '')} />
+            <img alt={'project screenshot'} src={projectImage} className={'projectImage' + (hovering ? ' hovering' : '')} />
           </div>
           <div className={'projectCardDescriptionWrapper'}>
             <div className={'projectCardDescriptionContainer'}>

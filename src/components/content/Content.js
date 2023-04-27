@@ -5,7 +5,7 @@ import About from '../about/About';
 import WorkExperiences from '../workExperiences/WorkExperiences';
 import UIDesign from '../uiDesign/UIDesign';
 import ThreeDModeling from '../ThreeDModeling/ThreeDModeling';
-import ProjectsOLD from '../projects/ProjectsOLD';
+// import ProjectsOLD from '../projects/ProjectsOLD';
 import Projects from '../projects/Projects';
 import AboutMe from "../aboutMe/AboutMe";
 import HeaderSpace from '../header/HeaderSpace';
