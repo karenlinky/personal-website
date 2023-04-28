@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import ResponsivePage from '../responsivePage/ResponsivePage';
 import PageHeader from '../typography/PageHeader';
 import IconButtonGroup from '../iconButton/IconButtonGroup';
