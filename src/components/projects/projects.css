@@ -36,6 +36,7 @@
     position: relative;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    border: rgb(46, 46, 46) 1px solid;
 }
 
 .projectImage {
