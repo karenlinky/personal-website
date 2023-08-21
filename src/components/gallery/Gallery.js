@@ -1,10 +1,10 @@
 import React from "react";
-import { useInView } from "react-intersection-observer";
+// import { useInView } from "react-intersection-observer";
 import { useHorizontalScroll } from "../horizontalScroll/horizontalScroll";
 import "./gallery.css";
 
 const Gallery = ({ children }) => {
-  const { ref, inView } = useInView({ threshold: 0.1 });
+  // const { ref, inView } = useInView({ threshold: 0.1 });
   const scrollRef = useHorizontalScroll();
 
   return (
