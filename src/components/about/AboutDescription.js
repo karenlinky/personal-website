@@ -13,7 +13,7 @@ const AboutDescription = () => {
       <span className={"descriptionBlue"}>{"me "}</span>
       <span className={"descriptionRed"}>{"= "}</span>
       <span className={"descriptionGrey"}>{"<"}</span>
-      <span className={"descriptionYellow"}>{"FullStackEngineer"}</span>
+      <span className={"descriptionYellow"}>{"SoftwareEngineer"}</span>
     </>
   );
 
@@ -46,9 +46,9 @@ const AboutDescription = () => {
 
   const descriptionPeriod = (
     <>
-      <span className={"descriptionPurple"}>{"period"}</span>
+      <span className={"descriptionPurple"}>{"graduationDate"}</span>
       <span className={"descriptionGrey"}>{"="}</span>
-      <span className={"descriptionGreen"}>{"'2018 Sept - 2023 Apr'"}</span>
+      <span className={"descriptionGreen"}>{"'2023 Apr'"}</span>
     </>
   );
 
@@ -130,7 +130,7 @@ const AboutDescription = () => {
     <>
       <span className={"descriptionBlue"}>{"me "}</span>
       <span className={"descriptionRed"}>{"= "}</span>
-      <span className={"descriptionYellow"}>{"FullStackEngineer"}</span>
+      <span className={"descriptionYellow"}>{"SoftwareEngineer"}</span>
       <span className={"descriptionGrey"}>{"("}</span>
     </>
   );
@@ -168,9 +168,9 @@ const AboutDescription = () => {
 
   const pythonPeriod = (
     <>
-      <span className={"descriptionPurple"}>{"period"}</span>
+      <span className={"descriptionPurple"}>{"graduation_date"}</span>
       <span className={"descriptionGrey"}>{"="}</span>
-      <span className={"descriptionGreen"}>{"'2018 Sept - 2023 Apr'"}</span>
+      <span className={"descriptionGreen"}>{"'2023 Apr'"}</span>
       <span className={"descriptionGrey"}>{","}</span>
     </>
   );
