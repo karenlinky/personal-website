@@ -64,6 +64,16 @@ const AboutDescription = () => {
       <span className={"descriptionGrey"}>{", "}</span>
       <span className={"descriptionGreen"}>{"'Git'"}</span>
       <span className={"descriptionGrey"}>{", "}</span>
+      <span className={"descriptionGreen"}>
+        {"'Object-Oriented Programming'"}
+      </span>
+      <span className={"descriptionGrey"}>{", "}</span>
+      <span className={"descriptionGreen"}>{"'Architectural Design'"}</span>
+      <span className={"descriptionGrey"}>{", "}</span>
+      <span className={"descriptionGreen"}>
+        {"'Data Structures & Algorithms'"}
+      </span>
+      <span className={"descriptionGrey"}>{", "}</span>
       <span className={"descriptionGreen"}>{"'PHP'"}</span>
       <span className={"descriptionGrey"}>{", "}</span>
       <span className={"descriptionGreen"}>{"'Kotlin'"}</span>
