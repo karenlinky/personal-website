@@ -4,6 +4,7 @@ import PageHeader from "../typography/PageHeader";
 import PersonalWebsite from "./PersonalWebsite";
 import GenS from "./GenS";
 import SecretGifta from "./SecretGifta";
+import PDFViewer from "./PDFViewer";
 import ChefsHat from "./ChefsHat";
 import SpaceInvader from "./SpaceInvader";
 import UltramanRagdoll from "./UltramanRagdoll";
@@ -25,6 +26,7 @@ const Projects = () => {
     personalWebsite: "personal-website",
     genS: "gen-s",
     secretGifta: "secret-gifta",
+    pdfViewer: "pdf-viewer",
     chefsHat: "chef-s-hat",
     spaceInvader: "space-invader",
     ultramanRagdoll: "ultraman-ragdoll",
@@ -64,6 +66,11 @@ const Projects = () => {
             <SecretGifta
               imageOnLeft
               id={ids.secretGifta}
+              openDetail={openProjectDetail}
+              setProjectDetail={setProjectDetail}
+            />
+            <PDFViewer
+              id={ids.pdfViewer}
               openDetail={openProjectDetail}
               setProjectDetail={setProjectDetail}
             />
