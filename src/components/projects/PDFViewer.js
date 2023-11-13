@@ -6,7 +6,7 @@ import ProjectSection from "./ProjectSection";
 import screenshot from "../../img/pdfViewer.jpg";
 
 const PDFViewer = ({ imageOnLeft, id, openDetail, setProjectDetail }) => {
-  const projectTitle = "PDFViewer";
+  const projectTitle = "PDF Viewer";
   const projectLink = "https://github.com/karenlinky/pdf-reader";
   const projectParticipationType = "Personal Project";
   const projectChips = (
@@ -19,9 +19,10 @@ const PDFViewer = ({ imageOnLeft, id, openDetail, setProjectDetail }) => {
   const projectDescr = (
     <>
       <div>
-        This PDF viewer allows users to annotate and highlight a PDF file. It
+        The PDF viewer allows users to annotate and highlight a PDF file. It
         also supports other basic functionalities such as zooming in and out,
-        erasing the strokes and navigating to other pages.
+        undoing and redoing an action, erasing the strokes and navigating to
+        other pages.
       </div>
     </>
   );
@@ -32,7 +33,10 @@ const PDFViewer = ({ imageOnLeft, id, openDetail, setProjectDetail }) => {
         Used strategy pattern to specify the behaviour of each pen
       </ListItem1>
       <ListItem1>
-        Wrote an algorithm to determine the draw-actions erased by the user by
+        Used a stack data structure to handle undoing/redoing an action
+      </ListItem1>
+      <ListItem1>
+        Wrote an algorithm to determine the drawings erased by the user by
         checking for intersections between each point of all strokes and the
         eraser
       </ListItem1>
