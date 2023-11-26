@@ -10,6 +10,7 @@ import SpaceInvader from "./SpaceInvader";
 import UltramanRagdoll from "./UltramanRagdoll";
 import Modal from "../modal/Modal";
 import "./projects.css";
+import PhysioTracker from "./PhysioTracker";
 
 const Projects = () => {
   const descr = (
@@ -23,6 +24,7 @@ const Projects = () => {
   );
 
   const ids = {
+    physioTracker: "physio-tracker",
     personalWebsite: "personal-website",
     genS: "gen-s",
     secretGifta: "secret-gifta",
@@ -53,6 +55,11 @@ const Projects = () => {
         <ResponsivePage>
           <PageHeader short label={"Projects"} descr={descr} />
           <div className={"projectGallery"}>
+            <PhysioTracker
+              id={ids.physioTracker}
+              openDetail={openProjectDetail}
+              setProjectDetail={setProjectDetail}
+            />
             <PersonalWebsite
               id={ids.personalWebsite}
               openDetail={openProjectDetail}
