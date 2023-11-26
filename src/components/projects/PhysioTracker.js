@@ -27,7 +27,7 @@ const PhysioTracker = ({ imageOnLeft, id, openDetail, setProjectDetail }) => {
         exercises scheduled 5 times a week. But I realized I've fallen into a
         bit of a habit - taking longer breaks between each exercise or set than
         I should. To help with this, I've developed an app that keeps track of
-        how long I spend on each exercise and on breaks. It kindly reminds me
+        how long I spend on each exercise and on breaks. It "kindly" reminds me
         with notifications when it's time to get back into my exercises.{" "}
         <a
           href={PhysioTrackerApp}
@@ -35,9 +35,8 @@ const PhysioTracker = ({ imageOnLeft, id, openDetail, setProjectDetail }) => {
           rel="noreferrer"
           className={"downloadLink"}
         >
-          {"Downloadable APK"}
+          Downloadable APK
         </a>
-        <a></a>
       </div>
     </>
   );
