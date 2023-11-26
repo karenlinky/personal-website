@@ -12,7 +12,7 @@ const PhysioTracker = ({ imageOnLeft, id, openDetail, setProjectDetail }) => {
   const projectParticipationType = "Personal Project";
   const projectChips = (
     <>
-      <Chip>Android Development</Chip>
+      <Chip>Android App</Chip>
       <Chip>Java</Chip>
       <Chip>OOP</Chip>
       <Chip>Observer Design Pattern</Chip>
