@@ -138,11 +138,6 @@ const AboutDescription = () => {
         <DescriptionLine
           hovering={hovering}
           lineNumber={"6"}
-          content={descriptionPeriod}
-        />
-        <DescriptionLine
-          hovering={hovering}
-          lineNumber={"7"}
           content={descriptionSkills}
         />
       </div>
@@ -245,11 +240,6 @@ const AboutDescription = () => {
         <DescriptionLine
           hovering={hovering}
           lineNumber={"6"}
-          content={pythonPeriod}
-        />
-        <DescriptionLine
-          hovering={hovering}
-          lineNumber={"7"}
           content={pythonDescriptionSkills}
         />
       </div>
