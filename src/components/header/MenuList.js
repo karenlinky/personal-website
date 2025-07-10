@@ -48,8 +48,8 @@ const MenuList = () => {
           />
           <MenuListItem
             closeMenu={closeMenu}
-            label={"UI Design"}
-            to={"ui_design"}
+            label={"UI/UX Design"}
+            to={"ui_ux_design"}
           />
           <MenuListItem
             closeMenu={closeMenu}

@@ -149,19 +149,23 @@
 }
 
 .descriptionLine3 {
-    animation-delay: 2.4s;
+    animation-delay: 2.3s;
 }
 
 .descriptionLine4 {
-    animation-delay: 3.2s;
+    animation-delay: 3.3s;
 }
 
 .descriptionLine5 {
-    animation-delay: 4s;
+    animation-delay: 4.1s;
 }
 
 .descriptionLine6 {
-    animation-delay: 4.7s;
+    animation-delay: 4.9s;
+}
+
+.descriptionLine7 {
+    animation-delay: 5.6s;
 }
 
 .descriptionPurple {

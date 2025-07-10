@@ -10,7 +10,7 @@ const MenuBar = () => {
       {/* <MenuItem label={'About Me'} to={'/about_me'}/> */}
       <MenuItem label={"Work Experience"} to={"/work_experience"} />
       <MenuItem label={"Projects"} to={"projects"} />
-      <MenuItem label={"UI Design"} to={"ui_design"} />
+      <MenuItem label={"UI/UX Design"} to={"ui_ux_design"} />
       <MenuItem label={"3D Modeling"} to={"3d_modeling"} />
     </div>
   );

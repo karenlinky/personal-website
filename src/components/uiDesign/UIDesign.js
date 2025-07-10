@@ -17,15 +17,15 @@ import genS8 from '../../img/uiDesign/gen_s_ui_8.png';
 import '../content/content.css';
 
 const UIDesign = () => {
-    const descr = <><div>While I am a software engineer, I also participate in the UI design process.</div>
-    <div>I have gained experience in UI design through my internships and projects, and here are a few designs I made for a project using Figma.</div></>
+    const descr = <><div>While I am a software engineer, I also participate in the UI/UX design process.</div>
+    <div>I have gained experience in UI design through my work and projects, and here are a few designs I made for a project using Figma.</div></>
 
     const threshold = 0.1;
 
     return (
         <div className={'fullPageBody'}>
         <ResponsivePage>
-            <PageHeader shortBottomPadding label={'UI Design'} descr={descr}/>
+            <PageHeader shortBottomPadding label={'UI/UX Design'} descr={descr}/>
             <Gallery>
                 <GalleryImage threshold={threshold}><img src={genS1} alt={'gen_s_1'} /></GalleryImage>
                 <GalleryImage threshold={threshold}><img src={genS2} alt={'gen_s_2'} /></GalleryImage>

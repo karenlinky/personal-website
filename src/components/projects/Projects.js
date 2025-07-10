@@ -15,10 +15,9 @@ import PhysioTracker from "./PhysioTracker";
 const Projects = () => {
   const descr = (
     <>
-      <div>Over the years, I have completed several projects.</div>
+      <div>Over the years, I've worked on a variety of projects.</div>
       <div>
-        Each one has presented its own unique set of challenges. Here are a few
-        of projects that I am proud of.
+        Each bringing its own unique challenges. Below are a few that I'm particularly proud of.
       </div>
     </>
   );

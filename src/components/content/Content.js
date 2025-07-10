@@ -25,6 +25,7 @@ const Content = () => {
           {/* <Route path={'/projects'} element={<ProjectsOLD />} /> */}
           <Route path={"/projects"} element={<Projects />} />
           <Route path={"/ui_design"} element={<UIDesign />} />
+          <Route path={"/ui_ux_design"} element={<UIDesign />} />
           <Route path={"/3d_modeling"} element={<ThreeDModeling />} />
           <Route path={"/about_me"} element={<AboutMe />} />
           <Route path={"*"} element={<Redirection />} />

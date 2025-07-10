@@ -17,6 +17,14 @@ const AboutDescription = () => {
     </>
   );
 
+  const descriptionCompany = (
+    <>
+      <span className={"descriptionPurple"}>{"company"}</span>
+      <span className={"descriptionGrey"}>{"="}</span>
+      <span className={"descriptionGreen"}>{"'Snap Inc.'"}</span>
+    </>
+  );
+
   const descriptionSchool = (
     <>
       <span className={"descriptionPurple"}>{"school"}</span>
@@ -110,26 +118,31 @@ const AboutDescription = () => {
         <DescriptionLine
           hovering={hovering}
           lineNumber={"2"}
-          content={descriptionSchool}
+          content={descriptionCompany}
         />
         <DescriptionLine
           hovering={hovering}
           lineNumber={"3"}
-          content={descriptionDegree}
+          content={descriptionSchool}
         />
         <DescriptionLine
           hovering={hovering}
           lineNumber={"4"}
-          content={descriptionMajor}
+          content={descriptionDegree}
         />
         <DescriptionLine
           hovering={hovering}
           lineNumber={"5"}
-          content={descriptionPeriod}
+          content={descriptionMajor}
         />
         <DescriptionLine
           hovering={hovering}
           lineNumber={"6"}
+          content={descriptionPeriod}
+        />
+        <DescriptionLine
+          hovering={hovering}
+          lineNumber={"7"}
           content={descriptionSkills}
         />
       </div>
@@ -142,6 +155,15 @@ const AboutDescription = () => {
       <span className={"descriptionRed"}>{"= "}</span>
       <span className={"descriptionYellow"}>{"SoftwareEngineer"}</span>
       <span className={"descriptionGrey"}>{"("}</span>
+    </>
+  );
+
+  const pythonCompany = (
+    <>
+      <span className={"descriptionPurple"}>{"company"}</span>
+      <span className={"descriptionGrey"}>{"="}</span>
+      <span className={"descriptionGreen"}>{"'Snap Inc.'"}</span>
+      <span className={"descriptionGrey"}>{","}</span>
     </>
   );
 
@@ -203,26 +225,31 @@ const AboutDescription = () => {
         <DescriptionLine
           hovering={hovering}
           lineNumber={"2"}
-          content={pythonSchool}
+          content={pythonCompany}
         />
         <DescriptionLine
           hovering={hovering}
           lineNumber={"3"}
-          content={pythonDegree}
+          content={pythonSchool}
         />
         <DescriptionLine
           hovering={hovering}
           lineNumber={"4"}
-          content={pythonMajor}
+          content={pythonDegree}
         />
         <DescriptionLine
           hovering={hovering}
           lineNumber={"5"}
-          content={pythonPeriod}
+          content={pythonMajor}
         />
         <DescriptionLine
           hovering={hovering}
           lineNumber={"6"}
+          content={pythonPeriod}
+        />
+        <DescriptionLine
+          hovering={hovering}
+          lineNumber={"7"}
           content={pythonDescriptionSkills}
         />
       </div>

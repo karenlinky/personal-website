@@ -12,7 +12,7 @@ const WorkExperiences = () => {
   const descr = (
     <>
       <div>
-        I've had the opportunity to work with a variety of organizations.
+        I've worked with multiple companies.
       </div>
       <div>
         Each of which has helped me develop invaluable skills and experience.
