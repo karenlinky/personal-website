@@ -7,6 +7,7 @@ import Achievers1ExperienceCard from "./Achievers1ExperienceCard";
 import Achievers2ExperienceCard from "./Achievers2ExperienceCard";
 import KGSExperienceCard from "./KGSExperienceCard";
 import "../content/content.css";
+import SnapExperienceCard from "./SnapExperienceCard";
 
 const WorkExperiences = () => {
   const descr = (
@@ -38,6 +39,12 @@ const WorkExperiences = () => {
     <div className={"fullPageBody"}>
       <ResponsivePage>
         <PageHeader paddingBottom label={"Work Experience"} descr={descr} />
+        <SnapExperienceCard
+          openNum={openNum}
+          experienceNum={4}
+          onCardClick={onCardClick}
+        />
+        <Separator margin={"25"} />
         <MetaExperienceCard
           openNum={openNum}
           experienceNum={3}
