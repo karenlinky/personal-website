@@ -19,10 +19,10 @@ const SnapExperienceCard = ({ openNum, experienceNum, onCardClick }) => {
     <ListItem1>Developing the <CardPrimaryText>Username Assisted Quick Login</CardPrimaryText> feature</ListItem1>
     <ListItem2>Increased the number of app-openings <CardPrimaryText>by 0.16%</CardPrimaryText></ListItem2>
     <ListItem2>Increased total time spent on the app <CardPrimaryText>by 0.57%</CardPrimaryText></ListItem2>
-    <ListItem1>Used <CardPrimaryText>GRPC Status Code</CardPrimaryText> to determine network connectivity, and set whether an error is a retryable error accordingly</ListItem1>
+    <ListItem1>Used <CardPrimaryText>GRPC Status Code</CardPrimaryText> to determine network connectivity, and <CardPrimaryText>classify errors as retryable or non-retryable</CardPrimaryText> accordingly</ListItem1>
     <ListItem2>Increased the number of app-openings <CardPrimaryText>by 4.32%</CardPrimaryText></ListItem2>
-    <ListItem2>Increased the number of app-openings by previoiusly non-active users <CardPrimaryText>by 7.64%</CardPrimaryText></ListItem2>
-    <ListItem2>Increased the number of snap save <CardPrimaryText>by 9.13%</CardPrimaryText></ListItem2>
+    <ListItem2>Increased the number of app-openings of previously non-active users <CardPrimaryText>by 7.64%</CardPrimaryText></ListItem2>
+    <ListItem2>Increased the number of Snap-save <CardPrimaryText>by 9.13%</CardPrimaryText></ListItem2>
   </div>;
     
   return (
