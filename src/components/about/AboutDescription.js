@@ -52,14 +52,6 @@ const AboutDescription = () => {
     </>
   );
 
-  const descriptionPeriod = (
-    <>
-      <span className={"descriptionPurple"}>{"graduationDate"}</span>
-      <span className={"descriptionGrey"}>{"="}</span>
-      <span className={"descriptionGreen"}>{"'2023 Apr'"}</span>
-    </>
-  );
-
   const descriptionSkillsCommon = (
     <>
       <span className={"descriptionPurple"}>{"skills"}</span>
@@ -189,15 +181,6 @@ const AboutDescription = () => {
       <span className={"descriptionPurple"}>{"major"}</span>
       <span className={"descriptionGrey"}>{"="}</span>
       <span className={"descriptionGreen"}>{"'Computer Science'"}</span>
-      <span className={"descriptionGrey"}>{","}</span>
-    </>
-  );
-
-  const pythonPeriod = (
-    <>
-      <span className={"descriptionPurple"}>{"graduation_date"}</span>
-      <span className={"descriptionGrey"}>{"="}</span>
-      <span className={"descriptionGreen"}>{"'2023 Apr'"}</span>
       <span className={"descriptionGrey"}>{","}</span>
     </>
   );
