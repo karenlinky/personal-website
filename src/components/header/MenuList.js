@@ -28,7 +28,7 @@ const MenuList = () => {
         <FaBars onClick={toggleMenu} className={"menuIcon"} />
       )}
       <div className={"narrowMenuScrollable"}>
-        <div
+        <nav
           className={
             "narrowMenuList" +
             (showMenuList ? " showNarrowMenuList" : " hideNarrowMenuList")
@@ -59,7 +59,7 @@ const MenuList = () => {
           <div className={"narrowMenuIconGroup"}>
             <IconButtonGroup />
           </div>
-        </div>
+        </nav>
       </div>
     </div>
   );

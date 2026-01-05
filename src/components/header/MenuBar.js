@@ -5,14 +5,14 @@ import "./header.css";
 
 const MenuBar = () => {
   return (
-    <div className={"menuBar"}>
+    <nav className={"menuBar"}>
       <MenuItem label={"Home"} to={"/"} />
       {/* <MenuItem label={'About Me'} to={'/about_me'}/> */}
       <MenuItem label={"Work Experience"} to={"/work_experience"} />
       <MenuItem label={"Projects"} to={"projects"} />
       <MenuItem label={"UI/UX Design"} to={"ui_ux_design"} />
       <MenuItem label={"3D Modeling"} to={"3d_modeling"} />
-    </div>
+    </nav>
   );
 };
 
