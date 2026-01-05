@@ -19,12 +19,12 @@ const PersonalWebsite = ({ imageOnLeft, id, openDetail, setProjectDetail }) => {
   );
   const projectDescr = (
     <>
-      <div>
+      <p>
         To effectively highlight my projects and work experience, I have created
         this website to showcase my past accomplishments and demonstrate my
         genuine passion for frontend development, which is a field within
         software engineering that truly captivates me.
-      </div>
+      </p>
     </>
   );
 

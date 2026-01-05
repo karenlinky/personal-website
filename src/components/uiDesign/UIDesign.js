@@ -17,8 +17,8 @@ import genS8 from '../../img/uiDesign/gen_s_ui_8.png';
 import '../content/content.css';
 
 const UIDesign = () => {
-    const descr = <><div>While I am a software engineer, I also participate in the UI/UX design process.</div>
-    <div>I have gained experience in UI design through my work and projects, and here are a few designs I made for a project using Figma.</div></>
+    const descr = <><p>While I am a software engineer, I also participate in the UI/UX design process.</p>
+    <p>I have gained experience in UI design through my work and projects, and here are a few designs I made for a project using Figma.</p></>
 
     const threshold = 0.1;
 

@@ -11,8 +11,8 @@ const ChefsHat = ({ imageOnLeft, id, openDetail, setProjectDetail }) => {
     const projectParticipationType = 'Group Project';
     const projectChips = <><Chip>Web App</Chip><Chip>HTML</Chip><Chip>CSS</Chip><Chip>JavaScript</Chip><Chip>SQL</Chip></>;
     const projectDescr = <>
-    <div>We built a platform that allows users to manage recipes.
-    It has several features such as creating new recipes, bookmarking favorites, searching and rating recipes.</div>
+    <p>We built a platform that allows users to manage recipes.
+    It has several features such as creating new recipes, bookmarking favorites, searching and rating recipes.</p>
     </>
 
     const projectInvolvement = <div>

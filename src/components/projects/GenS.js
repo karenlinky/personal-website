@@ -19,13 +19,13 @@ const GenS = ({ imageOnLeft, id, openDetail, setProjectDetail }) => {
   );
   const projectDescr = (
     <>
-      <div>
+      <p>
         As students with busy schedule, we recognize the significance of
         scheduling our activities in advance and abstaining from
         procrastination. Therefore, we developed an app that enables users to
         create personalized study schedules based on their preferences and
         availabilies.
-      </div>
+      </p>
     </>
   );
 

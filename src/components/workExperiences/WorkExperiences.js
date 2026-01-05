@@ -12,13 +12,13 @@ import SnapExperienceCard from "./SnapExperienceCard";
 const WorkExperiences = () => {
   const descr = (
     <>
-      <div>
+      <p>
         I've worked with multiple companies.
-      </div>
-      <div>
+      </p>
+      <p>
         Each of which has helped me develop invaluable skills and experience.
         Here are a few highlights from my work experience.
-      </div>
+      </p>
     </>
   );
 

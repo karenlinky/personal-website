@@ -3,7 +3,7 @@ import './card.css';
 
 const CardSubheader = ({ children, className }) => {
   return (
-    <div className={'cardSubheader' + (className ? ' ' + className : '')}>{children}</div>
+    <h3 className={'cardSubheader' + (className ? ' ' + className : '')}>{children}</h3>
   )
 }
 

@@ -30,11 +30,9 @@ const PageHeader = ({ label, threshold, descr, shortBottomPadding, img, aboutMe 
         null
         }
         <div className={'pageHeaderTextContainer' + (img ? ' hasImage' : '')}>
-          <div className="pageHeader">
-            <ScrollObserver threshold={threshold != null ? threshold : 0.2} onInViewChange={updateInView}>
-              {label}
-            </ScrollObserver>
-          </div>
+          <ScrollObserver threshold={threshold != null ? threshold : 0.2} onInViewChange={updateInView}>
+            <h1 className="pageHeader">{label}</h1>
+          </ScrollObserver>
           {descr ? <div className="pageHeaderDescription">
             <ScrollObserver threshold={0} onInViewChange={updateDescrInView}>
               {descr}

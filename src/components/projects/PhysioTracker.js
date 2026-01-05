@@ -22,7 +22,7 @@ const PhysioTracker = ({ imageOnLeft, id, openDetail, setProjectDetail }) => {
   );
   const projectDescr = (
     <>
-      <div>
+      <p>
         As someone in the midst of physiotherapy, I've got a routine of over 10
         exercises scheduled 5 times a week. But I realized I've fallen into a
         bit of a habit - taking longer breaks between each exercise or set than
@@ -37,7 +37,7 @@ const PhysioTracker = ({ imageOnLeft, id, openDetail, setProjectDetail }) => {
         >
           Downloadable APK
         </a>
-      </div>
+      </p>
     </>
   );
 

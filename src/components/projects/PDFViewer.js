@@ -18,12 +18,12 @@ const PDFViewer = ({ imageOnLeft, id, openDetail, setProjectDetail }) => {
   );
   const projectDescr = (
     <>
-      <div>
+      <p>
         The PDF viewer allows users to annotate and highlight a PDF file. It
         also supports other basic functionalities such as zooming in and out,
         undoing and redoing an action, erasing the strokes and navigating to
         other pages.
-      </div>
+      </p>
     </>
   );
 

@@ -8,9 +8,9 @@ const ListItem1 = ({ children, className }) => {
       <div className={'bulletPoint'}>
         <FaLaptop />
       </div>
-      <div className={'listItemContent'}>
+      <p className={'listItemContent'}>
         {children}
-      </div>
+      </p>
     </div>
   )
 }

@@ -15,10 +15,10 @@ import PhysioTracker from "./PhysioTracker";
 const Projects = () => {
   const descr = (
     <>
-      <div>Over the years, I've worked on a variety of projects.</div>
-      <div>
+      <p>Over the years, I've worked on a variety of projects.</p>
+      <p>
         Each bringing its own unique challenges. Below are a few that I'm particularly proud of.
-      </div>
+      </p>
     </>
   );
 

@@ -14,13 +14,13 @@ const About = () => {
       <div className={'fullPageBody'}>
         <div className={'aboutContent'}>
           <div className={'nameDescriptionContainer'}>
-            <div className={'name notHighlightable'}>
+            <h1 className={'name notHighlightable'}>
               KA YING
-            </div>
-            <div className={'name notHighlightable'}>
+            </h1>
+            <h1 className={'name notHighlightable'}>
                 {/* <span className={'nameColor'}>KAREN</span> LIN */}
                 KAREN LIN
-            </div>
+            </h1>
             <div className={'nameDescriptionDivider'} />
             <AboutDescription />
             <Separator margin={'75'} />

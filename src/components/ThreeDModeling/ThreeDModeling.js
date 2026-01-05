@@ -14,7 +14,7 @@ import macBookPro from '../../img/3dModels/MacBookPro.png';
 import '../content/content.css';
 
 const ThreeDModeling = () => {
-    const descr = <><div>I also do 3D modeling as a hobby, and I'm excited to share some of my creations!</div></>
+    const descr = <><p>I also do 3D modeling as a hobby, and I'm excited to share some of my creations!</p></>
 
     const threshold = 0.1;
 

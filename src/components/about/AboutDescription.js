@@ -193,7 +193,7 @@ const AboutDescription = () => {
   );
 
   const PythonCode = (
-    <>
+    <p>
       <DescriptionLine
         hovering={hovering}
         lineNumber={"1"}
@@ -226,7 +226,7 @@ const AboutDescription = () => {
           content={pythonDescriptionSkills}
         />
       </div>
-    </>
+    </p>
   );
 
   const [openCode, setOpenCode] = useState(0);

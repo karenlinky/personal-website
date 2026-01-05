@@ -36,9 +36,9 @@ const ProjectSection = (
   const cardContent = <>
     <div className={'projectLink'}>
     <a target={'_blank'} rel={'noreferrer'} href={projectLink}>
-      <div className={'projectPopupTitle'}>
+      <h2 className={'projectPopupTitle'}>
         {projectTitle}
-      </div>
+      </h2>
       <div className={'projectPopupLinkContainer'}><FaGithub /></div>
     </a>
     </div>
@@ -62,9 +62,9 @@ const ProjectSection = (
           {popupImg}
       </div>
       <div className={'projectPopupListContainer ' + (showSectionNumber === 0 ? 'show' : 'hide')}>
-          <div className={'projectPopupListHeading'}>
+          <p className={'projectPopupListHeading'}>
             My tasks:
-          </div>
+          </p>
           {projectInvolvement}
       </div>
     </div>

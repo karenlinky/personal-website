@@ -3,7 +3,7 @@ import './chip.css';
 
 const Chip = ({ children }) => {
   return (
-    <div className={'chip'}>{children}</div>
+    <p className={'chip'}>{children}</p>
   )
 }
 
